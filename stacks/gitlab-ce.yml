@@ -1,0 +1,85 @@
+version: '3.8'
+
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:latest
+    restart: unless-stopped
+    hostname: 'gitlab.localhost'
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://gitlab.localhost:${GITLAB_HTTP_PORT}'
+        gitlab_rails['gitlab_shell_ssh_port'] = ${GITLAB_SSH_PORT}
+        gitlab_rails['initial_root_password'] = '${GITLAB_ROOT_PASSWORD}'
+        registry_external_url 'http://gitlab.localhost:${GITLAB_REGISTRY_PORT}'
+        postgresql['shared_preload_libraries'] = 'pg_stat_statements'
+        redis['password'] = '${REDIS_PASSWORD}'
+        gitlab_rails['redis_password'] = '${REDIS_PASSWORD}'
+    ports:
+      - '${GITLAB_HTTP_PORT}:${GITLAB_HTTP_PORT}'
+      - '${GITLAB_SSH_PORT}:22'
+      - '${GITLAB_REGISTRY_PORT}:${GITLAB_REGISTRY_PORT}'
+    volumes:
+      - gitlab_config:/etc/gitlab
+      - gitlab_logs:/var/log/gitlab
+      - gitlab_data:/var/opt/gitlab
+    networks:
+      - gitlab_network
+    healthcheck:
+      test: ["CMD", "/opt/gitlab/bin/gitlab-healthcheck", "--fail"]
+      interval: 60s
+      timeout: 30s
+      retries: 3
+      start_period: 180s
+
+  gitlab-runner:
+    image: gitlab/gitlab-runner:latest
+    restart: unless-stopped
+    environment:
+      - DOCKER_HOST=unix:///var/run/docker.sock
+    volumes:
+      - gitlab_runner_config:/etc/gitlab-runner
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - gitlab_network
+    depends_on:
+      - gitlab
+
+  postgres:
+    image: postgres:14
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: gitlabhq_production
+      POSTGRES_USER: gitlab
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - gitlab_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gitlab"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
+    command: redis-server --requirepass ${REDIS_PASSWORD}
+    volumes:
+      - redis_data:/data
+    networks:
+      - gitlab_network
+
+volumes:
+  gitlab_config:
+  gitlab_logs:
+  gitlab_data:
+  gitlab_runner_config:
+  postgres_data:
+  redis_data:
+
+networks:
+  gitlab_network:
+    driver: bridge
