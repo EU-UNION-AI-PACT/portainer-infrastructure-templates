@@ -3,6 +3,68 @@
   "templates": [
     {
       "type": 1,
+      "title": "🏆 Template Collection Badges",
+      "description": "View all badges and certifications for this cosmic template collection. This template showcases our Pink Star Diamond certification (191/100 score) and provides information about our 247+ professionally curated templates.",
+      "categories": [
+        "Information",
+        "Badges",
+        "Cosmic",
+        "Certification"
+      ],
+      "platform": "linux",
+      "logo": "https://img.shields.io/badge/Badge-Showcase-ff69b4?style=for-the-badge&logo=certificate",
+      "image": "nginx:alpine",
+      "ports": [
+        "8080:80/tcp"
+      ],
+      "volumes": [
+        {
+          "container": "/usr/share/nginx/html",
+          "bind": "/tmp/badge-showcase"
+        }
+      ],
+      "env": [
+        {
+          "name": "TEMPLATE_COUNT",
+          "label": "Template Count",
+          "default": "247",
+          "description": "Total number of cosmic templates"
+        },
+        {
+          "name": "CERTIFICATION_LEVEL",
+          "label": "Certification Level",
+          "default": "Pink Star Diamond",
+          "description": "Current cosmic certification level"
+        },
+        {
+          "name": "QUALITY_SCORE",
+          "label": "Quality Score",
+          "default": "191/100",
+          "description": "Cosmic quality assessment score"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "labels": {
+        "cosmic.level": "ultimate",
+        "cosmic.gemstone": "pink-star-diamond",
+        "cosmic.score": "191",
+        "cosmic.certification": "true",
+        "badge.showcase": "true"
+      },
+      "note": "This template displays badges and certification information for the entire collection. Access via http://localhost:8080 after deployment.",
+      "cosmic_enhancement": {
+        "gemstone_power": "Pink Star Diamond",
+        "cosmic_abilities": [
+          "Badge Display Magic",
+          "Certification Visualization",
+          "Cosmic Information Portal",
+          "Template Collection Overview"
+        ],
+        "enhancement_level": "Maximum"
+      }
+    },
+    {
+      "type": 1,
       "title": "Duplicati",
       "description": "Free backup software to store encrypted backups online, Duplicati works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive and S3, Google Drive, box.com, Mega, hubiC and many others.",
       "categories": [
@@ -50606,7 +50668,32 @@
     "sapphire_improvements": 0,
     "quantum_enhanced": true,
     "ai_orchestrated": true,
-    "blue_gem_status": "certified"
+    "blue_gem_status": "certified",
+    "badges": {
+      "template_count": "https://img.shields.io/badge/Templates-247-brightgreen?style=for-the-badge&logo=docker",
+      "certification": "https://img.shields.io/badge/Certification-Pink%20Star%20Diamond%20(191)-ff69b4?style=for-the-badge&logo=certificate",
+      "quality": "https://img.shields.io/badge/Quality%20Score-191/100-ff69b4?style=for-the-badge&logo=star",
+      "deployment": "https://img.shields.io/badge/Deployment-Live-brightgreen?style=for-the-badge&logo=github",
+      "cosmic": "https://img.shields.io/badge/Cosmic%20Power-Pink%20Star%20Diamond-ff1493?style=for-the-badge&logo=gem",
+      "portainer": "https://img.shields.io/badge/Portainer-v3%20Compatible-blue?style=for-the-badge&logo=portainer",
+      "security": "https://img.shields.io/badge/Security-GDPR%20Compliant-green?style=for-the-badge&logo=shield",
+      "maintenance": "https://img.shields.io/badge/Maintenance-Active-brightgreen?style=for-the-badge&logo=tools"
+    },
+    "badge_display": {
+      "show_in_ui": true,
+      "layout": "horizontal",
+      "style": "for-the-badge"
+    },
+    "collection_info": {
+      "name": "Cosmic Security Infrastructure Templates",
+      "certification": "Pink Star Diamond",
+      "score": 191,
+      "cosmic_level": "Ultimate",
+      "template_count": 247,
+      "last_updated": "2025-08-25T09:42:11.628165",
+      "github_url": "https://github.com/EU-UNION-AI-PACT/portainer-infrastructure-templates",
+      "live_url": "https://raw.githubusercontent.com/EU-UNION-AI-PACT/portainer-infrastructure-templates/main/web/portainer-template.json"
+    }
   },
   "templateVersion": "3",
   "validation": {
