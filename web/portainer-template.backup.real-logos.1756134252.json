@@ -12,7 +12,7 @@
         "Certification"
       ],
       "platform": "linux",
-      "logo": "https://nginx.org/nginx.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nginx.png",
       "image": "nginx:alpine",
       "ports": [
         "8080:80/tcp"
@@ -158,7 +158,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://www.mysql.com/common/logos/logo-mysql-170x115.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/mysql.png",
       "repository": {
         "url": "https://github.com/EU-UNION-AI-PACT/portainer-infrastructure-templates",
         "stackfile": "stacks/wordpress-production.yml"
@@ -236,7 +236,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://about.gitlab.com/images/press/logo/svg/gitlab-logo-500.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/gitlab.png",
       "repository": {
         "url": "https://github.com/EU-UNION-AI-PACT/portainer-infrastructure-templates",
         "stackfile": "stacks/gitlab-ce.yml"
@@ -364,7 +364,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://www.postgresql.org/media/img/about/press/elephant.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/postgresql.png",
       "repository": {
         "url": "https://github.com/EU-UNION-AI-PACT/portainer-infrastructure-templates",
         "stackfile": "stacks/nextjs-stack.yml"
@@ -440,7 +440,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://www.postgresql.org/media/img/about/press/elephant.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/postgresql.png",
       "image": "postgres:15",
       "ports": [
         "5432:5432/tcp"
@@ -514,7 +514,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://nginx.org/nginx.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nginx.png",
       "image": "jc21/nginx-proxy-manager:latest",
       "ports": [
         "80:80/tcp",
@@ -555,7 +555,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://uptime.kuma.pet/img/icon.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "louislam/uptime-kuma:latest",
       "ports": [
         "3001:3001/tcp"
@@ -581,7 +581,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/code-server.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/code-server:latest",
       "ports": [
         "8443:8443/tcp"
@@ -653,7 +653,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/bookstack.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/bookstack:latest",
       "ports": [
         "6875:80/tcp"
@@ -1295,7 +1295,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://syncthing.net/img/logo-horizontal.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/syncthing.png",
       "image": "lscr.io/linuxserver/syncthing:1.23.7",
       "ports": [
         "8384:8384/tcp",
@@ -3226,7 +3226,7 @@
         "Photos"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/lychee.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "linuxserver/lychee:4.9.5",
       "ports": [
         "80:80/tcp"
@@ -4590,7 +4590,7 @@
         "Community"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/seafile.png",
       "repository": {
         "url": "https://github.com/SelfhostedPro/selfhosted_templates",
         "stackfile": "Template/Stack/seafile.yml"
@@ -6229,7 +6229,7 @@
         "Downloaders"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/deluge.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/deluge:latest",
       "volumes": [
         {
@@ -6503,7 +6503,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/jackett.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/jackett:latest",
       "ports": [
         "9117:9117/tcp"
@@ -7326,7 +7326,7 @@
         "Downloaders"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nzbget.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/nzbget:latest",
       "ports": [
         "6789:6789/tcp"
@@ -8144,7 +8144,7 @@
         "Entertainment"
       ],
       "platform": "linux",
-      "logo": "https://www.plex.tv/wp-content/themes/plex/assets/img/plex-logo.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/plex.png",
       "image": "lscr.io/linuxserver/plexrequests:latest",
       "ports": [
         "3000:3000/tcp"
@@ -8420,7 +8420,7 @@
         "Video"
       ],
       "platform": "linux",
-      "logo": "https://radarr.video/img/logo.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/radarr.png",
       "image": "lscr.io/linuxserver/radarr:latest",
       "ports": [
         "7878:7878/tcp"
@@ -8695,7 +8695,7 @@
         "Downloaders"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/sabnzbd.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/sabnzbd:latest",
       "ports": [
         "8080:8080/tcp",
@@ -10350,7 +10350,7 @@
         "Music"
       ],
       "platform": "linux",
-      "logo": "https://lidarr.audio/img/logo.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/lidarr.png",
       "image": "lscr.io/linuxserver/lidarr:latest",
       "ports": [
         "8686:8686/tcp"
@@ -10625,7 +10625,7 @@
         "Downloaders"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/qbittorrent.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/qbittorrent:latest",
       "ports": [
         "6881:6881/tcp",
@@ -10900,7 +10900,7 @@
         "Professional"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/qbittorrent.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "markusmcnugen/qbittorrentvpn:latest",
       "ports": [
         "8080:8080/tcp",
@@ -13857,7 +13857,7 @@
         "Music"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/airsonic.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/airsonic:stable",
       "ports": [
         "4040:4040/tcp"
@@ -15246,7 +15246,7 @@
         "Music"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/navidrome.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "deluan/navidrome:stable",
       "ports": [
         "4533:4533/tcp"
@@ -15515,7 +15515,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://www.authelia.com/images/branding/logo-cropped.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "authelia/authelia:stable",
       "ports": [
         "9091:9091/tcp"
@@ -16554,7 +16554,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/code-server.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/code-server:stable",
       "ports": [
         "8443:8443/tcp"
@@ -17368,7 +17368,7 @@
         "Music"
       ],
       "platform": "linux",
-      "logo": "https://about.gitlab.com/images/press/logo/svg/gitlab-logo-500.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/gitlab.png",
       "image": "registry.gitlab.com/bockiii/deemix-docker:stable",
       "ports": [
         "6595:6595/tcp"
@@ -17753,7 +17753,7 @@
         "retries": 3,
         "start_period": "60s"
       },
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/deluge.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/openvpn.png",
       "id": 64,
       "author": "EU-UNION-AI-PACT",
       "limits": {
@@ -17906,7 +17906,7 @@
         "Maintenance"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/dozzle.png",
       "image": "amir20/dozzle:stable",
       "ports": [
         "8080:8080/tcp"
@@ -18412,7 +18412,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/filebrowser.png",
       "image": "80x86/filebrowser:stable",
       "ports": [
         "8082:8082/tcp"
@@ -18663,7 +18663,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/freshrss.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/freshrss:stable",
       "ports": [
         "80:80/tcp"
@@ -19190,7 +19190,7 @@
         "Web"
       ],
       "platform": "linux",
-      "logo": "https://grafana.com/static/img/logos/grafana_logo_swirl-events.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/grafana.png",
       "image": "grafana/grafana:10.2.0",
       "ports": [
         "3001:3000/tcp"
@@ -19960,7 +19960,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/homer.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "b4bz/homer:stable",
       "ports": [
         "8902:8080/tcp"
@@ -23138,7 +23138,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/organizr.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "organizrtools/organizr-v2:php-fpm",
       "ports": [
         "80:80/tcp"
@@ -23683,7 +23683,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/pihole.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "pihole/pihole:stable",
       "ports": [
         "53:53/tcp",
@@ -23940,7 +23940,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/react.png",
       "image": "amruthpillai/reactive-resume:stable",
       "ports": [
         "80:80/tcp"
@@ -24956,7 +24956,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://tiddlywiki.com/favicon.ico",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "mazzolino/tiddlywiki:stable",
       "ports": [
         "8080:8080/tcp"
@@ -26506,7 +26506,7 @@
         "Productivity"
       ],
       "platform": "linux",
-      "logo": "https://wiki.js.org/logo.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/wikijs:stable",
       "ports": [
         "3100:3000/tcp"
@@ -27555,7 +27555,7 @@
         "Photos"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/piwigo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/piwigo:stable",
       "ports": [
         "80:80/tcp"
@@ -28090,7 +28090,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://nginx.org/nginx.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nginx.png",
       "image": "jlesage/nginx-proxy-manager:stable",
       "ports": [
         "80:8080/tcp",
@@ -29567,7 +29567,7 @@
         "System Tools"
       ],
       "platform": "linux",
-      "logo": "https://www.phpmyadmin.net/static/images/logo-og.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/phpmyadmin.png",
       "image": "lscr.io/linuxserver/phpmyadmin:stable",
       "ports": [
         "80:8306/tcp"
@@ -29854,7 +29854,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "https://heimdall.site/img/heimdall-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/heimdall:stable",
       "ports": [
         "80:80/tcp",
@@ -30123,7 +30123,7 @@
         "Web"
       ],
       "platform": "linux",
-      "logo": "https://letsencrypt.org/images/le-logo-wide.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/letsencrypt:stable",
       "ports": [
         "80:80/tcp",
@@ -30732,7 +30732,7 @@
         "Professional"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/wallabag.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "wallabag/wallabag:stable",
       "ports": [
         "80:80/tcp"
@@ -31541,7 +31541,7 @@
         "Music"
       ],
       "platform": "linux",
-      "logo": "https://www.bazarr.media/assets/img/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/bazarr:stable",
       "ports": [
         "6767:6767/tcp"
@@ -32379,7 +32379,7 @@
         "Streaming"
       ],
       "platform": "linux",
-      "logo": "https://jellyfin.org/images/logo.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/jellyfin.png",
       "image": "lscr.io/linuxserver/jellyfin:stable",
       "ports": [
         "8096:8096/tcp",
@@ -33197,7 +33197,7 @@
         "Streaming"
       ],
       "platform": "linux",
-      "logo": "https://www.plex.tv/wp-content/themes/plex/assets/img/plex-logo.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/plex.png",
       "image": "lscr.io/linuxserver/plex:stable",
       "network": "host",
       "volumes": [
@@ -33747,7 +33747,7 @@
         "Chat"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/teamspeak.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "teamspeak:latest",
       "ports": [
         "9987:9987/udp",
@@ -34560,7 +34560,7 @@
         "Proxy"
       ],
       "platform": "linux",
-      "logo": "https://nginx.org/nginx.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nginx.png",
       "image": "nginx:1.25-alpine",
       "ports": [
         "80:80/tcp",
@@ -34825,7 +34825,7 @@
         "Wiki"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/bookstack.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "repository": {
         "stackfile": "Template/Stack/bookstack.yml",
         "url": "https://github.com/SelfhostedPro/selfhosted_templates"
@@ -35911,7 +35911,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://www.apache.org/logos/res/httpd/httpd.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/apache.png",
       "image": "apache/druid:stable",
       "ports": [
         "8888:8888"
@@ -36451,7 +36451,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://www.apache.org/logos/res/httpd/httpd.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/apache.png",
       "image": "apache/hive:stable",
       "ports": [
         "10000:10000"
@@ -36721,7 +36721,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://www.apache.org/logos/res/httpd/httpd.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/apache.png",
       "image": "apache/impala:stable",
       "ports": [
         "21000:21000"
@@ -36991,7 +36991,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://www.apache.org/logos/res/httpd/httpd.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/apache.png",
       "image": "apachekylin/apache-kylin-standalone:stable",
       "ports": [
         "7070:7070"
@@ -37261,7 +37261,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://www.apache.org/logos/res/httpd/httpd.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/apache.png",
       "image": "apachepinot/pinot:stable",
       "ports": [
         "9000:9000"
@@ -37801,7 +37801,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://www.apache.org/logos/res/httpd/httpd.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/apache.png",
       "image": "apache/spark:stable",
       "ports": [
         "8080:8080",
@@ -39422,7 +39422,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://nginx.org/nginx.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nginx.png",
       "image": "nginx:1.25-alpine",
       "ports": [
         "80:80"
@@ -45096,7 +45096,7 @@
         "graph"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/neo4j.png",
       "image": "neo4j:5.13-community",
       "ports": [
         "7474:7474",
@@ -50242,7 +50242,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/couchdb.png",
       "image": "couchdb:stable",
       "ports": [
         "5984:5984"
@@ -53762,7 +53762,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://www.apache.org/logos/res/httpd/httpd.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/apache.png",
       "image": "apache/derby:stable",
       "ports": [
         "1527:1527"
@@ -55670,7 +55670,7 @@
         "relational"
       ],
       "platform": "linux",
-      "logo": "https://www.mysql.com/common/logos/logo-mysql-170x115.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/mysql.png",
       "image": "mysql:8.0",
       "ports": [
         "3306:3306"
@@ -55957,7 +55957,7 @@
         "relational"
       ],
       "platform": "linux",
-      "logo": "https://www.postgresql.org/media/img/about/press/elephant.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/postgresql.png",
       "image": "postgres:15-alpine",
       "ports": [
         "5432:5432"
@@ -57320,7 +57320,7 @@
         "Database"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/elasticsearch.png",
       "image": "elasticsearch:8.11.0",
       "ports": [
         "9200:9200",
@@ -62743,7 +62743,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nodejs.png",
       "image": "quay.io/m3db/m3dbnode:stable",
       "ports": [
         "9000:9000"
@@ -67331,7 +67331,7 @@
       "title": "Airsonic",
       "name": "airsonic",
       "description": "Airsonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/airsonic.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/airsonic-logo.png",
       "image": "lscr.io/linuxserver/airsonic:latest",
       "categories": [
         "Music",
@@ -67409,7 +67409,7 @@
       "title": "Authelia",
       "name": "authelia",
       "description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
-      "logo": "https://www.authelia.com/images/branding/logo-cropped.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/authelia.png",
       "image": "authelia/authelia:latest",
       "note": "Requires a configuration.yml file in order to work. Documentation is Available <a href='https://docs.authelia.com/deployment/deployment-ha'>here</a>.",
       "categories": [
@@ -67458,7 +67458,7 @@
       "title": "Bazarr",
       "name": "bazarr",
       "description": "Bazarr is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.",
-      "logo": "https://www.bazarr.media/assets/img/logo.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bazarr.png",
       "image": "lscr.io/linuxserver/bazarr:latest",
       "categories": [
         "Video",
@@ -67523,7 +67523,7 @@
       "title": "Beets",
       "name": "beets",
       "description": "The purpose of beets is to get your music collection right once and for all. It catalogs your collection, automatically improving its metadata as it goes using the MusicBrainz database. Then it provides a bouquet of tools for manipulating and accessing your music.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/beets-icon.png",
       "image": "lscr.io/linuxserver/beets:latest",
       "categories": [
         "Music",
@@ -67583,7 +67583,7 @@
       "title": "Booksonic",
       "name": "booksonic",
       "description": "Booksonic is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/booksonic.png",
       "image": "lscr.io/linuxserver/booksonic:latest",
       "categories": [
         "Books",
@@ -67649,7 +67649,7 @@
       "title": "EmbyStat",
       "name": "embystat",
       "description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/emby.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/embystat.png",
       "image": "lscr.io/linuxserver/embystat:latest",
       "categories": [
         "Other",
@@ -67690,7 +67690,7 @@
       "title": "Headphones",
       "name": "headphones",
       "description": null,
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/headphones-icon.png",
       "image": "lscr.io/linuxserver/headphones:latest",
       "categories": [
         "Music",
@@ -67750,7 +67750,7 @@
       "title": "Heimdall",
       "name": "heimdall",
       "description": "Heimdall is a way to organise all those links to your most used web sites and web applications in a simple way.",
-      "logo": "https://heimdall.site/img/heimdall-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/heimdall.png",
       "image": "lscr.io/linuxserver/heimdall:latest",
       "categories": [
         "Tools",
@@ -67808,7 +67808,7 @@
       "name": "homer",
       "description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
       "note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/homer.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/homer.png",
       "image": "b4bz/homer:latest",
       "categories": [
         "Other",
@@ -67852,7 +67852,7 @@
       "title": "Huginn",
       "name": "huginn",
       "description": "Create agents that monitor and act on your behalf.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/huginn.png",
       "image": "huginn/huginn:latest",
       "categories": [
         "Other",
@@ -67892,7 +67892,7 @@
       "title": "Invoice Ninja",
       "name": "invoice_ninja",
       "description": "Invoices, Expenses and Tasks built with Laravel and Flutter.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/invoice_ninja.png",
       "categories": [
         "Cloud",
         "Productivity",
@@ -68014,7 +68014,7 @@
       "title": "Jellyfin",
       "name": "jellyfin",
       "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.",
-      "logo": "https://jellyfin.org/images/logo.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/jellyfin.png",
       "image": "lscr.io/linuxserver/jellyfin:latest",
       "categories": [
         "Video",
@@ -68085,7 +68085,7 @@
       "title": "Kodi Headless",
       "name": "kodi-headless",
       "description": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/kodi-icon.png",
       "image": "lscr.io/linuxserver/kodi-headless:latest",
       "categories": [
         "Video",
@@ -68138,7 +68138,7 @@
       "title": "LazyLibrarian",
       "name": "lazylibrarian",
       "description": "LazyLibrarian is a program to follow authors and grab metadata for all your digital reading needs.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lazylibrarian-icon.png",
       "image": "lscr.io/linuxserver/lazylibrarian:latest",
       "categories": [
         "Books",
@@ -68195,7 +68195,7 @@
       "title": "Let's Encrypt",
       "name": "letsencrypt",
       "description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.\r\n  \r\n  Before running this container, make sure that the url and subdomains are properly forwarded to this container's host.\r\n  \r\n  - Port 443 on the internet side of the router should be forwarded to this container's port 443.\r\n  - If you need a dynamic dns provider, you can use the free provider duckdns.org where the url will be yoursubdomain.duckdns.org and the subdomains    can be www,ftp,cloud\r\n  - The container detects changes to url and subdomains, revokes existing certs and generates new ones during start. \r\n  - It also detects changes to the DHLEVEL parameter and replaces the dhparams file.\r\n  \r\n  - If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file docker exec -it letsencrypt htpasswd -c /config/nginx/.htpasswd &lt;username&gt;",
-      "logo": "https://letsencrypt.org/images/le-logo-wide.svg",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/letsencrypt.png",
       "image": "lscr.io/linuxserver/letsencrypt:latest",
       "categories": [
         "Tools",
@@ -68284,7 +68284,7 @@
       "title": "LibreSpeed",
       "name": "librespeed",
       "description": "A Free and Open Source Speedtest for HTML5 and more.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/speedtest.png",
       "image": "lscr.io/linuxserver/librespeed:latest",
       "categories": [
         "Other",
@@ -68324,7 +68324,7 @@
       "title": "Lychee",
       "name": "lychee",
       "description": "Lychee is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/lychee.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lychee-icon.png",
       "image": "lscr.io/linuxserver/lychee:latest",
       "categories": [
         "Cloud",
@@ -68443,7 +68443,7 @@
       "title": "McMyAdmin 2",
       "name": "mcmyadmin2",
       "description": "McMyAdmin 2 is the leading web control panel and administration console for Minecraft servers.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mcmyadmin-icon.png",
       "image": "lscr.io/linuxserver/mcmyadmin2:latest",
       "categories": [
         "Other",
@@ -68495,7 +68495,7 @@
       "title": "Medusa",
       "name": "medusa",
       "description": "Medusa, automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/medusa-icon.png",
       "image": "lscr.io/linuxserver/medusa:latest",
       "categories": [
         "Downloaders",
@@ -68556,7 +68556,7 @@
       "title": "Minetest",
       "name": "minetest",
       "description": "Server version of minetest, a free, open source alternative to minecraft.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/minetest-icon.png",
       "image": "lscr.io/linuxserver/minetest:latest",
       "categories": [
         "Other",
@@ -68607,7 +68607,7 @@
       "title": "Minisatip",
       "name": "minisatip",
       "description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.\n\n  The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.\n  ",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/minisatip-icon.png",
       "image": "lscr.io/linuxserver/minisatip:latest",
       "categories": [
         "Video",
@@ -68656,7 +68656,7 @@
       "title": "Mstream",
       "name": "mstream",
       "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mstream.png",
       "image": "lscr.io/linuxserver/mstream:latest",
       "categories": [
         "Other",
@@ -68700,7 +68700,7 @@
       "title": "Murmur",
       "name": "murmur",
       "description": "Mumble is a voicechat program for gamers written on top of Qt and Opus. Murmur is the server backend for Mumble.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/Mumble-logo.png",
       "image": "goofball222/murmur:latest",
       "categories": [
         "Other",
@@ -68771,7 +68771,7 @@
       "title": "MusicBrainz",
       "name": "musicbrainz",
       "description": " MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/musicbrainz-icon.png",
       "image": "lscr.io/linuxserver/musicbrainz:latest",
       "categories": [
         "Music",
@@ -68834,7 +68834,7 @@
       "title": "Muximux",
       "name": "muximux",
       "description": "A lightweight portal to view, manage your HTPC apps without having to run anything more than a PHP enabled webserver. With Muximux you don't need to keep multiple tabs open, or bookmark the URL to all of your apps.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/muximux-icon.png",
       "image": "lscr.io/linuxserver/muximux:latest",
       "categories": [
         "Web",
@@ -68889,7 +68889,7 @@
       "title": "Mylar",
       "name": "mylar",
       "description": "An automated Comic Book downloader (cbr/cbz) for use with SABnzbd, NZBGet and torrents.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mylar-icon.png",
       "image": "lscr.io/linuxserver/mylar:latest",
       "categories": [
         "Downloaders",
@@ -69020,7 +69020,7 @@
       "title": "Nginx",
       "name": "nginx",
       "description": "Nginx is a web server with a strong focus on high concurrency, performance and low memory usage. It can also act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.",
-      "logo": "https://nginx.org/nginx.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nginx.png",
       "image": "lscr.io/linuxserver/nginx:latest",
       "categories": [
         "Web",
@@ -69076,7 +69076,7 @@
       "title": "Nginx Proxy Manager",
       "name": "nginx-proxy-manager",
       "description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.",
-      "logo": "https://nginx.org/nginx.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/proxy_mgr.png",
       "image": "jlesage/nginx-proxy-manager",
       "categories": [
         "Proxy",
@@ -69120,7 +69120,7 @@
       "title": "NZBGet",
       "name": "nzbget",
       "description": "NZBGet is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources. It supports all platforms including Windows, Mac, Linux and works on all devices including PC, NAS, WLAN routers and media players",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nzbget.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nzbget-icon.png",
       "image": "lscr.io/linuxserver/nzbget:latest",
       "categories": [
         "Downloaders",
@@ -69176,7 +69176,7 @@
       "title": "NZBHydra 2",
       "name": "nzbhydra2",
       "description": "NZBHydra is a meta search for NZB indexers and the \"spiritual successor\" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/hydra-icon.png",
       "image": "lscr.io/linuxserver/nzbhydra2:latest",
       "categories": [
         "Downloaders",
@@ -69234,7 +69234,7 @@
       "title": "Ombi",
       "name": "ombi",
       "description": "Ombi allows you to host your own Plex Request and user management system. ",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/ombi.png",
       "image": "lscr.io/linuxserver/ombi:latest",
       "categories": [
         "Downloaders",
@@ -69289,7 +69289,7 @@
       "title": "OpenVPN Access Server",
       "name": "openvpn-as",
       "description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/openvpn.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/openvpn-as-icon.png",
       "image": "lscr.io/linuxserver/openvpn-as:latest",
       "categories": [
         "Other",
@@ -69348,7 +69348,7 @@
       "title": "Organizr v2",
       "name": "organizr-v2",
       "description": "Organizr allows you to setup Tabs that will be loaded all in one webpage. You can then work on your server with ease.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/organizr.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/organizr-icon.png",
       "image": "organizrtools/organizr-v2:php-fpm",
       "categories": [
         "Other",
@@ -69401,7 +69401,7 @@
       "title": "OScam",
       "name": "oscam",
       "description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module\n  (CAM). OScam is, compared with other softcams (CCcam, mgcamd, etc.), open source. Hence, the name Open Source Conditional Access Module (OScam). OScam is based on the\n  not so well known softcam MpCS. The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "http://i.imgur.com/8LadrLg.png",
       "image": "lscr.io/linuxserver/oscam:latest",
       "categories": [
         "Other",
@@ -69454,7 +69454,7 @@
       "title": "PhotoShow",
       "name": "photoshow",
       "description": "A simple, easy way to turn a photo album into a webgallery",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/photoshow-icon.png",
       "image": "lscr.io/linuxserver/photoshow:latest",
       "categories": [
         "Photos",
@@ -69514,7 +69514,7 @@
       "title": "Snibox",
       "name": "snibox",
       "description": "Self-hosted snippet manager.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/snibox.png",
       "image": "snowmean/snibox-sqlite:latest",
       "categories": [
         "Other",
@@ -69555,7 +69555,7 @@
       "title": "Chevereto",
       "name": "Chevereto",
       "description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version..",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/Chevereto.png",
       "image": "nmtan/chevereto:latest",
       "categories": [
         "Other",
@@ -69633,7 +69633,7 @@
       "title": "Chowdown",
       "name": "Chowdown",
       "description": "Save recipes in seconds with plain text formatting and create beatiful recipe pages with automated ease.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/chowdown.png",
       "image": "gregyankovoy/chowdown:latest",
       "categories": [
         "Other",
@@ -69673,7 +69673,7 @@
       "title": "Calibre Web",
       "name": "calibre-web",
       "description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.\n\n  [br][br]\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\n  [b]/config[/b] Where Calibre-web should store it's database[br]\n  [b]/books[/b] Path to your calibre library metadata.db file[br]",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/calibre-web.png",
       "image": "lscr.io/linuxserver/calibre-web:latest",
       "categories": [
         "Cloud",
@@ -69730,7 +69730,7 @@
       "title": "Cardigann",
       "name": "cardigann",
       "description": "Cardigann, a server for adding extra indexers to Sonarr, SickRage and CouchPotato via Torznab and TorrentPotato proxies. Behind the scenes Cardigann logs in and runs searches and then transforms the results into a compatible format.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cardigann.png",
       "image": "lscr.io/linuxserver/cardigann:latest",
       "categories": [
         "Downloaders",
@@ -69852,7 +69852,7 @@
       "title": "Codiad",
       "name": "codiad",
       "description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.\n  ",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/codiad-icon.png",
       "image": "lscr.io/linuxserver/codiad:latest",
       "categories": [
         "Productivity",
@@ -69904,7 +69904,7 @@
       "title": "COPS",
       "name": "cops",
       "description": "COPS links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cops-icon.png",
       "image": "lscr.io/linuxserver/cops:latest",
       "categories": [
         "Cloud",
@@ -69961,7 +69961,7 @@
       "title": "CouchPotato",
       "name": "couchpotato",
       "description": "CouchPotato (CP) is an automatic NZB and torrent downloader. You can keep a \"movies I want\"-list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/couchpotato-icon.png",
       "image": "lscr.io/linuxserver/couchpotato:latest",
       "categories": [
         "Downloaders",
@@ -70022,7 +70022,7 @@
       "title": "Daapd",
       "name": "daapd",
       "description": "DAAP (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), MPD and internet radio.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/daapd-icon.png",
       "image": "lscr.io/linuxserver/daapd:latest",
       "categories": [
         "Music",
@@ -70074,7 +70074,7 @@
       "title": "DashMachine",
       "name": "dashmachine",
       "description": "Another application bookmark dashboard, with fun features.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dashmachine_logo.png",
       "image": "rmountjoy/dashmachine:latest",
       "categories": [
         "Other",
@@ -70114,7 +70114,7 @@
       "title": "Davos",
       "name": "davos",
       "description": "davos is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow.\r\n\r\n/config : AppData Location\r\n/download : File Download Location",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/davos.png",
       "image": "lscr.io/linuxserver/davos:latest",
       "categories": [
         "FTP",
@@ -70172,7 +70172,7 @@
       "title": "DeeMix",
       "name": "deemix",
       "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
-      "logo": "https://about.gitlab.com/images/press/logo/svg/gitlab-logo-500.svg",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deemix.png",
       "image": "registry.gitlab.com/bockiii/deemix-docker",
       "categories": [
         "Other",
@@ -70217,7 +70217,7 @@
       "title": "Domoticz",
       "name": "domoticz",
       "description": "Domoticz is a Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://github.com/domoticz/domoticz/raw/master/www/images/logo.png",
       "image": "lscr.io/linuxserver/domoticz:latest",
       "categories": [
         "HomeAutomation",
@@ -70272,7 +70272,7 @@
       "title": "Duck DNS",
       "name": "duckdns",
       "description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.\r\n\r\nFirst, go to duckdns site, register your subdomain and retrieve your token\r\nThen run the docker create command above with your subdomain(s) and token\r\nIt will update your IP with the DuckDNS service every 5 minutes\r\n\r\n",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/duckdns.png",
       "image": "lscr.io/linuxserver/duckdns:latest",
       "categories": [
         "DNS",
@@ -70324,7 +70324,7 @@
       "title": "Duplicati",
       "name": "duplicati",
       "description": "Free backup software to store encrypted backups online, Duplicati works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive and S3, Google Drive, box.com, Mega, hubiC and many others.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/duplicati.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/duplicati-icon.png",
       "image": "lscr.io/linuxserver/duplicati:latest",
       "categories": [
         "Backup",
@@ -70389,7 +70389,7 @@
       "title": "Emby",
       "name": "emby",
       "description": "Emby organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/emby.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/emby.png",
       "image": "lscr.io/linuxserver/emby:latest",
       "categories": [
         "Video",
@@ -70457,7 +70457,7 @@
       "name": "filebrowser",
       "description": "Web File Browser which can be used as a middleware or standalone app.",
       "note": "The default user and password is admin/admin.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/filebrowser.png",
       "image": "80x86/filebrowser:latest",
       "categories": [
         "Other",
@@ -70553,7 +70553,7 @@
       "title": "Gazee",
       "name": "gazee",
       "description": "A WebApp Comic Reader for your favorite digital comics. Reach and read your comic library from any web connected device with a modern web browser",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/gazee-logo.png",
       "image": "lscr.io/linuxserver/gazee:latest",
       "categories": [
         "Web",
@@ -70611,7 +70611,7 @@
       "title": "Grocy",
       "name": "grocy",
       "description": "Grocy is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utulity.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/grocy_logo.png",
       "image": "lscr.io/linuxserver/grocy:latest",
       "categories": [
         "Other",
@@ -70670,7 +70670,7 @@
       "name": "guacamole",
       "description": "A clientless remote desktop gateway.",
       "note": "The default login will be guacadmin/guacadmin. It is common practice to add a new admin user and remove the default user for Guacamole.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/guacamole.png",
       "image": "oznu/guacamole:latest",
       "categories": [
         "Other",
@@ -70710,7 +70710,7 @@
       "title": "HTPC Manager",
       "name": "htpcmanager",
       "description": "HTPC Manaager, a front end for many htpc related applications. Hellowlol version.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/htpcmanager-icon.png",
       "image": "lscr.io/linuxserver/htpcmanager:latest",
       "categories": [
         "Video",
@@ -70764,7 +70764,7 @@
       "title": "lidarr",
       "name": "lidarr",
       "description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
-      "logo": "https://lidarr.audio/img/logo.svg",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lidarr.png",
       "image": "lscr.io/linuxserver/lidarr:latest",
       "categories": [
         "Downloaders",
@@ -70825,7 +70825,7 @@
       "title": "Pi-Hole",
       "name": "pihole",
       "description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/pihole.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/pi-hole.png",
       "image": "pihole/pihole:latest",
       "categories": [
         "Other",
@@ -70876,7 +70876,7 @@
       "title": "Piwigo",
       "name": "piwigo",
       "description": "Piwigo is photo gallery software for the web, built by an active community of users and developers.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/piwigo.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/piwigo-icon.png",
       "image": "lscr.io/linuxserver/piwigo:latest",
       "categories": [
         "Photos",
@@ -70928,7 +70928,7 @@
       "title": "Plex",
       "name": "plex",
       "description": "Your favorite movies, TV, music, web shows, podcasts, and more, all streamed to your favorite screens.",
-      "logo": "https://www.plex.tv/wp-content/themes/plex/assets/img/plex-logo.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/plex.png",
       "image": "lscr.io/linuxserver/plex:latest",
       "categories": [
         "Video",
@@ -70994,7 +70994,7 @@
       "title": "Plex Requests",
       "name": "plexrequests",
       "description": "Simple automated way for users to request new content for Plex.",
-      "logo": "https://www.plex.tv/wp-content/themes/plex/assets/img/plex-logo.svg",
+      "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/plexrequests-icon.png",
       "image": "lscr.io/linuxserver/plexrequests:latest",
       "categories": [
         "Downloaders",
@@ -71056,7 +71056,7 @@
       "title": "ProjectSend",
       "name": "projectsend",
       "description": "ProjectSend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files!\n  ",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/projectsend-logo.png",
       "image": "lscr.io/linuxserver/projectsend:latest",
       "categories": [
         "Cloud",
@@ -71116,7 +71116,7 @@
       "name": "protonmail-bridge",
       "description": "This is an unofficial Docker container of the ProtonMail Bridge. Some of the scripts are based on Hendrik Meyer's work.",
       "note": "Please refer to the documentation <a href='https://hub.docker.com/r/shenxn/protonmail-bridge'/>here</a> to set this up.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/protonmail-bridge.png",
       "image": "shenxn/protonmail-bridge:latest",
       "categories": [
         "Email",
@@ -71159,7 +71159,7 @@
       "title": "Pritunl",
       "name": "pritunl",
       "description": "Pritunl container built on Alpine Linux. Supports IPv6 and running behind a reverse proxy. This container requires an external Mongo DB and should be run via Docker Compose or other orchestration.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pritunl.png",
       "categories": [
         "VPN",
         "Tools",
@@ -71217,7 +71217,7 @@
       "title": "Pydio",
       "name": "pydio",
       "description": "Pydio (formerly AjaXplorer) is a mature open source software solution for file sharing and synchronization. With intuitive user interfaces (web / mobile / desktop), Pydio provides enterprise-grade features to gain back control and privacy of your data: user directory connectors, legacy filesystems drivers, comprehensive admin interface, and much more.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pydio-icon.png",
       "image": "lscr.io/linuxserver/pydio:latest",
       "categories": [
         "Cloud",
@@ -71332,7 +71332,7 @@
       "title": "Quassel IRC",
       "name": "quassel-core",
       "description": "Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core -- much like the popular combination of screen and a text-based IRC client such as WeeChat, but graphical. Blowfish support and optional web-ui included.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/quassel-core-icon.png",
       "image": "lscr.io/linuxserver/quassel-core:latest",
       "categories": [
         "Messenger",
@@ -71384,7 +71384,7 @@
       "title": "Radarr",
       "name": "radarr",
       "description": "Radarr - A fork of Sonarr to work with movies à la Couchpotato.",
-      "logo": "https://radarr.video/img/logo.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/radarr.png",
       "image": "lscr.io/linuxserver/radarr:latest",
       "categories": [
         "Downloaders",
@@ -71447,7 +71447,7 @@
       "title": "Reactive-Resume",
       "name": "reactive-resume",
       "description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/reactiveresume.png",
       "image": "amruthpillai/reactive-resume:latest",
       "categories": [
         "Other",
@@ -71487,7 +71487,7 @@
       "title": "Resilio Sync",
       "name": "resilio-sync",
       "description": "Resilio Sync (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/resilio.png",
       "image": "lscr.io/linuxserver/resilio-sync:latest",
       "categories": [
         "Backup",
@@ -71545,7 +71545,7 @@
       "title": "ruTorrent",
       "name": "rutorrent",
       "description": "Popular torrent client with a webui for ease of use.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
       "image": "lscr.io/linuxserver/rutorrent:latest",
       "categories": [
         "Downloaders",
@@ -71603,7 +71603,7 @@
       "title": "SABnzbd",
       "name": "sabnzbd",
       "description": "SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/sabnzbd.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sabnzbd-icon.png",
       "image": "lscr.io/linuxserver/sabnzbd:latest",
       "categories": [
         "Downloaders",
@@ -71664,7 +71664,7 @@
       "title": "Shiori",
       "name": "shiori",
       "description": "Shiori is a simple bookmarks manager written in Go language. Intended as a simple clone of Pocket. You can use it as command line application or as web application.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/shiori-icon.png",
       "image": "radhifadlillah/shiori:latest",
       "categories": [
         "Other",
@@ -71704,7 +71704,7 @@
       "title": "SickChill",
       "name": "sickchill",
       "description": "Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickchill-icon.png",
       "image": "lscr.io/linuxserver/sickchill:latest",
       "categories": [
         "Downloaders",
@@ -71765,7 +71765,7 @@
       "title": "SickGear",
       "name": "sickgear",
       "description": "SickGear provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickgear-icon.png",
       "image": "lscr.io/linuxserver/sickgear:latest",
       "categories": [
         "Downloaders",
@@ -71826,7 +71826,7 @@
       "title": "SmokePing",
       "name": "smokeping",
       "description": null,
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/smokeping-icon.png",
       "image": "lscr.io/linuxserver/smokeping:latest",
       "categories": [
         "Management",
@@ -71949,7 +71949,7 @@
       "title": "SyncThing",
       "name": "syncthing",
       "description": null,
-      "logo": "https://syncthing.net/img/logo-horizontal.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/syncthing.png",
       "image": "lscr.io/linuxserver/syncthing:latest",
       "categories": [
         "Backup",
@@ -72009,7 +72009,7 @@
       "title": "Tautulli",
       "name": "tautulli",
       "description": "Tautulli is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about your server to everyone else.[br][br]\r\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\r\n  [b]8181[/b] The webui for Tautulli's webui [br]\r\n  [b]/config[/b] Storing Configuration and the Tautulli database[br]\r\n[b]/logs[/b] Map to you plex logs (required for IP logging)[br]\r\n\r\n",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/tautulli.png",
       "image": "lscr.io/linuxserver/tautulli:latest",
       "categories": [
         "Other",
@@ -72066,7 +72066,7 @@
       "title": "TheLounge",
       "name": "thelounge",
       "description": "A self-hosted web IRC client",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
       "image": "lscr.io/linuxserver/thelounge:latest",
       "categories": [
         "Messenger",
@@ -72118,7 +72118,7 @@
       "title": "TiddlyWiki",
       "name": "tiddlywiki",
       "description": "A unique, non-linear notebook wiki.",
-      "logo": "https://tiddlywiki.com/favicon.ico",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tiddlywiki.png",
       "image": "mazzolino/tiddlywiki:latest",
       "categories": [
         "Other",
@@ -72218,7 +72218,7 @@
       "title": "Transmission-OpenVPN",
       "name": "transmission-openvpn",
       "description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/transmission.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/transmission-icon.png",
       "image": "haugene/transmission-openvpn:latest",
       "note": "List of supported providers available <a href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/>here</a>.",
       "categories": [
@@ -72298,7 +72298,7 @@
       "title": "Tiny Tiny RSS",
       "name": "tt-rss",
       "description": "Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tt-rss-icon.png",
       "image": "lunik1/tt-rss:latest",
       "categories": [
         "Other",
@@ -72350,7 +72350,7 @@
       "title": "Tvheadend",
       "name": "tvheadend",
       "description": "Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT&gt;IP and HDHomeRun as input sources.\r\nTvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT&gt;IP streaming.\r\nMultiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "http://i.imgur.com/zGSUAT4.png",
       "image": "lscr.io/linuxserver/tvheadend:latest",
       "categories": [
         "Video",
@@ -72452,7 +72452,7 @@
       "title": "Ubooquity",
       "name": "ubooquity",
       "description": "Ubooquity is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ubooquity-icon.png",
       "image": "lscr.io/linuxserver/ubooquity:latest",
       "categories": [
         "Cloud",
@@ -72516,7 +72516,7 @@
       "title": "UniFi Controller",
       "name": "unifi-controller",
       "description": null,
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/unifi-icon.png",
       "image": "lscr.io/linuxserver/unifi-controller:latest",
       "categories": [
         "Management",
@@ -72576,7 +72576,7 @@
       "title": "Watchtower",
       "name": "watchtower",
       "description": "With watchtower you can update the running version of your containerized app simply by pushing a new image to the Docker Hub or your own image registry. Watchtower will pull down your new image, gracefully shut down your existing container and restart it with the same options that were used when it was deployed initially.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/watchtower.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/watchtower.png",
       "image": "containrrr/watchtower:latest",
       "note": "It is recommended to manually update your containers but we're including this for those of you that don't care",
       "categories": [
@@ -72614,7 +72614,7 @@
       "title": "WebGrab+Plus",
       "name": "webgrabplus",
       "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.[br]\r\n\t\tOptional postprocessors to add IMDb data or to customize your xmltv listing.[br]\r\n\t\thttp://www.webgrabplus.com/[br]\r\n\t\t[b][span style='color: #E80000;']Directions:[/span][/b][br]\r\n\t\t[b]/config[/b] : This is where WebGrab+Plus will store it's configuration.[br][br]\r\n\t\t[b]/data[/b] : This is where tv_grab_wg script in the Tvheadend container looks for the guide.xml file.[br][br]",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/webgrabplus.png",
       "image": "lscr.io/linuxserver/webgrabplus:latest",
       "categories": [
         "Downloaders",
@@ -72666,7 +72666,7 @@
       "title": "Whoogle",
       "name": "whoogle",
       "description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/whoogle.png",
       "image": "benbusby/whoogle-search:latest",
       "categories": [
         "Other",
@@ -72706,7 +72706,7 @@
       "title": "Wikijs",
       "name": "wikijs",
       "description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
-      "logo": "https://wiki.js.org/logo.svg",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/wikijs.png",
       "image": "lscr.io/linuxserver/wikijs:latest",
       "categories": [
         "Other",
@@ -72750,7 +72750,7 @@
       "title": "YouTubeDL-Material",
       "name": "youtubedl-material",
       "description": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ytdlm.png",
       "image": "tzahi12345/youtubedl-material:latest",
       "categories": [
         "Other",
@@ -72806,7 +72806,7 @@
       "title": "UniFi Video",
       "name": "UniFi Video",
       "description": "UniFi Video is a powerful and flexible, integrated IP video management surveillance system designed to work with Ubiquiti’s UniFi Video Camera product line. UniFi Video has an intuitive, configurable, and feature‑packed user interface with advanced features such as motion detection, auto‑discovery, user‑level security, storage management, reporting, and mobile device support.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/UniFiVideo-logo.png",
       "image": "pducharme/unifi-video-controller:latest",
       "categories": [
         "CCTV",
@@ -72880,7 +72880,7 @@
       "title": "Yacht",
       "name": "yacht",
       "description": "A web interface for managing docker containers with an emphasis on templating to provide 1 click deployments. Think of it like a decentralized app store for servers that anyone can make packages for.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/yacht.png",
       "image": "selfhostedpro/yacht:latest",
       "categories": [
         "Other",
@@ -72924,7 +72924,7 @@
       "title": "ZNC",
       "name": "znc",
       "description": "ZNC is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/znc-icon.png",
       "image": "lscr.io/linuxserver/znc:latest",
       "categories": [
         "Messenger",
@@ -72976,7 +72976,7 @@
       "title": "GOPHISH",
       "name": "gophish",
       "description": "NOTE: Once you deploy your GoPhish instance, please navigate to the logs section in Portainer and acquire your 'admin' credentials for login. Gophish is an open-source phishing toolkit designed for businesses and penetration testers. It provides the ability to quickly and easily setup and execute phishing engagements and security awareness training.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/gophish.png",
       "image": "gophish/gophish:latest",
       "categories": [
         "Other",
@@ -73022,7 +73022,7 @@
       "title": "Seafile",
       "name": "seafile",
       "description": "Seafile is an open-source, cross-platform file-hosting software system. Files are stored on a central server and can be synchronized with personal computers and mobile devices through apps. Files on the Seafile server can also be accessed directly via the server's web interface.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/seafile.png",
       "categories": [
         "Cloud",
         "Other",
@@ -73098,7 +73098,7 @@
       "title": "Dozzle",
       "name": "dozzle",
       "description": "Dozzle is a simple, lightweight application that provides you with a web based interface to monitor your Docker container logs live. It doesn’t store log information, it is for live monitoring of your container logs only.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dozzle.png",
       "image": "amir20/dozzle:latest",
       "categories": [
         "Other",
@@ -73139,7 +73139,7 @@
       "title": "Wallbag",
       "name": "wallabag",
       "description": "wallabag is a self hostable application for saving web pages: Save and classify articles. Read them later. Freely.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/wallabag.png",
+      "logo": "https://raw.githubusercontent.com/jake-walker/selfhosted_templates/wallabag/Images/wallabag.png",
       "image": "wallabag/wallabag:latest",
       "categories": [
         "Tools",
@@ -73249,7 +73249,7 @@
       "title": "DDClient",
       "name": "ddclient",
       "description": "DDClient is a Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider. It was originally written by Paul Burry and is now mostly by wimpunk. It has the capability to update more than just dyndns and it can fetch your WAN-ipaddress in a few different ways.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ddclient.png",
       "image": "lscr.io/linuxserver/ddclient:latest",
       "categories": [
         "Other",
@@ -73312,7 +73312,7 @@
       "title": "Peppermint",
       "name": "Peppermint",
       "description": "Peppermint is a free and open source tickeg management solution with a range of features",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/Peppermint-Lab/peppermint/master/public/logo.svg",
       "image": "pepperlabs/peppermint:latest",
       "categories": [
         "Other",
@@ -73454,8 +73454,7 @@
         "💾 Persistent storage volumes configured",
         "🌐 Network ports will be exposed"
       ],
-      "complexity": "Intermediate",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/deluge.png"
+      "complexity": "Intermediate"
     },
     {
       "categories": [
@@ -73464,7 +73463,7 @@
       ],
       "description": "Dradis Framework: Collaboration and reporting for IT Security teams http://dradisframework.org",
       "image": "raesene/dradis:latest",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dradis-logo.png",
       "name": "dradis",
       "platform": "linux",
       "ports": [
@@ -73495,7 +73494,7 @@
       "name": "bitwardenrs",
       "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
       "note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/bitwarden.png",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
       "image": "bitwardenrs/server:latest",
       "categories": [
         "Other",
@@ -73539,7 +73538,7 @@
       "title": "Phpmyadmin",
       "name": "Phpmyadmin",
       "description": "Phpmyadmin is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB.",
-      "logo": "https://www.phpmyadmin.net/static/images/logo-og.png",
+      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png",
       "image": "lscr.io/linuxserver/phpmyadmin:latest",
       "note": "Yacht App Templates by <a href='https://github.com/SelfhostedPro' target='_blank'>SelfhostedPro</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p>",
       "categories": [
@@ -73612,7 +73611,7 @@
       "title": "Grafana",
       "name": "grafana",
       "description": "Grafana is a multi-platform open source analytics and interactive visualization web application. It provides charts, graphs, and alerts for the web when connected to supported data sources.",
-      "logo": "https://grafana.com/static/img/logos/grafana_logo_swirl-events.svg",
+      "logo": "https://logodix.com/logo/1736776.png",
       "image": "grafana/grafana",
       "categories": [
         "Other",
@@ -73655,7 +73654,7 @@
       "title": "InfluxDB",
       "name": "influxdb",
       "description": "Store data points for Grafana",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/influxdb.png",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Influxdb_logo.svg/1200px-Influxdb_logo.svg.png",
       "image": "influxdb:latest",
       "categories": [
         "Other",
@@ -73697,7 +73696,7 @@
       "title": "MineOS",
       "name": "mineos",
       "description": "MineOS is a web-management dashboard designed to simplify Minecraft management ",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://camo.githubusercontent.com/bfcc53b6de495c0f2d9d5699afea18b7319529933c5cd38f1e0cf55377df725f/68747470733a2f2f7669676e65747465322e77696b69612e6e6f636f6f6b69652e6e65742f6c6f74722d6d696e6563726166742d6d6f642d6578696c65732f696d616765732f662f66322f4d696e6563726166745f7365727665725f73657475702e706e672f7265766973696f6e2f6c61746573743f63623d3230313630393131313732353537",
       "image": "hexparrot/mineos",
       "categories": [
         "Other",
@@ -73762,7 +73761,7 @@
       "title": "Navidrome",
       "name": "navidrome",
       "description": "Navidrome is an open source web-based music collection server and streamer",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/navidrome.png",
+      "logo": "https://api.cloudron.io/api/v1/apps/org.navidrome.cloudronapp/versions/1.2.0/icon",
       "image": "deluan/navidrome:latest",
       "categories": [
         "Music",
@@ -73820,7 +73819,7 @@
       "title": "Prometheus",
       "name": "prometheus",
       "description": "Prometheus is an application used for event monitoring and alerting.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/prometheus.png",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prometheus_software_logo.svg/1200px-Prometheus_software_logo.svg.png",
       "image": "prom/prometheus",
       "categories": [
         "Cloud",
@@ -73877,7 +73876,7 @@
       "title": "Teamspeak",
       "name": "teamspeak",
       "description": "Teamspeak is a is a proprietary voice-over-Internet Protocol (VoIP) application for audio communication between users on a chat channel.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/teamspeak.png",
+      "logo": "https://addons-content.teamspeak.com/943dd816-7ef2-48d7-82b8-d60c3b9b10b3/images/648_366/teamspeaklogo_5d00347a0cb48.png",
       "image": "teamspeak",
       "categories": [
         "Voice",
@@ -73939,7 +73938,7 @@
       "title": "Papermerge",
       "name": "papermerge",
       "description": "Papermerge is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents. Instead of having piles of paper documents all over your desk, office or drawers - you can quickly scan them and configure your scanner to directly upload to Papermerge DMS.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png",
       "image": "lscr.io/linuxserver/papermerge:latest",
       "categories": [
         "Documents",
@@ -74001,7 +74000,7 @@
       "title": "SWAG",
       "name": "swag",
       "description": "SWAG - Secure Web Application Gateway (formerly known as letsencrypt, no relation to Let's Encrypt™) sets up an Nginx webserver and reverse proxy with php support and a built-in certbot client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/swag.gif",
       "image": "lscr.io/linuxserver/swag:latest",
       "categories": [
         "Tools",
@@ -74094,7 +74093,7 @@
         "One-Click Deployment"
       ],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/openfaas.png",
       "repository": {
         "url": "https://github.com/openfaas/faas",
         "stackfile": "docker-compose.yml"
@@ -74444,15 +74443,6 @@
       "LinuxServer.io",
       "Awesome Docker Compose",
       "PiHole Community"
-    ],
-    "logo_enhancement_date": "2025-08-25 17:05:22",
-    "real_logos_enhanced": 378,
-    "validation_errors": 327,
-    "logo_quality": "Real High-Quality Logos",
-    "logo_sources": [
-      "Official Websites",
-      "Dashboard Icons CDN"
-    ],
-    "enhancement_engine": "Real Logo Enhancement v2.0"
+    ]
   }
 }
