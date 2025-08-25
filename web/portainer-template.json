@@ -285,7 +285,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cops-icon.png",
       "image": "lscr.io/linuxserver/cops:latest",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -396,7 +396,8 @@
           "label": "PORT"
         }
       ],
-      "image": "invoiceninja/invoiceninja:latest"
+      "image": "invoiceninja/invoiceninja:latest",
+      "restart_policy": "unless-stopped"
     },
     {
       "type": 1,
@@ -412,7 +413,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lychee-icon.png",
       "image": "linuxserver/lychee:latest",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -484,7 +485,8 @@
           "name": "PORT"
         }
       ],
-      "image": "nextcloud:latest"
+      "image": "nextcloud:latest",
+      "restart_policy": "unless-stopped"
     },
     {
       "type": 1,
@@ -500,7 +502,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/projectsend-logo.png",
       "image": "lscr.io/linuxserver/projectsend:latest",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -539,7 +541,7 @@
       ],
       "platform": "linux",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prometheus_software_logo.svg/1200px-Prometheus_software_logo.svg.png",
-      "image": "prom/prometheus",
+      "image": "prom/prometheus:latest",
       "ports": [
         "9090:9090/tcp"
       ],
@@ -576,7 +578,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pydio-icon.png",
       "image": "lscr.io/linuxserver/pydio:latest",
       "ports": [
-        "443/tcp"
+        "443:443/tcp"
       ],
       "volumes": [
         {
@@ -649,7 +651,8 @@
         }
       ],
       "note": "Source: template.json",
-      "image": "seafileltd/seafile-mc:latest"
+      "image": "seafileltd/seafile-mc:latest",
+      "restart_policy": "unless-stopped"
     },
     {
       "type": 1,
@@ -1559,7 +1562,7 @@
       ],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/qbittorrent-icon.png",
-      "image": "markusmcnugen/qbittorrentvpn",
+      "image": "markusmcnugen/qbittorrentvpn:latest",
       "ports": [
         "8080:8080/tcp",
         "8999:8999/udp",
@@ -1634,7 +1637,7 @@
       "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
       "image": "lscr.io/linuxserver/rutorrent:latest",
       "ports": [
-        "80/tcp",
+        "80:80/tcp",
         "51413:51413/tcp",
         "6881:6881/udp"
       ],
@@ -1678,8 +1681,8 @@
       "note": "Please refer to the documentation <a href='https://hub.docker.com/r/shenxn/protonmail-bridge'/>here</a> to set this up. (Source: template.json)",
       "image": "shenxn/protonmail-bridge:latest",
       "ports": [
-        "143/tcp",
-        "25/tcp"
+        "143:143/tcp",
+        "25:25/tcp"
       ],
       "volumes": [
         {
@@ -1702,7 +1705,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/davos.png",
       "image": "lscr.io/linuxserver/davos:latest",
       "ports": [
-        "8080/tcp"
+        "8080:8080/tcp"
       ],
       "volumes": [
         {
@@ -1777,7 +1780,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/smokeping-icon.png",
       "image": "linuxserver/smokeping:latest",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -1968,7 +1971,8 @@
           "default": "admin123"
         }
       ],
-      "image": "alpine:latest"
+      "image": "alpine:latest",
+      "restart_policy": "unless-stopped"
     },
     {
       "type": 1,
@@ -2275,7 +2279,7 @@
       "note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
       "image": "bitwardenrs/server:latest",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -2299,7 +2303,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/Chevereto.png",
       "image": "nmtan/chevereto:latest",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -2500,7 +2504,7 @@
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deemix.png",
       "note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details. (Source: template.json)",
-      "image": "registry.gitlab.com/bockiii/deemix-docker",
+      "image": "registry.gitlab.com/bockiii/deemix-docker:latest",
       "ports": [
         "6595:6595/tcp"
       ],
@@ -2659,7 +2663,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/freshrss-icon.png",
       "image": "lscr.io/linuxserver/freshrss:latest",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -2722,7 +2726,7 @@
       ],
       "platform": "linux",
       "logo": "https://logodix.com/logo/1736776.png",
-      "image": "grafana/grafana",
+      "image": "grafana/grafana:latest",
       "ports": [
         "3001:3000/tcp"
       ],
@@ -2748,7 +2752,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/grocy_logo.png",
       "image": "lscr.io/linuxserver/grocy:latest",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -2883,7 +2887,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/speedtest.png",
       "image": "lscr.io/linuxserver/librespeed:latest",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -2977,7 +2981,7 @@
       ],
       "platform": "linux",
       "logo": "https://camo.githubusercontent.com/bfcc53b6de495c0f2d9d5699afea18b7319529933c5cd38f1e0cf55377df725f/68747470733a2f2f7669676e65747465322e77696b69612e6e6f636f6f6b69652e6e65742f6c6f74722d6d696e6563726166742d6d6f642d6578696c65732f696d616765732f662f66322f4d696e6563726166745f7365727665725f73657475702e706e672f7265766973696f6e2f6c61746573743f63623d3230313630393131313732353537",
-      "image": "hexparrot/mineos",
+      "image": "hexparrot/mineos:latest",
       "ports": [
         "25565:25565/tcp",
         "8443:8443/tcp"
@@ -3213,7 +3217,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/organizr-icon.png",
       "image": "organizrtools/organizr-v2:php-fpm",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -3336,7 +3340,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/reactiveresume.png",
       "image": "amruthpillai/reactive-resume:latest",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -3359,7 +3363,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/shiori-icon.png",
       "image": "radhifadlillah/shiori:latest",
       "ports": [
-        "8080/tcp"
+        "8080:8080/tcp"
       ],
       "volumes": [
         {
@@ -3466,7 +3470,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tt-rss-icon.png",
       "image": "lunik1/tt-rss:latest",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -3563,7 +3567,7 @@
       "note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC. (Source: template.json)",
       "image": "vaultwarden/server:latest",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -3723,7 +3727,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/photoshow-icon.png",
       "image": "lscr.io/linuxserver/photoshow:latest",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -3765,7 +3769,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/piwigo-icon.png",
       "image": "lscr.io/linuxserver/piwigo:latest",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -3799,7 +3803,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/codiad-icon.png",
       "image": "lscr.io/linuxserver/codiad:latest",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -3832,7 +3836,7 @@
       ],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/proxy_mgr.png",
-      "image": "jlesage/nginx-proxy-manager",
+      "image": "jlesage/nginx-proxy-manager:latest",
       "ports": [
         "80:8080/tcp",
         "81:8181/tcp",
@@ -3901,7 +3905,8 @@
           "default": "your-secure-admin-token"
         }
       ],
-      "image": "alpine:latest"
+      "image": "alpine:latest",
+      "restart_policy": "unless-stopped"
     },
     {
       "type": 1,
@@ -3940,7 +3945,8 @@
           "default": "SecretPassword123!"
         }
       ],
-      "image": "alpine:latest"
+      "image": "alpine:latest",
+      "restart_policy": "unless-stopped"
     },
     {
       "type": 3,
@@ -3957,7 +3963,8 @@
         "url": "https://github.com/YOUR_USERNAME/portainer-infrastructure-templates",
         "stackfile": "stacks/free-alternatives.yml"
       },
-      "image": "alpine:latest"
+      "image": "alpine:latest",
+      "restart_policy": "unless-stopped"
     },
     {
       "type": 3,
@@ -3975,7 +3982,8 @@
         "url": "https://github.com/YOUR_USERNAME/portainer-infrastructure-templates",
         "stackfile": "stacks/extended-security-tools.yml"
       },
-      "image": "alpine:latest"
+      "image": "alpine:latest",
+      "restart_policy": "unless-stopped"
     },
     {
       "type": 1,
@@ -4044,8 +4052,8 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/heimdall-icon.png",
       "image": "lscr.io/linuxserver/heimdall:latest",
       "ports": [
-        "80/tcp",
-        "443/tcp"
+        "80:80/tcp",
+        "443:443/tcp"
       ],
       "volumes": [
         {
@@ -4070,7 +4078,7 @@
     },
     {
       "type": 1,
-      "title": "Let's Encrypt",
+      "title": "LetsEncrypt",
       "description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.\r\n  \r\n  Before running this container, make sure that the url and subdomains are properly forwarded to this container's host.\r\n  \r\n  - Port 443 on the internet side of the router should be forwarded to this container's port 443.\r\n  - If you need a dynamic dns provider, you can use the free provider duckdns.org where the url will be yoursubdomain.duckdns.org and the subdomains    can be www,ftp,cloud\r\n  - The container detects changes to url and subdomains, revokes existing certs and generates new ones during start. \r\n  - It also detects changes to the DHLEVEL parameter and replaces the dhparams file.\r\n  \r\n  - If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file docker exec -it letsencrypt htpasswd -c /config/nginx/.htpasswd &lt;username&gt;",
       "categories": [
         "Tools",
@@ -4080,8 +4088,8 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/letsencrypt.png",
       "image": "lscr.io/linuxserver/letsencrypt:latest",
       "ports": [
-        "80/tcp",
-        "443/tcp"
+        "80:80/tcp",
+        "443:443/tcp"
       ],
       "volumes": [
         {
@@ -4151,8 +4159,8 @@
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/swag.gif",
       "image": "lscr.io/linuxserver/swag:latest",
       "ports": [
-        "80/tcp",
-        "443/tcp"
+        "80:80/tcp",
+        "443:443/tcp"
       ],
       "volumes": [
         {
@@ -4314,7 +4322,8 @@
           "default": "false"
         }
       ],
-      "image": "pritunl/pritunl:latest"
+      "image": "pritunl/pritunl:latest",
+      "restart_policy": "unless-stopped"
     },
     {
       "type": 3,
@@ -4345,7 +4354,8 @@
           "default": "10"
         }
       ],
-      "image": "alpine:latest"
+      "image": "alpine:latest",
+      "restart_policy": "unless-stopped"
     },
     {
       "type": 1,
@@ -4538,8 +4548,8 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/kodi-icon.png",
       "image": "lscr.io/linuxserver/kodi-headless:latest",
       "ports": [
-        "8080/tcp",
-        "9777/udp"
+        "8080:8080/tcp",
+        "9777:9777/udp"
       ],
       "volumes": [
         {
@@ -4777,7 +4787,7 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/muximux-icon.png",
       "image": "lscr.io/linuxserver/muximux:latest",
       "ports": [
-        "80/tcp"
+        "80:80/tcp"
       ],
       "volumes": [
         {
@@ -4812,8 +4822,8 @@
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nginx-icon.png",
       "image": "lscr.io/linuxserver/nginx:latest",
       "ports": [
-        "80/tcp",
-        "443/tcp"
+        "80:80/tcp",
+        "443:443/tcp"
       ],
       "volumes": [
         {
@@ -4878,7 +4888,8 @@
           "name": "PORT"
         }
       ],
-      "image": "lscr.io/linuxserver/bookstack:latest"
+      "image": "lscr.io/linuxserver/bookstack:latest",
+      "restart_policy": "unless-stopped"
     },
     {
       "type": 1,
@@ -7429,8 +7440,8 @@
     },
     {
       "type": 1,
-      "title": "Unknown Database",
-      "description": "The postgresql linked to the prewave assignement app (Category: relational)",
+      "title": "Database Template",
+      "description": "Generic database template for custom configurations",
       "categories": [
         "relational",
         "database",
@@ -7438,7 +7449,7 @@
       ],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/docker-library/docs/master/unknown/logo.png",
-      "image": "/unknown",
+      "image": "alpine:latest",
       "ports": [
         "5432:5432"
       ],
