@@ -1,0 +1,212 @@
+networks:
+  database_network:
+    driver: bridge
+services:
+  altibase:
+    container_name: altibase
+    environment:
+      DB_PASSWORD: secure_password
+    image: altibase/altibase:latest
+    networks:
+    - database_network
+    ports:
+    - 20300:20300
+    restart: unless-stopped
+    volumes:
+    - ./data/altibase/data:/data
+  cockroachdb:
+    container_name: cockroachdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: cockroachdb/cockroach:latest
+    networks:
+    - database_network
+    ports:
+    - 26257:26257
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/cockroachdb/data:/data
+  cubrid:
+    container_name: cubrid
+    environment:
+      DB_PASSWORD: secure_password
+    image: cubrid/cubrid:latest
+    networks:
+    - database_network
+    ports:
+    - 33000:33000
+    restart: unless-stopped
+    volumes:
+    - ./data/cubrid/data:/data
+  derby:
+    container_name: derby
+    environment:
+      DB_PASSWORD: secure_password
+    image: apache/derby:latest
+    networks:
+    - database_network
+    ports:
+    - 1527:1527
+    restart: unless-stopped
+    volumes:
+    - ./data/derby/data:/data
+  duckdb:
+    container_name: duckdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: marcboeker/duckdb:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/duckdb/data:/data
+  firebird:
+    container_name: firebird
+    environment:
+      DB_PASSWORD: secure_password
+    image: jacobalberty/firebird:latest
+    networks:
+    - database_network
+    ports:
+    - 3050:3050
+    restart: unless-stopped
+    volumes:
+    - ./data/firebird/data:/data
+  h2:
+    container_name: h2
+    environment:
+      DB_PASSWORD: secure_password
+    image: buildo/h2database:latest
+    networks:
+    - database_network
+    ports:
+    - 1521:1521
+    - 8082:8082
+    restart: unless-stopped
+    volumes:
+    - ./data/h2/data:/data
+  hsqldb:
+    container_name: hsqldb
+    environment:
+      DB_PASSWORD: secure_password
+    image: lhsystems/hsqldb:latest
+    networks:
+    - database_network
+    ports:
+    - 9001:9001
+    restart: unless-stopped
+    volumes:
+    - ./data/hsqldb/data:/data
+  mariadb:
+    container_name: mariadb
+    environment:
+      MYSQL_DATABASE: database
+      MYSQL_PASSWORD: secure_password
+      MYSQL_ROOT_PASSWORD: secure_password
+      MYSQL_USER: admin
+    image: mariadb:latest
+    networks:
+    - database_network
+    ports:
+    - 3306:3306
+    restart: unless-stopped
+    volumes:
+    - ./data/mariadb/var/lib/mysql:/var/lib/mysql
+  monetdb:
+    container_name: monetdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: monetdb/monetdb:latest
+    networks:
+    - database_network
+    ports:
+    - 50000:50000
+    restart: unless-stopped
+    volumes:
+    - ./data/monetdb/data:/data
+  mysql:
+    container_name: mysql
+    environment:
+      MYSQL_DATABASE: database
+      MYSQL_PASSWORD: secure_password
+      MYSQL_ROOT_PASSWORD: secure_password
+      MYSQL_USER: admin
+    image: mysql:latest
+    networks:
+    - database_network
+    ports:
+    - 3306:3306
+    restart: unless-stopped
+    volumes:
+    - ./data/mysql/var/lib/mysql:/var/lib/mysql
+  postgresql:
+    container_name: postgresql
+    environment:
+      POSTGRES_DB: database
+      POSTGRES_PASSWORD: secure_password
+      POSTGRES_USER: admin
+    image: postgres:latest
+    networks:
+    - database_network
+    ports:
+    - 5432:5432
+    restart: unless-stopped
+    volumes:
+    - ./data/postgresql/var/lib/postgresql/data:/var/lib/postgresql/data
+  sqlite:
+    container_name: sqlite
+    environment:
+      DB_PASSWORD: secure_password
+    image: nouchka/sqlite3:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/sqlite/data:/data
+  tidb:
+    container_name: tidb
+    environment:
+      DB_PASSWORD: secure_password
+    image: pingcap/tidb:latest
+    networks:
+    - database_network
+    ports:
+    - 4000:4000
+    restart: unless-stopped
+    volumes:
+    - ./data/tidb/data:/data
+  yugabytedb:
+    container_name: yugabytedb
+    environment:
+      DB_PASSWORD: secure_password
+    image: yugabytedb/yugabyte:latest
+    networks:
+    - database_network
+    ports:
+    - 5433:5433
+    - 9000:9000
+    restart: unless-stopped
+    volumes:
+    - ./data/yugabytedb/data:/data
+version: '3.8'
+volumes:
+  altibase_data: null
+  cockroachdb_data: null
+  cubrid_data: null
+  derby_data: null
+  duckdb_data: null
+  firebird_data: null
+  h2_data: null
+  hsqldb_data: null
+  mariadb_data: null
+  monetdb_data: null
+  mysql_data: null
+  postgresql_data: null
+  sqlite_data: null
+  tidb_data: null
+  yugabytedb_data: null

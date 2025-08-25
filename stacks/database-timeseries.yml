@@ -1,0 +1,207 @@
+networks:
+  database_network:
+    driver: bridge
+services:
+  akumuli:
+    container_name: akumuli
+    environment:
+      DB_PASSWORD: secure_password
+    image: akumuli/akumuli:latest
+    networks:
+    - database_network
+    ports:
+    - 8282:8282
+    restart: unless-stopped
+    volumes:
+    - ./data/akumuli/data:/data
+  atlas:
+    container_name: atlas
+    environment:
+      DB_PASSWORD: secure_password
+    image: netflix/atlas:latest
+    networks:
+    - database_network
+    ports:
+    - 7101:7101
+    restart: unless-stopped
+    volumes:
+    - ./data/atlas/data:/data
+  beringei:
+    container_name: beringei
+    environment:
+      DB_PASSWORD: secure_password
+    image: facebookincubator/beringei:latest
+    networks:
+    - database_network
+    ports:
+    - 9999:9999
+    restart: unless-stopped
+    volumes:
+    - ./data/beringei/data:/data
+  blueflood:
+    container_name: blueflood
+    environment:
+      DB_PASSWORD: secure_password
+    image: rackerlabs/blueflood:latest
+    networks:
+    - database_network
+    ports:
+    - 20000:20000
+    restart: unless-stopped
+    volumes:
+    - ./data/blueflood/data:/data
+  graphite:
+    container_name: graphite
+    environment:
+      DB_PASSWORD: secure_password
+    image: graphiteapp/graphite-statsd:latest
+    networks:
+    - database_network
+    ports:
+    - 80:80
+    - 2003:2003
+    restart: unless-stopped
+    volumes:
+    - ./data/graphite/data:/data
+  greptimedb:
+    container_name: greptimedb
+    environment:
+      DB_PASSWORD: secure_password
+    image: greptime/greptimedb:latest
+    networks:
+    - database_network
+    ports:
+    - 4000:4000
+    - 4001:4001
+    - 4002:4002
+    restart: unless-stopped
+    volumes:
+    - ./data/greptimedb/data:/data
+  influxdb:
+    container_name: influxdb
+    environment:
+      INFLUXDB_ADMIN_PASSWORD: secure_password
+      INFLUXDB_ADMIN_USER: admin
+      INFLUXDB_DB: database
+    image: influxdb:latest
+    networks:
+    - database_network
+    ports:
+    - 8086:8086
+    restart: unless-stopped
+    volumes:
+    - ./data/influxdb/var/lib/influxdb:/var/lib/influxdb
+  kairosdb:
+    container_name: kairosdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: kairosdb/kairosdb:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/kairosdb/data:/data
+  m3db:
+    container_name: m3db
+    environment:
+      DB_PASSWORD: secure_password
+    image: quay.io/m3db/m3dbnode:latest
+    networks:
+    - database_network
+    ports:
+    - 9000:9000
+    restart: unless-stopped
+    volumes:
+    - ./data/m3db/data:/data
+  opentsdb:
+    container_name: opentsdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: petergrace/opentsdb-docker:latest
+    networks:
+    - database_network
+    ports:
+    - 4242:4242
+    restart: unless-stopped
+    volumes:
+    - ./data/opentsdb/data:/data
+  prometheus:
+    container_name: prometheus
+    environment:
+      DB_PASSWORD: secure_password
+    image: prom/prometheus:latest
+    networks:
+    - database_network
+    ports:
+    - 9090:9090
+    restart: unless-stopped
+    volumes:
+    - ./data/prometheus/data:/data
+  questdb:
+    container_name: questdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: questdb/questdb:latest
+    networks:
+    - database_network
+    ports:
+    - 9000:9000
+    - 8812:8812
+    restart: unless-stopped
+    volumes:
+    - ./data/questdb/data:/data
+  siridb:
+    container_name: siridb
+    environment:
+      DB_PASSWORD: secure_password
+    image: siridb/siridb-server:latest
+    networks:
+    - database_network
+    ports:
+    - 9000:9000
+    restart: unless-stopped
+    volumes:
+    - ./data/siridb/data:/data
+  timescaledb:
+    container_name: timescaledb
+    environment:
+      DB_PASSWORD: secure_password
+    image: timescale/timescaledb:latest
+    networks:
+    - database_network
+    ports:
+    - 5432:5432
+    restart: unless-stopped
+    volumes:
+    - ./data/timescaledb/data:/data
+  victoriametrics:
+    container_name: victoriametrics
+    environment:
+      DB_PASSWORD: secure_password
+    image: victoriametrics/victoria-metrics:latest
+    networks:
+    - database_network
+    ports:
+    - 8428:8428
+    restart: unless-stopped
+    volumes:
+    - ./data/victoriametrics/data:/data
+version: '3.8'
+volumes:
+  akumuli_data: null
+  atlas_data: null
+  beringei_data: null
+  blueflood_data: null
+  graphite_data: null
+  greptimedb_data: null
+  influxdb_data: null
+  kairosdb_data: null
+  m3db_data: null
+  opentsdb_data: null
+  prometheus_data: null
+  questdb_data: null
+  siridb_data: null
+  timescaledb_data: null
+  victoriametrics_data: null

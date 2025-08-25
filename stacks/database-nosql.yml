@@ -1,0 +1,166 @@
+networks:
+  database_network:
+    driver: bridge
+services:
+  arangodb:
+    container_name: arangodb
+    environment:
+      DB_PASSWORD: secure_password
+    image: arangodb:latest
+    networks:
+    - database_network
+    ports:
+    - 8529:8529
+    restart: unless-stopped
+    volumes:
+    - ./data/arangodb/data:/data
+  couchbase:
+    container_name: couchbase
+    environment:
+      DB_PASSWORD: secure_password
+    image: couchbase:latest
+    networks:
+    - database_network
+    ports:
+    - 8091:8091
+    - 11210:11210
+    restart: unless-stopped
+    volumes:
+    - ./data/couchbase/data:/data
+  couchdb:
+    container_name: couchdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: couchdb:latest
+    networks:
+    - database_network
+    ports:
+    - 5984:5984
+    restart: unless-stopped
+    volumes:
+    - ./data/couchdb/opt/couchdb/data:/opt/couchdb/data
+  ejdb:
+    container_name: ejdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: ejdb/ejdb:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/ejdb/data:/data
+  ferretdb:
+    container_name: ferretdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: ferretdb/ferretdb:latest
+    networks:
+    - database_network
+    ports:
+    - 27017:27017
+    restart: unless-stopped
+    volumes:
+    - ./data/ferretdb/data:/data
+  lowdb:
+    container_name: lowdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: lowdb/lowdb:latest
+    networks:
+    - database_network
+    ports:
+    - 3000:3000
+    restart: unless-stopped
+    volumes:
+    - ./data/lowdb/data:/data
+  mongodb:
+    container_name: mongodb
+    environment:
+      MONGO_INITDB_ROOT_PASSWORD: secure_password
+      MONGO_INITDB_ROOT_USERNAME: admin
+    image: mongo:latest
+    networks:
+    - database_network
+    ports:
+    - 27017:27017
+    restart: unless-stopped
+    volumes:
+    - ./data/mongodb/data/db:/data/db
+  orientdb:
+    container_name: orientdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: orientdb:latest
+    networks:
+    - database_network
+    ports:
+    - 2424:2424
+    - 2480:2480
+    restart: unless-stopped
+    volumes:
+    - ./data/orientdb/data:/data
+  pouchdb:
+    container_name: pouchdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: pouchdb/pouchdb:latest
+    networks:
+    - database_network
+    ports:
+    - 5984:5984
+    restart: unless-stopped
+    volumes:
+    - ./data/pouchdb/data:/data
+  ravendb:
+    container_name: ravendb
+    environment:
+      DB_PASSWORD: secure_password
+    image: ravendb/ravendb:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/ravendb/data:/data
+  rethinkdb:
+    container_name: rethinkdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: rethinkdb:latest
+    networks:
+    - database_network
+    ports:
+    - 28015:28015
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/rethinkdb/data:/data
+  tinydb:
+    container_name: tinydb
+    environment:
+      DB_PASSWORD: secure_password
+    image: tinydb/tinydb:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/tinydb/data:/data
+version: '3.8'
+volumes:
+  arangodb_data: null
+  couchbase_data: null
+  couchdb_data: null
+  ejdb_data: null
+  ferretdb_data: null
+  lowdb_data: null
+  mongodb_data: null
+  orientdb_data: null
+  pouchdb_data: null
+  ravendb_data: null
+  rethinkdb_data: null
+  tinydb_data: null

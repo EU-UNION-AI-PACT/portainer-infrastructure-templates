@@ -1,0 +1,164 @@
+networks:
+  database_network:
+    driver: bridge
+services:
+  citus:
+    container_name: citus
+    environment:
+      DB_PASSWORD: secure_password
+    image: citusdata/citus:latest
+    networks:
+    - database_network
+    ports:
+    - 5432:5432
+    restart: unless-stopped
+    volumes:
+    - ./data/citus/data:/data
+  clickhouse:
+    container_name: clickhouse
+    environment:
+      DB_PASSWORD: secure_password
+    image: clickhouse/clickhouse-server:latest
+    networks:
+    - database_network
+    ports:
+    - 8123:8123
+    - 9000:9000
+    restart: unless-stopped
+    volumes:
+    - ./data/clickhouse/var/lib/clickhouse:/var/lib/clickhouse
+  databricks:
+    container_name: databricks
+    environment:
+      DB_PASSWORD: secure_password
+    image: databricks/databricks:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/databricks/data:/data
+  druid:
+    container_name: druid
+    environment:
+      DB_PASSWORD: secure_password
+    image: apache/druid:latest
+    networks:
+    - database_network
+    ports:
+    - 8888:8888
+    restart: unless-stopped
+    volumes:
+    - ./data/druid/data:/data
+  greenplum:
+    container_name: greenplum
+    environment:
+      DB_PASSWORD: secure_password
+    image: greenplum/gpdb-base:latest
+    networks:
+    - database_network
+    ports:
+    - 5432:5432
+    restart: unless-stopped
+    volumes:
+    - ./data/greenplum/data:/data
+  hive:
+    container_name: hive
+    environment:
+      DB_PASSWORD: secure_password
+    image: apache/hive:latest
+    networks:
+    - database_network
+    ports:
+    - 10000:10000
+    restart: unless-stopped
+    volumes:
+    - ./data/hive/data:/data
+  impala:
+    container_name: impala
+    environment:
+      DB_PASSWORD: secure_password
+    image: apache/impala:latest
+    networks:
+    - database_network
+    ports:
+    - 21000:21000
+    restart: unless-stopped
+    volumes:
+    - ./data/impala/data:/data
+  kylin:
+    container_name: kylin
+    environment:
+      DB_PASSWORD: secure_password
+    image: apachekylin/apache-kylin-standalone:latest
+    networks:
+    - database_network
+    ports:
+    - 7070:7070
+    restart: unless-stopped
+    volumes:
+    - ./data/kylin/data:/data
+  pinot:
+    container_name: pinot
+    environment:
+      DB_PASSWORD: secure_password
+    image: apachepinot/pinot:latest
+    networks:
+    - database_network
+    ports:
+    - 9000:9000
+    restart: unless-stopped
+    volumes:
+    - ./data/pinot/data:/data
+  presto:
+    container_name: presto
+    environment:
+      DB_PASSWORD: secure_password
+    image: prestodb/presto:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/presto/data:/data
+  spark:
+    container_name: spark
+    environment:
+      DB_PASSWORD: secure_password
+    image: apache/spark:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    - 7077:7077
+    restart: unless-stopped
+    volumes:
+    - ./data/spark/data:/data
+  trino:
+    container_name: trino
+    environment:
+      DB_PASSWORD: secure_password
+    image: trinodb/trino:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/trino/data:/data
+version: '3.8'
+volumes:
+  citus_data: null
+  clickhouse_data: null
+  databricks_data: null
+  druid_data: null
+  greenplum_data: null
+  hive_data: null
+  impala_data: null
+  kylin_data: null
+  pinot_data: null
+  presto_data: null
+  spark_data: null
+  trino_data: null

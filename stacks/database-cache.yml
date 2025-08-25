@@ -1,0 +1,111 @@
+networks:
+  database_network:
+    driver: bridge
+services:
+  envoy:
+    container_name: envoy
+    environment:
+      DB_PASSWORD: secure_password
+    image: envoyproxy/envoy:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/envoy/data:/data
+  haproxy:
+    container_name: haproxy
+    environment:
+      DB_PASSWORD: secure_password
+    image: haproxy:latest
+    networks:
+    - database_network
+    ports:
+    - 80:80
+    restart: unless-stopped
+    volumes:
+    - ./data/haproxy/data:/data
+  mcrouter:
+    container_name: mcrouter
+    environment:
+      DB_PASSWORD: secure_password
+    image: facebook/mcrouter:latest
+    networks:
+    - database_network
+    ports:
+    - 11211:11211
+    restart: unless-stopped
+    volumes:
+    - ./data/mcrouter/data:/data
+  memcached:
+    container_name: memcached
+    environment:
+      DB_PASSWORD: secure_password
+    image: memcached:latest
+    networks:
+    - database_network
+    ports:
+    - 11211:11211
+    restart: unless-stopped
+    volumes:
+    - ./data/memcached/data:/data
+  nginx_cache:
+    container_name: nginx_cache
+    environment:
+      DB_PASSWORD: secure_password
+    image: nginx:latest
+    networks:
+    - database_network
+    ports:
+    - 80:80
+    restart: unless-stopped
+    volumes:
+    - ./data/nginx_cache/data:/data
+  squid:
+    container_name: squid
+    environment:
+      DB_PASSWORD: secure_password
+    image: sameersbn/squid:latest
+    networks:
+    - database_network
+    ports:
+    - 3128:3128
+    restart: unless-stopped
+    volumes:
+    - ./data/squid/data:/data
+  traefik:
+    container_name: traefik
+    environment:
+      DB_PASSWORD: secure_password
+    image: traefik:latest
+    networks:
+    - database_network
+    ports:
+    - 80:80
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/traefik/data:/data
+  varnish:
+    container_name: varnish
+    environment:
+      DB_PASSWORD: secure_password
+    image: varnish:latest
+    networks:
+    - database_network
+    ports:
+    - 80:80
+    restart: unless-stopped
+    volumes:
+    - ./data/varnish/data:/data
+version: '3.8'
+volumes:
+  envoy_data: null
+  haproxy_data: null
+  mcrouter_data: null
+  memcached_data: null
+  nginx_cache_data: null
+  squid_data: null
+  traefik_data: null
+  varnish_data: null

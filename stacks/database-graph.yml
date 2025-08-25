@@ -1,0 +1,166 @@
+networks:
+  database_network:
+    driver: bridge
+services:
+  agensdb:
+    container_name: agensdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: bitnine/agensgraph:latest
+    networks:
+    - database_network
+    ports:
+    - 5432:5432
+    restart: unless-stopped
+    volumes:
+    - ./data/agensdb/data:/data
+  blazegraph:
+    container_name: blazegraph
+    environment:
+      DB_PASSWORD: secure_password
+    image: blazegraph/blazegraph:latest
+    networks:
+    - database_network
+    ports:
+    - 9999:9999
+    restart: unless-stopped
+    volumes:
+    - ./data/blazegraph/data:/data
+  cayley:
+    container_name: cayley
+    environment:
+      DB_PASSWORD: secure_password
+    image: cayley/cayley:latest
+    networks:
+    - database_network
+    ports:
+    - 64210:64210
+    restart: unless-stopped
+    volumes:
+    - ./data/cayley/data:/data
+  dgraph:
+    container_name: dgraph
+    environment:
+      DB_PASSWORD: secure_password
+    image: dgraph/dgraph:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    - 9080:9080
+    restart: unless-stopped
+    volumes:
+    - ./data/dgraph/data:/data
+  flockdb:
+    container_name: flockdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: flockdb/flockdb:latest
+    networks:
+    - database_network
+    ports:
+    - 7915:7915
+    restart: unless-stopped
+    volumes:
+    - ./data/flockdb/data:/data
+  hugegraph:
+    container_name: hugegraph
+    environment:
+      DB_PASSWORD: secure_password
+    image: hugegraph/hugegraph:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/hugegraph/data:/data
+  hypergraphdb:
+    container_name: hypergraphdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: hypergraphdb/hypergraphdb:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/hypergraphdb/data:/data
+  janusgraph:
+    container_name: janusgraph
+    environment:
+      DB_PASSWORD: secure_password
+    image: janusgraph/janusgraph:latest
+    networks:
+    - database_network
+    ports:
+    - 8182:8182
+    restart: unless-stopped
+    volumes:
+    - ./data/janusgraph/data:/data
+  memgraph:
+    container_name: memgraph
+    environment:
+      DB_PASSWORD: secure_password
+    image: memgraph/memgraph:latest
+    networks:
+    - database_network
+    ports:
+    - 7687:7687
+    restart: unless-stopped
+    volumes:
+    - ./data/memgraph/data:/data
+  neo4j:
+    container_name: neo4j
+    environment:
+      NEO4J_AUTH: neo4j/secure_password
+      NEO4J_dbms_memory_heap_initial__size: 512m
+    image: neo4j:latest
+    networks:
+    - database_network
+    ports:
+    - 7474:7474
+    - 7687:7687
+    restart: unless-stopped
+    volumes:
+    - ./data/neo4j/data:/data
+    - ./data/neo4j/logs:/logs
+  typedb:
+    container_name: typedb
+    environment:
+      DB_PASSWORD: secure_password
+    image: vaticle/typedb:latest
+    networks:
+    - database_network
+    ports:
+    - 1729:1729
+    restart: unless-stopped
+    volumes:
+    - ./data/typedb/data:/data
+  whitedb:
+    container_name: whitedb
+    environment:
+      DB_PASSWORD: secure_password
+    image: whitedb/whitedb:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/whitedb/data:/data
+version: '3.8'
+volumes:
+  agensdb_data: null
+  blazegraph_data: null
+  cayley_data: null
+  dgraph_data: null
+  flockdb_data: null
+  hugegraph_data: null
+  hypergraphdb_data: null
+  janusgraph_data: null
+  memgraph_data: null
+  neo4j_data: null
+  typedb_data: null
+  whitedb_data: null

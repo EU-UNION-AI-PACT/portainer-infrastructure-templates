@@ -1,0 +1,136 @@
+networks:
+  database_network:
+    driver: bridge
+services:
+  annoy:
+    container_name: annoy
+    environment:
+      DB_PASSWORD: secure_password
+    image: spotify/annoy:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/annoy/data:/data
+  chroma:
+    container_name: chroma
+    environment:
+      DB_PASSWORD: secure_password
+    image: chromadb/chroma:latest
+    networks:
+    - database_network
+    ports:
+    - 8000:8000
+    restart: unless-stopped
+    volumes:
+    - ./data/chroma/data:/data
+  deeplake:
+    container_name: deeplake
+    environment:
+      DB_PASSWORD: secure_password
+    image: activeloop/deeplake:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/deeplake/data:/data
+  faiss:
+    container_name: faiss
+    environment:
+      DB_PASSWORD: secure_password
+    image: faiss/faiss:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/faiss/data:/data
+  milvus:
+    container_name: milvus
+    environment:
+      DB_PASSWORD: secure_password
+    image: milvusdb/milvus:latest
+    networks:
+    - database_network
+    ports:
+    - 19530:19530
+    restart: unless-stopped
+    volumes:
+    - ./data/milvus/data:/data
+  pinecone:
+    container_name: pinecone
+    environment:
+      DB_PASSWORD: secure_password
+    image: pinecone/pinecone:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/pinecone/data:/data
+  qdrant:
+    container_name: qdrant
+    environment:
+      DB_PASSWORD: secure_password
+    image: qdrant/qdrant:latest
+    networks:
+    - database_network
+    ports:
+    - 6333:6333
+    restart: unless-stopped
+    volumes:
+    - ./data/qdrant/data:/data
+  txtai:
+    container_name: txtai
+    environment:
+      DB_PASSWORD: secure_password
+    image: neuml/txtai:latest
+    networks:
+    - database_network
+    ports:
+    - 8000:8000
+    restart: unless-stopped
+    volumes:
+    - ./data/txtai/data:/data
+  vald:
+    container_name: vald
+    environment:
+      DB_PASSWORD: secure_password
+    image: vdaas/vald:latest
+    networks:
+    - database_network
+    ports:
+    - 8081:8081
+    restart: unless-stopped
+    volumes:
+    - ./data/vald/data:/data
+  weaviate:
+    container_name: weaviate
+    environment:
+      DB_PASSWORD: secure_password
+    image: semitechnologies/weaviate:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/weaviate/data:/data
+version: '3.8'
+volumes:
+  annoy_data: null
+  chroma_data: null
+  deeplake_data: null
+  faiss_data: null
+  milvus_data: null
+  pinecone_data: null
+  qdrant_data: null
+  txtai_data: null
+  vald_data: null
+  weaviate_data: null

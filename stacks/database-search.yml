@@ -1,0 +1,166 @@
+networks:
+  database_network:
+    driver: bridge
+services:
+  elasticsearch:
+    container_name: elasticsearch
+    environment:
+      ES_JAVA_OPTS: -Xms512m -Xmx512m
+      discovery.type: single-node
+    image: docker.elastic.co/elasticsearch/elasticsearch:latest
+    networks:
+    - database_network
+    ports:
+    - 9200:9200
+    - 9300:9300
+    restart: unless-stopped
+    volumes:
+    - ./data/elasticsearch/usr/share/elasticsearch/data:/usr/share/elasticsearch/data
+  manticore:
+    container_name: manticore
+    environment:
+      DB_PASSWORD: secure_password
+    image: manticoresearch/manticore:latest
+    networks:
+    - database_network
+    ports:
+    - 9306:9306
+    - 9308:9308
+    restart: unless-stopped
+    volumes:
+    - ./data/manticore/data:/data
+  meilisearch:
+    container_name: meilisearch
+    environment:
+      DB_PASSWORD: secure_password
+    image: getmeili/meilisearch:latest
+    networks:
+    - database_network
+    ports:
+    - 7700:7700
+    restart: unless-stopped
+    volumes:
+    - ./data/meilisearch/data:/data
+  opensearch:
+    container_name: opensearch
+    environment:
+      DB_PASSWORD: secure_password
+    image: opensearchproject/opensearch:latest
+    networks:
+    - database_network
+    ports:
+    - 9200:9200
+    - 9600:9600
+    restart: unless-stopped
+    volumes:
+    - ./data/opensearch/data:/data
+  solr:
+    container_name: solr
+    environment:
+      DB_PASSWORD: secure_password
+    image: solr:latest
+    networks:
+    - database_network
+    ports:
+    - 8983:8983
+    restart: unless-stopped
+    volumes:
+    - ./data/solr/data:/data
+  sonic:
+    container_name: sonic
+    environment:
+      DB_PASSWORD: secure_password
+    image: valeriansaliou/sonic:latest
+    networks:
+    - database_network
+    ports:
+    - 1491:1491
+    restart: unless-stopped
+    volumes:
+    - ./data/sonic/data:/data
+  sphinx:
+    container_name: sphinx
+    environment:
+      DB_PASSWORD: secure_password
+    image: sphinxsearch/sphinx:latest
+    networks:
+    - database_network
+    ports:
+    - 9312:9312
+    restart: unless-stopped
+    volumes:
+    - ./data/sphinx/data:/data
+  tantivy:
+    container_name: tantivy
+    environment:
+      DB_PASSWORD: secure_password
+    image: tantivy/tantivy:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/tantivy/data:/data
+  typesense:
+    container_name: typesense
+    environment:
+      DB_PASSWORD: secure_password
+    image: typesense/typesense:latest
+    networks:
+    - database_network
+    ports:
+    - 8108:8108
+    restart: unless-stopped
+    volumes:
+    - ./data/typesense/data:/data
+  vespa:
+    container_name: vespa
+    environment:
+      DB_PASSWORD: secure_password
+    image: vespaengine/vespa:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/vespa/data:/data
+  whoosh:
+    container_name: whoosh
+    environment:
+      DB_PASSWORD: secure_password
+    image: whoosh/whoosh:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/whoosh/data:/data
+  xapian:
+    container_name: xapian
+    environment:
+      DB_PASSWORD: secure_password
+    image: xapian/xapian:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/xapian/data:/data
+version: '3.8'
+volumes:
+  elasticsearch_data: null
+  manticore_data: null
+  meilisearch_data: null
+  opensearch_data: null
+  solr_data: null
+  sonic_data: null
+  sphinx_data: null
+  tantivy_data: null
+  typesense_data: null
+  vespa_data: null
+  whoosh_data: null
+  xapian_data: null

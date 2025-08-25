@@ -1,0 +1,19 @@
+networks:
+  database_network:
+    driver: bridge
+services:
+  unknown:
+    container_name: unknown
+    environment:
+      DB_PASSWORD: secure_password
+    image: /unknown
+    networks:
+    - database_network
+    ports:
+    - 5432:5432
+    restart: unless-stopped
+    volumes:
+    - ./data/unknown/data:/data
+version: '3.8'
+volumes:
+  unknown_data: null

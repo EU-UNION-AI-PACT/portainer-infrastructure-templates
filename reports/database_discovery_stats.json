@@ -1,0 +1,12 @@
+{
+  "total_databases": 1,
+  "categories": {
+    "relational": 1
+  },
+  "databases_by_category": {
+    "relational": [
+      "unknown"
+    ]
+  },
+  "discovery_timestamp": "2025-08-25T03:30:00Z"
+}

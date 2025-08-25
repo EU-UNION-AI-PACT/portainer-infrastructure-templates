@@ -1,0 +1,36 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "type": 1,
+      "title": "Unknown Database",
+      "description": "The postgresql linked to the prewave assignement app (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/unknown/logo.png",
+      "image": "/unknown",
+      "ports": [
+        "5432:5432"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/unknown/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    }
+  ]
+}

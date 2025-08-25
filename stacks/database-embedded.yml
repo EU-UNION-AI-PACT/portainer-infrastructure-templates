@@ -1,0 +1,110 @@
+networks:
+  database_network:
+    driver: bridge
+services:
+  extremedb:
+    container_name: extremedb
+    environment:
+      DB_PASSWORD: secure_password
+    image: extremedb/extremedb:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/extremedb/data:/data
+  litedb:
+    container_name: litedb
+    environment:
+      DB_PASSWORD: secure_password
+    image: litedb/litedb:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/litedb/data:/data
+  mvstore:
+    container_name: mvstore
+    environment:
+      DB_PASSWORD: secure_password
+    image: h2database/mvstore:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/mvstore/data:/data
+  objectbox:
+    container_name: objectbox
+    environment:
+      DB_PASSWORD: secure_password
+    image: objectbox/objectbox:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/objectbox/data:/data
+  perst:
+    container_name: perst
+    environment:
+      DB_PASSWORD: secure_password
+    image: perst/perst:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/perst/data:/data
+  polyhedra:
+    container_name: polyhedra
+    environment:
+      DB_PASSWORD: secure_password
+    image: polyhedra/polyhedra:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/polyhedra/data:/data
+  realm:
+    container_name: realm
+    environment:
+      DB_PASSWORD: secure_password
+    image: realm/realm:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/realm/data:/data
+  unqlite:
+    container_name: unqlite
+    environment:
+      DB_PASSWORD: secure_password
+    image: unqlite/unqlite:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/unqlite/data:/data
+version: '3.8'
+volumes:
+  extremedb_data: null
+  litedb_data: null
+  mvstore_data: null
+  objectbox_data: null
+  perst_data: null
+  polyhedra_data: null
+  realm_data: null
+  unqlite_data: null

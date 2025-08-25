@@ -1,0 +1,191 @@
+networks:
+  database_network:
+    driver: bridge
+services:
+  badgerdb:
+    container_name: badgerdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: badgerdb/badger:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/badgerdb/data:/data
+  berkleydb:
+    container_name: berkleydb
+    environment:
+      DB_PASSWORD: secure_password
+    image: berkleydb/db:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/berkleydb/data:/data
+  consul:
+    container_name: consul
+    environment:
+      DB_PASSWORD: secure_password
+    image: consul:latest
+    networks:
+    - database_network
+    ports:
+    - 8500:8500
+    - 8300:8300
+    restart: unless-stopped
+    volumes:
+    - ./data/consul/data:/data
+  dragonfly:
+    container_name: dragonfly
+    environment:
+      DB_PASSWORD: secure_password
+    image: dragonflydb/dragonfly:latest
+    networks:
+    - database_network
+    ports:
+    - 6379:6379
+    restart: unless-stopped
+    volumes:
+    - ./data/dragonfly/data:/data
+  etcd:
+    container_name: etcd
+    environment:
+      DB_PASSWORD: secure_password
+    image: quay.io/coreos/etcd:latest
+    networks:
+    - database_network
+    ports:
+    - 2379:2379
+    - 2380:2380
+    restart: unless-stopped
+    volumes:
+    - ./data/etcd/data:/data
+  hazelcast:
+    container_name: hazelcast
+    environment:
+      DB_PASSWORD: secure_password
+    image: hazelcast/hazelcast:latest
+    networks:
+    - database_network
+    ports:
+    - 5701:5701
+    restart: unless-stopped
+    volumes:
+    - ./data/hazelcast/data:/data
+  keydb:
+    container_name: keydb
+    environment:
+      DB_PASSWORD: secure_password
+    image: eqalpha/keydb:latest
+    networks:
+    - database_network
+    ports:
+    - 6379:6379
+    restart: unless-stopped
+    volumes:
+    - ./data/keydb/data:/data
+  leveldb:
+    container_name: leveldb
+    environment:
+      DB_PASSWORD: secure_password
+    image: leveldb/leveldb:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/leveldb/data:/data
+  lmdb:
+    container_name: lmdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: lmdb/lmdb:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/lmdb/data:/data
+  redis:
+    container_name: redis
+    environment:
+      REDIS_PASSWORD: secure_password
+    image: redis:latest
+    networks:
+    - database_network
+    ports:
+    - 6379:6379
+    restart: unless-stopped
+    volumes:
+    - ./data/redis/data:/data
+  riak:
+    container_name: riak
+    environment:
+      DB_PASSWORD: secure_password
+    image: basho/riak-kv:latest
+    networks:
+    - database_network
+    ports:
+    - 8087:8087
+    - 8098:8098
+    restart: unless-stopped
+    volumes:
+    - ./data/riak/data:/data
+  rocksdb:
+    container_name: rocksdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: rocksdb/rocksdb:latest
+    networks:
+    - database_network
+    ports:
+    - 8080:8080
+    restart: unless-stopped
+    volumes:
+    - ./data/rocksdb/data:/data
+  ssdb:
+    container_name: ssdb
+    environment:
+      DB_PASSWORD: secure_password
+    image: ssdb/ssdb:latest
+    networks:
+    - database_network
+    ports:
+    - 8888:8888
+    restart: unless-stopped
+    volumes:
+    - ./data/ssdb/data:/data
+  vedis:
+    container_name: vedis
+    environment:
+      DB_PASSWORD: secure_password
+    image: vedis/vedis:latest
+    networks:
+    - database_network
+    ports:
+    - 6379:6379
+    restart: unless-stopped
+    volumes:
+    - ./data/vedis/data:/data
+version: '3.8'
+volumes:
+  badgerdb_data: null
+  berkleydb_data: null
+  consul_data: null
+  dragonfly_data: null
+  etcd_data: null
+  hazelcast_data: null
+  keydb_data: null
+  leveldb_data: null
+  lmdb_data: null
+  redis_data: null
+  riak_data: null
+  rocksdb_data: null
+  ssdb_data: null
+  vedis_data: null
