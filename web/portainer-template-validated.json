@@ -1,0 +1,87 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 1,
+      "type": 1,
+      "title": "✅ Nginx Web Server",
+      "description": "Nginx web server with validated stable image",
+      "categories": [
+        "Web",
+        "Proxy",
+        "Test"
+      ],
+      "platform": "linux",
+      "logo": "https://img.shields.io/badge/Test-Nginx-green?style=for-the-badge&logo=nginx",
+      "image": "nginx:stable-alpine",
+      "ports": [
+        "8080:80/tcp"
+      ],
+      "restart_policy": "unless-stopped",
+      "labels": [
+        {
+          "name": "test.validated",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": 1,
+      "title": "✅ Portainer CE",
+      "description": "Portainer Community Edition with validated image",
+      "categories": [
+        "Management",
+        "Docker",
+        "Test"
+      ],
+      "platform": "linux",
+      "logo": "https://img.shields.io/badge/Test-Portainer-blue?style=for-the-badge&logo=portainer",
+      "image": "portainer/portainer-ce:latest",
+      "ports": [
+        "9000:9000/tcp"
+      ],
+      "volumes": [
+        {
+          "container": "/var/run/docker.sock",
+          "bind": "/var/run/docker.sock"
+        },
+        {
+          "container": "/data",
+          "bind": "/tmp/portainer-data"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "labels": [
+        {
+          "name": "test.validated",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": 1,
+      "title": "✅ Redis Cache",
+      "description": "Redis cache with validated alpine image",
+      "categories": [
+        "Database",
+        "Cache",
+        "Test"
+      ],
+      "platform": "linux",
+      "logo": "https://img.shields.io/badge/Test-Redis-red?style=for-the-badge&logo=redis",
+      "image": "redis:7-alpine",
+      "ports": [
+        "6379:6379/tcp"
+      ],
+      "restart_policy": "unless-stopped",
+      "labels": [
+        {
+          "name": "test.validated",
+          "value": "true"
+        }
+      ]
+    }
+  ]
+}

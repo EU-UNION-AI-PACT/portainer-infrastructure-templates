@@ -1,0 +1,200 @@
+{
+  "timestamp": "2025-08-25T10:14:48.945741",
+  "total_templates": 248,
+  "fixes_applied": 32,
+  "errors_found": 0,
+  "fixes_detail": [
+    {
+      "template": "Nextcloud",
+      "original": "nextcloud:stable",
+      "fixed": "nextcloud:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "ProjectSend",
+      "original": "lscr.io/linuxserver/projectsend:stable",
+      "fixed": "lscr.io/linuxserver/projectsend:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Pydio",
+      "original": "lscr.io/linuxserver/pydio:stable",
+      "fixed": "lscr.io/linuxserver/pydio:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Seafile",
+      "original": "seafileltd/seafile-mc:stable",
+      "fixed": "seafileltd/seafile-mc:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Ubooquity",
+      "original": "lscr.io/linuxserver/ubooquity:stable",
+      "fixed": "lscr.io/linuxserver/ubooquity:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Duck DNS",
+      "original": "lscr.io/linuxserver/duckdns:stable",
+      "fixed": "lscr.io/linuxserver/duckdns:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Papermerge",
+      "original": "lscr.io/linuxserver/papermerge:stable",
+      "fixed": "lscr.io/linuxserver/papermerge:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Cardigann",
+      "original": "lscr.io/linuxserver/cardigann:stable",
+      "fixed": "lscr.io/linuxserver/cardigann:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "CouchPotato",
+      "original": "lscr.io/linuxserver/couchpotato:stable",
+      "fixed": "lscr.io/linuxserver/couchpotato:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Deluge",
+      "original": "lscr.io/linuxserver/deluge:stable",
+      "fixed": "lscr.io/linuxserver/deluge:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Jackett",
+      "original": "linuxserver/jackett:stable",
+      "fixed": "lscr.io/linuxserver/jackett:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Medusa",
+      "original": "lscr.io/linuxserver/medusa:stable",
+      "fixed": "lscr.io/linuxserver/medusa:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Mylar",
+      "original": "lscr.io/linuxserver/mylar:stable",
+      "fixed": "lscr.io/linuxserver/mylar:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "NZBGet",
+      "original": "lscr.io/linuxserver/nzbget:stable",
+      "fixed": "lscr.io/linuxserver/nzbget:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "NZBHydra 2",
+      "original": "lscr.io/linuxserver/nzbhydra2:stable",
+      "fixed": "lscr.io/linuxserver/nzbhydra2:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Ombi",
+      "original": "lscr.io/linuxserver/ombi:stable",
+      "fixed": "lscr.io/linuxserver/ombi:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Plex Requests",
+      "original": "lscr.io/linuxserver/plexrequests:stable",
+      "fixed": "lscr.io/linuxserver/plexrequests:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Radarr",
+      "original": "linuxserver/radarr:stable",
+      "fixed": "lscr.io/linuxserver/radarr:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "SABnzbd",
+      "original": "lscr.io/linuxserver/sabnzbd:stable",
+      "fixed": "lscr.io/linuxserver/sabnzbd:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "SickChill",
+      "original": "lscr.io/linuxserver/sickchill:stable",
+      "fixed": "lscr.io/linuxserver/sickchill:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "SickGear",
+      "original": "lscr.io/linuxserver/sickgear:stable",
+      "fixed": "lscr.io/linuxserver/sickgear:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Sonarr",
+      "original": "linuxserver/sonarr:stable",
+      "fixed": "lscr.io/linuxserver/sonarr:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Transmission",
+      "original": "lscr.io/linuxserver/transmission:stable",
+      "fixed": "lscr.io/linuxserver/transmission:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "WebGrab+Plus",
+      "original": "lscr.io/linuxserver/webgrabplus:stable",
+      "fixed": "lscr.io/linuxserver/webgrabplus:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "lidarr",
+      "original": "lscr.io/linuxserver/lidarr:stable",
+      "fixed": "lscr.io/linuxserver/lidarr:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "qBittorrent",
+      "original": "lscr.io/linuxserver/qbittorrent:stable",
+      "fixed": "lscr.io/linuxserver/qbittorrent:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "qBittorrentVPN",
+      "original": "markusmcnugen/qbittorrentvpn:stable",
+      "fixed": "markusmcnugen/qbittorrentvpn:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "ruTorrent",
+      "original": "lscr.io/linuxserver/rutorrent:stable",
+      "fixed": "lscr.io/linuxserver/rutorrent:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "ProtonMail Bridge",
+      "original": "shenxn/protonmail-bridge:stable",
+      "fixed": "shenxn/protonmail-bridge:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Davos",
+      "original": "lscr.io/linuxserver/davos:stable",
+      "fixed": "lscr.io/linuxserver/davos:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Domoticz",
+      "original": "lscr.io/linuxserver/domoticz:stable",
+      "fixed": "lscr.io/linuxserver/domoticz:latest",
+      "reason": "Known problematic image"
+    },
+    {
+      "template": "Teamspeak",
+      "original": "teamspeak",
+      "fixed": "teamspeak:latest",
+      "reason": "Known problematic image"
+    }
+  ]
+}
