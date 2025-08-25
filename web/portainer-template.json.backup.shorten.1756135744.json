@@ -3641,7 +3641,7 @@
       "type": 1,
       "title": "Let's Encrypt",
       "name": "letsencrypt",
-      "description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention. Before running this container, make sure that the url and subdomains are properly forwarded to this container's host. - Port 443 on the internet side of the router should be forwarded to this container's port 443.",
+      "description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention. Before running this container, make sure that the url and subdomains are properly forwarded to this container's host. - Port 443 on the internet side of the router should be forwarded to this container's port 443. - If you need a dynamic dns provider, you can use the free provider duckdns.org where the url will be yoursubdomain.duckdns.org and the subdomains can be www,ftp,cloud - The container detects changes to url and subdomains, revokes existing certs and generates new ones during start. - It also detects changes to the DHLEVEL parameter and replaces the dhparams file. - If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file docker exec -it letsencrypt htpasswd -c /config/nginx/.htpasswd &lt;username&gt;",
       "logo": "https://letsencrypt.org/images/le-logo-wide.svg",
       "image": "lscr.io/linuxserver/letsencrypt:latest",
       "categories": [
@@ -3729,7 +3729,7 @@
     {
       "type": 1,
       "title": "LetsEncrypt",
-      "description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention. Before running this container, make sure that the url and subdomains are properly forwarded to this container's host. - Port 443 on the internet s. [Full documentation available in official docs].",
+      "description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention. Before running this container, make sure that the url and subdomains are properly forwarded to this container's host. - Port 443 on the internet s.. [Full documentation available in official docs].",
       "categories": [
         "Tools",
         "Web"
@@ -17321,7 +17321,7 @@
     {
       "type": 1,
       "title": "Tautulli",
-      "description": "Tautulli is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about you. [Full documentation available in official docs].",
+      "description": "Tautulli is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about you.. [Full documentation available in official docs].",
       "categories": [
         "Other",
         "Tools"
@@ -17594,7 +17594,7 @@
       "type": 1,
       "title": "Tautulli",
       "name": "tautulli",
-      "description": "Tautulli is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched.",
+      "description": "Tautulli is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about your server to everyone else.[br][br] [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br] [b]8181[/b] The webui for Tautulli's webui [br] [b]/config[/b] Storing Configuration and the Tautulli database[br] [b]/logs[/b] Map to you plex logs (required for IP logging)[br]",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/tautulli:latest",
       "categories": [
@@ -27898,7 +27898,7 @@
     {
       "type": 1,
       "title": "Codiad",
-      "description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.",
+      "description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements..",
       "categories": [
         "Productivity"
       ],
@@ -31459,7 +31459,7 @@
     {
       "type": 1,
       "title": "Deluge",
-      "description": "Deluge is a lightweight, Free Software, cross-platform BitTorrent client providing: Full Encryption, WebUI, Plugin System, Much more.",
+      "description": "Deluge is a lightweight, Free Software, cross-platform BitTorrent client providing: Full Encryption, WebUI, Plugin System, Much more..",
       "categories": [
         "Downloaders"
       ],
@@ -46606,7 +46606,7 @@
     {
       "type": 1,
       "title": "Minisatip",
-      "description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards. The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.",
+      "description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards. The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids..",
       "categories": [
         "Video",
         "Other",
@@ -70952,7 +70952,7 @@
     {
       "type": 1,
       "title": "WebGrab+Plus",
-      "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.[br] Optional postprocessors to add IMDb data or to customize your xmltv listing.[br] https://www.webgrabplus.com/[br] [b][span style='color: #E80000;']Directions:[/span][/b][br] [b]/config[/b]: This is where WebGrab+Plus will store it's. [Full documentation available in official docs].",
+      "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.[br] Optional postprocessors to add IMDb data or to customize your xmltv listing.[br] https://www.webgrabplus.com/[br] [b][span style='color: #E80000;']Directions:[/span][/b][br] [b]/config[/b]: This is where WebGrab+Plus will store it's.. [Full documentation available in official docs].",
       "categories": [
         "Downloaders"
       ],
@@ -71221,7 +71221,7 @@
       "type": 1,
       "title": "WebGrab+Plus",
       "name": "webgrabplus",
-      "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber.",
+      "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.[br] Optional postprocessors to add IMDb data or to customize your xmltv listing.[br] https://www.webgrabplus.com/[br] [b][span style='color: #E80000;']Directions:[/span][/b][br] [b]/config[/b]: This is where WebGrab+Plus will store it's configuration.[br][br] [b]/data[/b]: This is where tv_grab_wg script in the Tvheadend container looks for the guide.xml file.[br][br]",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/webgrabplus:latest",
       "categories": [

@@ -3,8 +3,8 @@
   "templates": [
     {
       "type": 1,
-      "title": "📋 🔥 Neuheiten & Trends (1 Template)",
-      "description": "Diese Kategorie enthält 1 sorgfältig ausgewählte Templates zu Neuheiten & Trends. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
+      "title": "📋 🔥 Neuheiten & Trends (1 Templates)",
+      "description": "Diese Kategorie enthält 1 sorgfältig ausgewählte Templates für Neuheiten & Trends. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
       "categories": [
         "📖 Documentation",
         "Neuheiten & Trends"
@@ -24,7 +24,7 @@
         },
         {
           "name": "TEMPLATE_COUNT",
-          "label": "Templates Count",
+          "label": "Template Count",
           "default": "1",
           "description": "Anzahl Templates in dieser Kategorie"
         }
@@ -122,7 +122,7 @@
     {
       "type": 1,
       "title": "📋 🚀 One-Click Deployments (12 Templates)",
-      "description": "Diese Kategorie enthält 12 sorgfältig ausgewählte Templates zu One-Click Deployments. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
+      "description": "Diese Kategorie enthält 12 sorgfältig ausgewählte Templates für One-Click Deployments. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
       "categories": [
         "📖 Documentation",
         "One-Click Deployments"
@@ -142,7 +142,7 @@
         },
         {
           "name": "TEMPLATE_COUNT",
-          "label": "Templates Count",
+          "label": "Template Count",
           "default": "12",
           "description": "Anzahl Templates in dieser Kategorie"
         }
@@ -723,7 +723,7 @@
         {
           "name": "GRAFANA_PASSWORD",
           "label": "Grafana Password",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "image": "alpine:3.18",
@@ -965,7 +965,7 @@
         {
           "name": "WAZUH_PASSWORD",
           "label": "Wazuh Password",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "image": "alpine:3.18",
@@ -1929,7 +1929,7 @@
     {
       "type": 1,
       "title": "📋 📱 Web Development (27 Templates)",
-      "description": "Diese Kategorie enthält 27 sorgfältig ausgewählte Templates zu Web Development. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
+      "description": "Diese Kategorie enthält 27 sorgfältig ausgewählte Templates für Web Development. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
       "categories": [
         "📖 Documentation",
         "Web Development"
@@ -1949,7 +1949,7 @@
         },
         {
           "name": "TEMPLATE_COUNT",
-          "label": "Templates Count",
+          "label": "Template Count",
           "default": "27",
           "description": "Anzahl Templates in dieser Kategorie"
         }
@@ -1991,7 +1991,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -2261,7 +2261,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -2509,7 +2509,7 @@
     {
       "type": 1,
       "title": "Duck DNS",
-      "description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence. First, go to duckdns site, register your subdomain and retrieve your token Then run the docker create command above with your subdomain(s) and token It will update your IP with the DuckDNS service every 5 minutes.",
+      "description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.\r\n\r\nFirst, go to duckdns site, register your subdomain and retrieve your token\r\nThen run the docker create command above with your subdomain(s) and token\r\nIt will update your IP with the DuckDNS service every 5 minutes\r\n\r\n.",
       "categories": [
         "DNS",
         "Tools"
@@ -2779,7 +2779,7 @@
       "type": 1,
       "title": "Duck DNS",
       "name": "duckdns",
-      "description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence. First, go to duckdns site, register your subdomain and retrieve your token Then run the docker create command above with your subdomain(s) and token It will update your IP with the DuckDNS service every 5 minutes",
+      "description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.\r\n\r\nFirst, go to duckdns site, register your subdomain and retrieve your token\r\nThen run the docker create command above with your subdomain(s) and token\r\nIt will update your IP with the DuckDNS service every 5 minutes\r\n\r\n",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/duckdns:latest",
       "categories": [
@@ -2852,7 +2852,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -3122,7 +3122,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -3392,7 +3392,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -3641,7 +3641,7 @@
       "type": 1,
       "title": "Let's Encrypt",
       "name": "letsencrypt",
-      "description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention. Before running this container, make sure that the url and subdomains are properly forwarded to this container's host. - Port 443 on the internet side of the router should be forwarded to this container's port 443.",
+      "description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.\r\n  \r\n  Before running this container, make sure that the url and subdomains are properly forwarded to this container's host.\r\n  \r\n  - Port 443 on the internet side of the router should be forwarded to this container's port 443.\r\n  - If you need a dynamic dns provider, you can use the free provider duckdns.org where the url will be yoursubdomain.duckdns.org and the subdomains    can be www,ftp,cloud\r\n  - The container detects changes to url and subdomains, revokes existing certs and generates new ones during start. \r\n  - It also detects changes to the DHLEVEL parameter and replaces the dhparams file.\r\n  \r\n  - If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file docker exec -it letsencrypt htpasswd -c /config/nginx/.htpasswd &lt;username&gt;",
       "logo": "https://letsencrypt.org/images/le-logo-wide.svg",
       "image": "lscr.io/linuxserver/letsencrypt:latest",
       "categories": [
@@ -3729,7 +3729,7 @@
     {
       "type": 1,
       "title": "LetsEncrypt",
-      "description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention. Before running this container, make sure that the url and subdomains are properly forwarded to this container's host. - Port 443 on the internet s. [Full documentation available in official docs].",
+      "description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.\r\n  \r\n  Before running this container, make sure that the url and subdomains are properly forwarded to this container's host.\r\n  \r\n  - Port 443 on the internet s... [Full documentation available in official docs].",
       "categories": [
         "Tools",
         "Web"
@@ -4055,7 +4055,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -4325,7 +4325,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -5209,7 +5209,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -5479,7 +5479,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -6426,7 +6426,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -7299,7 +7299,7 @@
     },
     {
       "type": 1,
-      "title": "🏆 Templates Collection Badges",
+      "title": "🏆 Template Collection Badges",
       "description": "View all badges and certifications for this cosmic template collection. This template showcases our Pink Star Diamond certification (191/100 score) and provides information about our 258+ professionally curated templates with advanced pre-configured stacks and one-click deployments.",
       "categories": [
         "Information",
@@ -7322,7 +7322,7 @@
       "env": [
         {
           "name": "TEMPLATE_COUNT",
-          "label": "Templates Count",
+          "label": "Template Count",
           "default": "258",
           "description": "Total number of cosmic templates"
         },
@@ -7367,7 +7367,7 @@
     {
       "type": 1,
       "title": "📋 🗄️ Datenbanken (18 Templates)",
-      "description": "Diese Kategorie enthält 18 sorgfältig ausgewählte Templates zu Datenbanken. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
+      "description": "Diese Kategorie enthält 18 sorgfältig ausgewählte Templates für Datenbanken. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
       "categories": [
         "📖 Documentation",
         "Datenbanken"
@@ -7387,7 +7387,7 @@
         },
         {
           "name": "TEMPLATE_COUNT",
-          "label": "Templates Count",
+          "label": "Template Count",
           "default": "18",
           "description": "Anzahl Templates in dieser Kategorie"
         }
@@ -7429,7 +7429,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -7699,7 +7699,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -7969,7 +7969,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -8239,7 +8239,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -8827,7 +8827,7 @@
         {
           "name": "INFLUXDB_ADMIN_PASSWORD",
           "label": "INFLUXDB_ADMIN_PASSWORD",
-          "description": "(Required: Generate secure password)"
+          "description": " (Required: Generate secure password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -9097,7 +9097,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -9716,7 +9716,7 @@
         {
           "name": "MYSQL_PASSWORD",
           "label": "MYSQL_PASSWORD",
-          "description": "(Required: Generate secure password)"
+          "description": " (Required: Generate secure password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -9993,7 +9993,7 @@
         {
           "name": "MONGO_INITDB_ROOT_PASSWORD",
           "label": "MONGO_INITDB_ROOT_PASSWORD",
-          "description": "(Required: Generate secure password)"
+          "description": " (Required: Generate secure password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -10280,7 +10280,7 @@
         {
           "name": "MYSQL_PASSWORD",
           "label": "MYSQL_PASSWORD",
-          "description": "(Required: Generate secure password)"
+          "description": " (Required: Generate secure password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -11462,7 +11462,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -11710,7 +11710,7 @@
     {
       "type": 1,
       "title": "📋 🔧 DevOps & CI/CD (6 Templates)",
-      "description": "Diese Kategorie enthält 6 sorgfältig ausgewählte Templates zu DevOps & CI/CD. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
+      "description": "Diese Kategorie enthält 6 sorgfältig ausgewählte Templates für DevOps & CI/CD. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
       "categories": [
         "📖 Documentation",
         "DevOps & CI/CD"
@@ -11730,7 +11730,7 @@
         },
         {
           "name": "TEMPLATE_COUNT",
-          "label": "Templates Count",
+          "label": "Template Count",
           "default": "6",
           "description": "Anzahl Templates in dieser Kategorie"
         }
@@ -12699,7 +12699,7 @@
     {
       "type": 1,
       "title": "📋 📊 Monitoring & Analytics (7 Templates)",
-      "description": "Diese Kategorie enthält 7 sorgfältig ausgewählte Templates zu Monitoring & Analytics. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
+      "description": "Diese Kategorie enthält 7 sorgfältig ausgewählte Templates für Monitoring & Analytics. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
       "categories": [
         "📖 Documentation",
         "Monitoring & Analytics"
@@ -12719,7 +12719,7 @@
         },
         {
           "name": "TEMPLATE_COUNT",
-          "label": "Templates Count",
+          "label": "Template Count",
           "default": "7",
           "description": "Anzahl Templates in dieser Kategorie"
         }
@@ -13379,7 +13379,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -13928,7 +13928,7 @@
     {
       "type": 1,
       "title": "📋 🎵 Media & Entertainment (24 Templates)",
-      "description": "Diese Kategorie enthält 24 sorgfältig ausgewählte Templates zu Media & Entertainment. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
+      "description": "Diese Kategorie enthält 24 sorgfältig ausgewählte Templates für Media & Entertainment. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
       "categories": [
         "📖 Documentation",
         "Media & Entertainment"
@@ -13948,7 +13948,7 @@
         },
         {
           "name": "TEMPLATE_COUNT",
-          "label": "Templates Count",
+          "label": "Template Count",
           "default": "24",
           "description": "Anzahl Templates in dieser Kategorie"
         }
@@ -15969,7 +15969,7 @@
     {
       "type": 1,
       "title": "Ombi",
-      "description": "Ombi allows you to host your own Plex Request and user management system. This professional-grade containerized solution provides enterprise-level reliability, security, and scalability for modern infrastructure deployments.",
+      "description": "Ombi allows you to host your own Plex Request and user management system.  This professional-grade containerized solution provides enterprise-level reliability, security, and scalability for modern infrastructure deployments.",
       "categories": [
         "Downloaders",
         "Other",
@@ -16240,7 +16240,7 @@
       "type": 1,
       "title": "Ombi",
       "name": "ombi",
-      "description": "Ombi allows you to host your own Plex Request and user management system.",
+      "description": "Ombi allows you to host your own Plex Request and user management system. ",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/ombi:latest",
       "categories": [
@@ -17321,7 +17321,7 @@
     {
       "type": 1,
       "title": "Tautulli",
-      "description": "Tautulli is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about you. [Full documentation available in official docs].",
+      "description": "Tautulli is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about you... [Full documentation available in official docs].",
       "categories": [
         "Other",
         "Tools"
@@ -17594,7 +17594,7 @@
       "type": 1,
       "title": "Tautulli",
       "name": "tautulli",
-      "description": "Tautulli is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched.",
+      "description": "Tautulli is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about your server to everyone else.[br][br]\r\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\r\n  [b]8181[/b] The webui for Tautulli's webui [br]\r\n  [b]/config[/b] Storing Configuration and the Tautulli database[br]\r\n[b]/logs[/b] Map to you plex logs (required for IP logging)[br]\r\n\r\n",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/tautulli:latest",
       "categories": [
@@ -17987,7 +17987,7 @@
     {
       "type": 1,
       "title": "📋 🔐 Security & Privacy (8 Templates)",
-      "description": "Diese Kategorie enthält 8 sorgfältig ausgewählte Templates zu Security & Privacy. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
+      "description": "Diese Kategorie enthält 8 sorgfältig ausgewählte Templates für Security & Privacy. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
       "categories": [
         "📖 Documentation",
         "Security & Privacy"
@@ -18007,7 +18007,7 @@
         },
         {
           "name": "TEMPLATE_COUNT",
-          "label": "Templates Count",
+          "label": "Template Count",
           "default": "8",
           "description": "Anzahl Templates in dieser Kategorie"
         }
@@ -18334,7 +18334,7 @@
     {
       "type": 1,
       "title": "Bitwarden RS",
-      "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.",
+      "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
       "categories": [
         "Other",
         "Tools"
@@ -18584,7 +18584,7 @@
       "type": 1,
       "title": "Bitwarden RS",
       "name": "bitwardenrs",
-      "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.",
+      "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
       "note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/bitwarden.png",
       "image": "bitwardenrs/server:latest",
@@ -18936,7 +18936,7 @@
     {
       "type": 1,
       "title": "Vaultwarden",
-      "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.",
+      "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
       "categories": [
         "Authentication",
         "Security",
@@ -19188,7 +19188,7 @@
       "type": 1,
       "title": "Vaultwarden",
       "name": "Vaultwarden",
-      "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.",
+      "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
       "note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/vaultwarden.png",
       "image": "vaultwarden/server:latest",
@@ -19232,7 +19232,7 @@
     {
       "type": 1,
       "title": "📋 📚 Productivity & Tools (8 Templates)",
-      "description": "Diese Kategorie enthält 8 sorgfältig ausgewählte Templates zu Productivity & Tools. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
+      "description": "Diese Kategorie enthält 8 sorgfältig ausgewählte Templates für Productivity & Tools. Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
       "categories": [
         "📖 Documentation",
         "Productivity & Tools"
@@ -19252,7 +19252,7 @@
         },
         {
           "name": "TEMPLATE_COUNT",
-          "label": "Templates Count",
+          "label": "Template Count",
           "default": "8",
           "description": "Anzahl Templates in dieser Kategorie"
         }
@@ -20245,7 +20245,7 @@
     {
       "type": 1,
       "title": "Tvheadend",
-      "description": "Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT&gt;IP and HDHomeRun as input sources. Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT&gt;IP streaming. Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).",
+      "description": "Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT&gt;IP and HDHomeRun as input sources.\r\nTvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT&gt;IP streaming.\r\nMultiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).",
       "categories": [
         "Video",
         "Other"
@@ -20518,7 +20518,7 @@
       "type": 1,
       "title": "Tvheadend",
       "name": "tvheadend",
-      "description": "Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT&gt;IP and HDHomeRun as input sources. Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT&gt;IP streaming. Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).",
+      "description": "Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT&gt;IP and HDHomeRun as input sources.\r\nTvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT&gt;IP streaming.\r\nMultiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/tvheadend:latest",
       "categories": [
@@ -20574,7 +20574,7 @@
     {
       "type": 1,
       "title": "📋 ⚡ Lightweight (< 100MB) (3 Templates)",
-      "description": "Diese Kategorie enthält 3 sorgfältig ausgewählte Templates zu Lightweight (< 100MB). Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
+      "description": "Diese Kategorie enthält 3 sorgfältig ausgewählte Templates für Lightweight (< 100MB). Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
       "categories": [
         "📖 Documentation",
         "Lightweight (< 100MB)"
@@ -20594,7 +20594,7 @@
         },
         {
           "name": "TEMPLATE_COUNT",
-          "label": "Templates Count",
+          "label": "Template Count",
           "default": "3",
           "description": "Anzahl Templates in dieser Kategorie"
         }
@@ -20636,7 +20636,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -21357,7 +21357,7 @@
     {
       "type": 1,
       "title": "📋 🔧 Standard (100MB - 500MB) (263 Templates)",
-      "description": "Diese Kategorie enthält 263 sorgfältig ausgewählte Templates zu Standard (100MB - 500MB). Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
+      "description": "Diese Kategorie enthält 263 sorgfältig ausgewählte Templates für Standard (100MB - 500MB). Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
       "categories": [
         "📖 Documentation",
         "Standard (100MB - 500MB)"
@@ -21377,7 +21377,7 @@
         },
         {
           "name": "TEMPLATE_COUNT",
-          "label": "Templates Count",
+          "label": "Template Count",
           "default": "263",
           "description": "Anzahl Templates in dieser Kategorie"
         }
@@ -21790,7 +21790,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -22060,7 +22060,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -22330,7 +22330,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -22600,7 +22600,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -22870,7 +22870,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -23140,7 +23140,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -23745,7 +23745,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -24015,7 +24015,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -24285,7 +24285,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -24555,7 +24555,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -25479,7 +25479,7 @@
     {
       "type": 1,
       "title": "Calibre Web",
-      "description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. [br][br] [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br] [b]/config[/b] Where Calibre-web should store it's database[br] [b]/books[/b] Path to your calibre library metadata.db file[br].",
+      "description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.\n\n  [br][br]\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\n  [b]/config[/b] Where Calibre-web should store it's database[br]\n  [b]/books[/b] Path to your calibre library metadata.db file[br].",
       "categories": [
         "Cloud",
         "Books"
@@ -25752,7 +25752,7 @@
       "type": 1,
       "title": "Calibre Web",
       "name": "calibre-web",
-      "description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. [br][br] [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br] [b]/config[/b] Where Calibre-web should store it's database[br] [b]/books[/b] Path to your calibre library metadata.db file[br]",
+      "description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.\n\n  [br][br]\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\n  [b]/config[/b] Where Calibre-web should store it's database[br]\n  [b]/books[/b] Path to your calibre library metadata.db file[br]",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/calibre-web:latest",
       "categories": [
@@ -25830,7 +25830,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -26078,7 +26078,7 @@
     {
       "type": 1,
       "title": "Chevereto",
-      "description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version.",
+      "description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version..",
       "categories": [
         "Other",
         "Tools",
@@ -26366,7 +26366,7 @@
       "type": 1,
       "title": "Chevereto",
       "name": "Chevereto",
-      "description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version.",
+      "description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version..",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "nmtan/chevereto:latest",
       "categories": [
@@ -26753,7 +26753,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -27024,7 +27024,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -27295,7 +27295,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -27898,7 +27898,7 @@
     {
       "type": 1,
       "title": "Codiad",
-      "description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.",
+      "description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.\n  .",
       "categories": [
         "Productivity"
       ],
@@ -28166,7 +28166,7 @@
       "type": 1,
       "title": "Codiad",
       "name": "codiad",
-      "description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.",
+      "description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.\n  ",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/codiad:latest",
       "categories": [
@@ -28240,7 +28240,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -28848,7 +28848,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -29118,7 +29118,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -29388,7 +29388,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -30610,7 +30610,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -30858,7 +30858,7 @@
     {
       "type": 1,
       "title": "Davos",
-      "description": "davos is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow. /config: AppData Location /download: File Download Location.",
+      "description": "davos is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow.\r\n\r\n/config : AppData Location\r\n/download : File Download Location.",
       "categories": [
         "FTP",
         "Other",
@@ -31132,7 +31132,7 @@
       "type": 1,
       "title": "Davos",
       "name": "davos",
-      "description": "davos is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow. /config: AppData Location /download: File Download Location",
+      "description": "davos is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow.\r\n\r\n/config : AppData Location\r\n/download : File Download Location",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/davos:latest",
       "categories": [
@@ -31211,7 +31211,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -31459,7 +31459,7 @@
     {
       "type": 1,
       "title": "Deluge",
-      "description": "Deluge is a lightweight, Free Software, cross-platform BitTorrent client providing: Full Encryption, WebUI, Plugin System, Much more.",
+      "description": "Deluge is a lightweight, Free Software, cross-platform BitTorrent client providing: Full Encryption, WebUI, Plugin System, Much more...",
       "categories": [
         "Downloaders"
       ],
@@ -32116,7 +32116,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -32979,7 +32979,7 @@
     {
       "type": 1,
       "title": "Dradis",
-      "description": "Dradis Framework: Collaboration and reporting for IT Security teams https://dradisframework.org.",
+      "description": "Dradis Framework: Collaboration and reporting for IT Security teams http://dradisframework.org.",
       "categories": [
         "Security"
       ],
@@ -33222,7 +33222,7 @@
         "Security",
         "SelfhostedPro"
       ],
-      "description": "Dradis Framework: Collaboration and reporting for IT Security teams https://dradisframework.org",
+      "description": "Dradis Framework: Collaboration and reporting for IT Security teams http://dradisframework.org",
       "image": "raesene/dradis:latest",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "name": "dradis",
@@ -33274,7 +33274,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -33889,7 +33889,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -34159,7 +34159,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -34430,7 +34430,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -34700,7 +34700,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -34970,7 +34970,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -35537,7 +35537,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -35807,7 +35807,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -36729,7 +36729,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -36999,7 +36999,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -37271,7 +37271,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -38163,7 +38163,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -38756,7 +38756,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -39026,7 +39026,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -39550,7 +39550,7 @@
       "type": 1,
       "title": "Headphones",
       "name": "headphones",
-      "description": "High-quality template for Headphones. Professionally configured with best practices and production-ready settings.",
+      "description": null,
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/headphones:latest",
       "categories": [
@@ -39631,7 +39631,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -39901,7 +39901,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -40459,7 +40459,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -41070,7 +41070,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -41340,7 +41340,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -42260,7 +42260,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -42824,7 +42824,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -43094,7 +43094,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -43698,7 +43698,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -44287,7 +44287,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -44894,7 +44894,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -45164,7 +45164,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -45434,7 +45434,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -45704,7 +45704,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -45952,7 +45952,7 @@
     {
       "type": 1,
       "title": "MineOS",
-      "description": "MineOS is a web-management dashboard designed to simplify Minecraft management.",
+      "description": "MineOS is a web-management dashboard designed to simplify Minecraft management .",
       "categories": [
         "Other"
       ],
@@ -45984,7 +45984,7 @@
         {
           "name": "USER_PASSWORD",
           "label": "USER_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         },
         {
           "name": "PGID",
@@ -46225,7 +46225,7 @@
       "type": 1,
       "title": "MineOS",
       "name": "mineos",
-      "description": "MineOS is a web-management dashboard designed to simplify Minecraft management",
+      "description": "MineOS is a web-management dashboard designed to simplify Minecraft management ",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "hexparrot/mineos",
       "categories": [
@@ -46606,7 +46606,7 @@
     {
       "type": 1,
       "title": "Minisatip",
-      "description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards. The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.",
+      "description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.\n\n  The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.\n  .",
       "categories": [
         "Video",
         "Other",
@@ -46872,7 +46872,7 @@
       "type": 1,
       "title": "Minisatip",
       "name": "minisatip",
-      "description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards. The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.",
+      "description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.\n\n  The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.\n  ",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/minisatip:latest",
       "categories": [
@@ -46942,7 +46942,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -47190,7 +47190,7 @@
     {
       "type": 1,
       "title": "Mstream",
-      "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone.",
+      "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
       "categories": [
         "Other",
         "Music"
@@ -47449,7 +47449,7 @@
       "type": 1,
       "title": "Mstream",
       "name": "mstream",
-      "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone.",
+      "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/mstream:latest",
       "categories": [
@@ -47844,7 +47844,7 @@
     {
       "type": 1,
       "title": "MusicBrainz",
-      "description": "MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
+      "description": " MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
       "categories": [
         "Music",
         "Other",
@@ -48123,7 +48123,7 @@
       "type": 1,
       "title": "MusicBrainz",
       "name": "musicbrainz",
-      "description": "MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
+      "description": " MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/musicbrainz:latest",
       "categories": [
@@ -48532,7 +48532,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -50380,7 +50380,7 @@
     {
       "type": 1,
       "title": "OScam",
-      "description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module (CAM). OScam is, compared with other softcams (CCcam, mgcamd, etc.), open source. Hence, the name Open Source Conditional Access Module (OScam). OScam is based on the not so well known softcam MpCS. The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
+      "description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module\n  (CAM). OScam is, compared with other softcams (CCcam, mgcamd, etc.), open source. Hence, the name Open Source Conditional Access Module (OScam). OScam is based on the\n  not so well known softcam MpCS. The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
       "categories": [
         "Other"
       ],
@@ -50649,7 +50649,7 @@
       "type": 1,
       "title": "OScam",
       "name": "oscam",
-      "description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module (CAM). OScam is, compared with other softcams (CCcam, mgcamd, etc.), open source. Hence, the name Open Source Conditional Access Module (OScam). OScam is based on the not so well known softcam MpCS. The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
+      "description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module\n  (CAM). OScam is, compared with other softcams (CCcam, mgcamd, etc.), open source. Hence, the name Open Source Conditional Access Module (OScam). OScam is based on the\n  not so well known softcam MpCS. The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/oscam:latest",
       "categories": [
@@ -50723,7 +50723,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -51373,7 +51373,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -51643,7 +51643,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -52229,7 +52229,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -52859,7 +52859,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         },
         {
           "name": "DB_HOST",
@@ -53194,7 +53194,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -53799,7 +53799,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -54388,7 +54388,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -54658,7 +54658,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -54928,7 +54928,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -55501,7 +55501,7 @@
     {
       "type": 1,
       "title": "ProjectSend",
-      "description": "ProjectSend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files!.",
+      "description": "ProjectSend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files!\n  .",
       "categories": [
         "Cloud",
         "Productivity",
@@ -55776,7 +55776,7 @@
       "type": 1,
       "title": "ProjectSend",
       "name": "projectsend",
-      "description": "ProjectSend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files!",
+      "description": "ProjectSend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files!\n  ",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/projectsend:latest",
       "categories": [
@@ -56480,7 +56480,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -57070,7 +57070,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -57340,7 +57340,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -57610,7 +57610,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -58213,7 +58213,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -58484,7 +58484,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -58754,7 +58754,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -59002,7 +59002,7 @@
     {
       "type": 1,
       "title": "SABnzbd",
-      "description": "SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an.nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.",
+      "description": "SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.",
       "categories": [
         "Downloaders"
       ],
@@ -59279,7 +59279,7 @@
       "type": 1,
       "title": "SABnzbd",
       "name": "sabnzbd",
-      "description": "SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an.nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.",
+      "description": "SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/sabnzbd.png",
       "image": "lscr.io/linuxserver/sabnzbd:latest",
       "categories": [
@@ -59371,7 +59371,7 @@
         {
           "name": "ADMIN_PASSWORD",
           "label": "Administrator Password",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         },
         {
           "name": "SERVER_HOSTNAME",
@@ -60674,7 +60674,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -61194,7 +61194,7 @@
       "type": 1,
       "title": "SmokePing",
       "name": "smokeping",
-      "description": "High-quality template for SmokePing. Professionally configured with best practices and production-ready settings.",
+      "description": null,
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/smokeping:latest",
       "categories": [
@@ -61560,7 +61560,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -61830,7 +61830,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -62100,7 +62100,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -62370,7 +62370,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -62640,7 +62640,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -62910,7 +62910,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -63434,7 +63434,7 @@
       "type": 1,
       "title": "SyncThing",
       "name": "syncthing",
-      "description": "High-quality template for SyncThing. Professionally configured with best practices and production-ready settings.",
+      "description": null,
       "logo": "https://syncthing.net/img/logo-horizontal.svg",
       "image": "lscr.io/linuxserver/syncthing:latest",
       "categories": [
@@ -63515,7 +63515,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -64435,7 +64435,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -65306,7 +65306,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -65577,7 +65577,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -66160,7 +66160,7 @@
     {
       "type": 1,
       "title": "Transmission-OpenVPN",
-      "description": "This container contains OpenVPN and Transmission with a configuration where Transmission is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
+      "description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
       "categories": [
         "Other",
         "VPN",
@@ -66451,7 +66451,7 @@
       "type": 1,
       "title": "Transmission-OpenVPN",
       "name": "transmission-openvpn",
-      "description": "This container contains OpenVPN and Transmission with a configuration where Transmission is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
+      "description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/transmission.png",
       "image": "haugene/transmission-openvpn:latest",
       "note": "List of supported providers available <a href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/>here</a>.",
@@ -66552,7 +66552,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -66822,7 +66822,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -67092,7 +67092,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -67362,7 +67362,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -67954,7 +67954,7 @@
       "type": 1,
       "title": "UniFi Controller",
       "name": "unifi-controller",
-      "description": "High-quality template for UniFi Controller. Professionally configured with best practices and production-ready settings.",
+      "description": null,
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/unifi-controller:latest",
       "categories": [
@@ -68392,7 +68392,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -68662,7 +68662,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -68932,7 +68932,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -69202,7 +69202,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -69472,7 +69472,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -69742,7 +69742,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -70039,7 +70039,7 @@
         {
           "name": "SYMFONY__ENV__MAILER_PASSWORD",
           "label": "SMTP Password",
-          "description": "(Required: Generate secure password)"
+          "description": " (Required: Generate secure password)"
         },
         {
           "name": "SYMFONY__ENV__FROM_EMAIL",
@@ -70704,7 +70704,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -70952,7 +70952,7 @@
     {
       "type": 1,
       "title": "WebGrab+Plus",
-      "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.[br] Optional postprocessors to add IMDb data or to customize your xmltv listing.[br] https://www.webgrabplus.com/[br] [b][span style='color: #E80000;']Directions:[/span][/b][br] [b]/config[/b]: This is where WebGrab+Plus will store it's. [Full documentation available in official docs].",
+      "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.[br]\r\n\t\tOptional postprocessors to add IMDb data or to customize your xmltv listing.[br]\r\n\t\thttp://www.webgrabplus.com/[br]\r\n\t\t[b][span style='color: #E80000;']Directions:[/span][/b][br]\r\n\t\t[b]/config[/b] : This is where WebGrab+Plus will store it's ... [Full documentation available in official docs].",
       "categories": [
         "Downloaders"
       ],
@@ -71221,7 +71221,7 @@
       "type": 1,
       "title": "WebGrab+Plus",
       "name": "webgrabplus",
-      "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber.",
+      "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.[br]\r\n\t\tOptional postprocessors to add IMDb data or to customize your xmltv listing.[br]\r\n\t\thttp://www.webgrabplus.com/[br]\r\n\t\t[b][span style='color: #E80000;']Directions:[/span][/b][br]\r\n\t\t[b]/config[/b] : This is where WebGrab+Plus will store it's configuration.[br][br]\r\n\t\t[b]/data[/b] : This is where tv_grab_wg script in the Tvheadend container looks for the guide.xml file.[br][br]",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/webgrabplus:latest",
       "categories": [
@@ -71294,7 +71294,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -71853,7 +71853,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -72123,7 +72123,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -72690,7 +72690,7 @@
         {
           "name": "DB_PASSWORD",
           "label": "DB_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         }
       ],
       "restart_policy": "unless-stopped",
@@ -73637,7 +73637,7 @@
         {
           "label": "VPN_PASSWORD",
           "name": "VPN_PASSWORD",
-          "description": "(Generate a strong, unique password)"
+          "description": " (Generate a strong, unique password)"
         },
         {
           "default": "8080",
@@ -74293,8 +74293,8 @@
     },
     {
       "type": 1,
-      "title": "📋 🏗️ Enterprise (> 500MB) (1 Template)",
-      "description": "Diese Kategorie enthält 1 sorgfältig ausgewählte Templates zu Enterprise (> 500MB). Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
+      "title": "📋 🏗️ Enterprise (> 500MB) (1 Templates)",
+      "description": "Diese Kategorie enthält 1 sorgfältig ausgewählte Templates für Enterprise (> 500MB). Alle Templates sind professionell konfiguriert und sofort einsatzbereit.",
       "categories": [
         "📖 Documentation",
         "Enterprise (> 500MB)"
@@ -74314,7 +74314,7 @@
         },
         {
           "name": "TEMPLATE_COUNT",
-          "label": "Templates Count",
+          "label": "Template Count",
           "default": "1",
           "description": "Anzahl Templates in dieser Kategorie"
         }
