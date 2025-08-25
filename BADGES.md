@@ -1,6 +1,6 @@
 ## 🏆 Badges & Certifications
 
-![Templates](https://img.shields.io/badge/Templates-247-brightgreen?style=for-the-badge&logo=docker)
+![Templates](https://img.shields.io/badge/Templates-391-brightgreen?style=for-the-badge&logo=docker)
 ![Certification](https://img.shields.io/badge/Certification-Pink Star Diamond%20(191)-ff69b4?style=for-the-badge&logo=certificate)
 ![Quality](https://img.shields.io/badge/Quality%20Score-191/100-ff69b4?style=for-the-badge&logo=star)
 ![Deployment](https://img.shields.io/badge/Deployment-Live-brightgreen?style=for-the-badge&logo=github)

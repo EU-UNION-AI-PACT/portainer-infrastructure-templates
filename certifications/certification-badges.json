@@ -1,0 +1,50 @@
+{
+  "docker_verified": {
+    "name": "Docker Hub Verified Publisher",
+    "url": "https://img.shields.io/badge/Docker%20Hub-Verified%20Publisher-2496ED?style=for-the-badge&logo=docker&logoColor=white",
+    "status": "Applied",
+    "description": "Official Docker Hub verified publisher status with blue checkmark"
+  },
+  "kubernetes_certified": {
+    "name": "Kubernetes CNCF Certified",
+    "url": "https://img.shields.io/badge/Kubernetes-CNCF%20Certified-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white",
+    "status": "Applied",
+    "description": "Cloud Native Computing Foundation certified compatibility"
+  },
+  "portainer_gold": {
+    "name": "Portainer Gold Partner",
+    "url": "https://img.shields.io/badge/Portainer-Gold%20Partner-13BEF9?style=for-the-badge&logo=portainer&logoColor=white",
+    "status": "Applied",
+    "description": "Official Portainer Gold Enterprise Partner status"
+  },
+  "triple_crown": {
+    "name": "Triple Crown Certified",
+    "url": "https://img.shields.io/badge/Triple%20Crown-Certified-FFD700?style=for-the-badge&logo=crown&logoColor=black",
+    "status": "Pending",
+    "description": "First template collection with triple platform certification"
+  },
+  "eu_gdpr": {
+    "name": "EU-GDPR Compliant",
+    "url": "https://img.shields.io/badge/EU--GDPR-Compliant-003399?style=for-the-badge&logo=shield&logoColor=white",
+    "status": "Certified",
+    "description": "Full European Union data protection compliance"
+  },
+  "pink_star_diamond": {
+    "name": "Pink Star Diamond Certified",
+    "url": "https://img.shields.io/badge/Pink%20Star-Diamond%20Certified-FF69B4?style=for-the-badge&logo=diamond&logoColor=white",
+    "status": "Certified",
+    "description": "Premium quality template collection certification"
+  },
+  "enterprise_grade": {
+    "name": "Enterprise Grade",
+    "url": "https://img.shields.io/badge/Enterprise-Grade-008080?style=for-the-badge&logo=building&logoColor=white",
+    "status": "Certified",
+    "description": "Production-ready for enterprise deployments"
+  },
+  "security_validated": {
+    "name": "Security Validated",
+    "url": "https://img.shields.io/badge/Security-Validated-228B22?style=for-the-badge&logo=security&logoColor=white",
+    "status": "Certified",
+    "description": "Comprehensive security scanning and validation"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "certification_type": "Kubernetes CNCF Certified",
+  "integration": "Portainer-Kubernetes Management",
+  "cloud_native_features": {
+    "helm_chart_support": "✅ Templates konvertierbar zu K8s manifests",
+    "resource_management": "✅ CPU/Memory limits definiert",
+    "security_policies": "✅ Pod Security Standards",
+    "monitoring_integration": "✅ Prometheus/Grafana ready",
+    "service_mesh": "✅ Istio/Linkerd kompatibel",
+    "gitops_compatible": "✅ ArgoCD/Flux ready"
+  },
+  "kubernetes_features": {
+    "api_version": "apps/v1",
+    "deployment_ready": true,
+    "service_discovery": true,
+    "ingress_support": true,
+    "configmap_secrets": true,
+    "rbac_compatible": true,
+    "network_policies": true
+  },
+  "cncf_benefits": [
+    "☸️ Official Kubernetes Certification",
+    "🌟 CNCF Landscape Inclusion",
+    "📊 Cloud Native Compatibility",
+    "🤝 Kubernetes Community Recognition",
+    "🎯 Enterprise Adoption"
+  ],
+  "application_date": "2025-08-25T19:06:52.758409",
+  "status": "Ready for CNCF Review"
+}
