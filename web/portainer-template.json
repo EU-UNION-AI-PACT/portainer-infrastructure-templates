@@ -12,7 +12,7 @@
         "Certification"
       ],
       "platform": "linux",
-      "logo": "https://img.shields.io/badge/Badge-Showcase-ff69b4?style=for-the-badge&logo=certificate",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nginx.png",
       "image": "nginx:alpine",
       "ports": [
         "8080:80/tcp"
@@ -80,7 +80,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://img.shields.io/badge/MEAN-Stack-success?style=for-the-badge&logo=node.js",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "repository": {
         "url": "https://github.com/EU-UNION-AI-PACT/portainer-infrastructure-templates",
         "stackfile": "stacks/mean-stack.yml"
@@ -144,7 +144,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://img.shields.io/badge/WordPress-Production-blue?style=for-the-badge&logo=wordpress",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/mysql.png",
       "repository": {
         "url": "https://github.com/EU-UNION-AI-PACT/portainer-infrastructure-templates",
         "stackfile": "stacks/wordpress-production.yml"
@@ -208,7 +208,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://img.shields.io/badge/GitLab-DevOps-orange?style=for-the-badge&logo=gitlab",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/gitlab.png",
       "repository": {
         "url": "https://github.com/EU-UNION-AI-PACT/portainer-infrastructure-templates",
         "stackfile": "stacks/gitlab-ce.yml"
@@ -272,7 +272,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://img.shields.io/badge/Monitoring-Stack-red?style=for-the-badge&logo=grafana",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/prometheus.png",
       "repository": {
         "url": "https://github.com/EU-UNION-AI-PACT/portainer-infrastructure-templates",
         "stackfile": "stacks/monitoring-stack.yml"
@@ -336,7 +336,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://img.shields.io/badge/Next.js-Stack-black?style=for-the-badge&logo=next.js",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/postgresql.png",
       "repository": {
         "url": "https://github.com/EU-UNION-AI-PACT/portainer-infrastructure-templates",
         "stackfile": "stacks/nextjs-stack.yml"
@@ -398,7 +398,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://img.shields.io/badge/PostgreSQL-Production-blue?style=for-the-badge&logo=postgresql",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/postgresql.png",
       "image": "postgres:15",
       "ports": [
         "5432:5432/tcp"
@@ -458,7 +458,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://img.shields.io/badge/Nginx-Proxy-green?style=for-the-badge&logo=nginx",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nginx.png",
       "image": "jc21/nginx-proxy-manager:latest",
       "ports": [
         "80:80/tcp",
@@ -499,7 +499,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://img.shields.io/badge/Uptime-Kuma-success?style=for-the-badge&logo=uptime-kuma",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "louislam/uptime-kuma:latest",
       "ports": [
         "3001:3001/tcp"
@@ -525,7 +525,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://img.shields.io/badge/Code-Server-blue?style=for-the-badge&logo=visual-studio-code",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/code-server:latest",
       "ports": [
         "8443:8443/tcp"
@@ -592,7 +592,7 @@
         "Pre-configured"
       ],
       "platform": "linux",
-      "logo": "https://img.shields.io/badge/BookStack-Docs-orange?style=for-the-badge&logo=bookstack",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/bookstack:latest",
       "ports": [
         "6875:80/tcp"
@@ -676,7 +676,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/duplicati-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/duplicati.png",
       "image": "linuxserver/duplicati:2.0.6",
       "ports": [
         "8200:8200/tcp"
@@ -949,7 +949,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/resilio.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/resilio-sync:2.7.3",
       "volumes": [
         {
@@ -1217,7 +1217,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/syncthing-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/syncthing.png",
       "image": "lscr.io/linuxserver/syncthing:1.23.7",
       "ports": [
         "8384:8384/tcp",
@@ -1484,7 +1484,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/booksonic.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/booksonic:1.2",
       "ports": [
         "4040:4040/tcp"
@@ -1758,7 +1758,7 @@
         "Books"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lazylibrarian-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/lazylibrarian:1.13.4",
       "ports": [
         "5299:5299/tcp"
@@ -2024,7 +2024,7 @@
         "CCTV"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/UniFiVideo-logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "pducharme/unifi-video-controller:3.10.13",
       "ports": [
         "1935:1935/tcp",
@@ -2308,7 +2308,7 @@
         "Books"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cops-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/cops:1.1.3",
       "ports": [
         "80:80/tcp"
@@ -2574,7 +2574,7 @@
         "Books"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/calibre-web-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/calibre-web:0.6.21",
       "ports": [
         "8083:8083/tcp"
@@ -2843,7 +2843,7 @@
         "Web"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/invoice_ninja.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "repository": {
         "url": "https://github.com/SelfhostedPro/selfhosted_templates",
         "stackfile": "Template/Stack/invoice-ninja.yml"
@@ -3110,7 +3110,7 @@
         "Photos"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lychee-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "linuxserver/lychee:4.9.5",
       "ports": [
         "80:80/tcp"
@@ -3379,7 +3379,7 @@
         "Web"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nextcloud-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nextcloud.png",
       "repository": {
         "stackfile": "Template/Stack/nextcloud.yml",
         "url": "https://github.com/SelfhostedPro/selfhosted_templates"
@@ -3649,7 +3649,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/projectsend-logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/projectsend:latest",
       "ports": [
         "80:80/tcp"
@@ -3918,7 +3918,7 @@
         "Productivity"
       ],
       "platform": "linux",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prometheus_software_logo.svg/1200px-Prometheus_software_logo.svg.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/prometheus.png",
       "image": "prom/prometheus:v2.47.0",
       "ports": [
         "9090:9090/tcp"
@@ -4180,7 +4180,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pydio-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/pydio:latest",
       "ports": [
         "443:443/tcp"
@@ -4446,7 +4446,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/seafile.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/seafile.png",
       "repository": {
         "url": "https://github.com/SelfhostedPro/selfhosted_templates",
         "stackfile": "Template/Stack/seafile.yml"
@@ -4713,7 +4713,7 @@
         "Books"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ubooquity-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/ubooquity:latest",
       "ports": [
         "2202:2202/tcp",
@@ -4986,7 +4986,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/duckdns.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/duckdns:latest",
       "env": [
         {
@@ -5248,7 +5248,7 @@
         "Documents"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/papermerge:latest",
       "ports": [
         "8000:8000/tcp"
@@ -5518,7 +5518,7 @@
         "Downloaders"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cardigann.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/cardigann:latest",
       "ports": [
         "5060:5060/tcp"
@@ -5780,7 +5780,7 @@
         "Video"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/couchpotato-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/couchpotato:latest",
       "ports": [
         "5050:5050/tcp"
@@ -6049,7 +6049,7 @@
         "Downloaders"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deluge-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/deluge:latest",
       "volumes": [
         {
@@ -6317,7 +6317,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/jacket-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/jackett:latest",
       "ports": [
         "9117:9117/tcp"
@@ -6583,7 +6583,7 @@
         "Video"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/medusa-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/medusa:latest",
       "ports": [
         "8081:8081/tcp"
@@ -6853,7 +6853,7 @@
         "Books"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mylar-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/mylar:latest",
       "ports": [
         "8090:8090/tcp"
@@ -7122,7 +7122,7 @@
         "Downloaders"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nzbget-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/nzbget:latest",
       "ports": [
         "6789:6789/tcp"
@@ -7389,7 +7389,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/hydra-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/nzbhydra2:latest",
       "ports": [
         "5076:5076/tcp"
@@ -7657,7 +7657,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ombi.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/ombi:latest",
       "ports": [
         "3579:3579/tcp"
@@ -7922,7 +7922,7 @@
         "Entertainment"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/plexrequests-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/plex.png",
       "image": "lscr.io/linuxserver/plexrequests:latest",
       "ports": [
         "3000:3000/tcp"
@@ -8192,7 +8192,7 @@
         "Video"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/radarr.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/radarr.png",
       "image": "lscr.io/linuxserver/radarr:latest",
       "ports": [
         "7878:7878/tcp"
@@ -8461,7 +8461,7 @@
         "Downloaders"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sabnzbd-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/sabnzbd:latest",
       "ports": [
         "8080:8080/tcp",
@@ -8732,7 +8732,7 @@
         "Video"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickchill-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/sickchill:latest",
       "ports": [
         "8081:8081/tcp"
@@ -9002,7 +9002,7 @@
         "Video"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickgear-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/sickgear:latest",
       "ports": [
         "8081:8081/tcp"
@@ -9275,7 +9275,7 @@
         "Video"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sonarr-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/sonarr.png",
       "image": "lscr.io/linuxserver/sonarr:latest",
       "ports": [
         "8989:8989/tcp"
@@ -9548,7 +9548,7 @@
         "Downloaders"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/transmission-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/transmission.png",
       "image": "lscr.io/linuxserver/transmission:latest",
       "ports": [
         "9091:9091/tcp",
@@ -9817,7 +9817,7 @@
         "Downloaders"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/webgrabplus.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/webgrabplus:latest",
       "volumes": [
         {
@@ -10080,7 +10080,7 @@
         "Music"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lidarr.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/lidarr.png",
       "image": "lscr.io/linuxserver/lidarr:latest",
       "ports": [
         "8686:8686/tcp"
@@ -10349,7 +10349,7 @@
         "Downloaders"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/qbittorrent-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/qbittorrent:latest",
       "ports": [
         "6881:6881/tcp",
@@ -10616,7 +10616,7 @@
         "Downloaders"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/qbittorrent-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "markusmcnugen/qbittorrentvpn:latest",
       "ports": [
         "8080:8080/tcp",
@@ -10917,7 +10917,7 @@
         "Downloaders"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/rutorrent:latest",
       "ports": [
         "80:80/tcp",
@@ -11187,7 +11187,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/protonmail-bridge.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "shenxn/protonmail-bridge:latest",
       "ports": [
         "143:143/tcp",
@@ -11437,7 +11437,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/davos.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/davos:latest",
       "ports": [
         "8080:8080/tcp"
@@ -11703,7 +11703,7 @@
         "Management"
       ],
       "platform": "linux",
-      "logo": "https://github.com/domoticz/domoticz/raw/master/www/images/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/domoticz:latest",
       "ports": [
         "1443:1443/tcp",
@@ -11966,7 +11966,7 @@
         "Management"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/smokeping-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "linuxserver/smokeping:stable",
       "ports": [
         "80:80/tcp"
@@ -12232,7 +12232,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/unifi-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/unifi-controller:stable",
       "ports": [
         "3478:3478/udp",
@@ -12500,7 +12500,7 @@
         "Messenger"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/quassel-core-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/quassel-core:stable",
       "ports": [
         "4242:4242/tcp"
@@ -12761,7 +12761,7 @@
         "Messenger"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/thelounge:stable",
       "ports": [
         "9000:9000/tcp"
@@ -13022,7 +13022,7 @@
         "Messenger"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/znc-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/znc:stable",
       "ports": [
         "6501:6501/tcp"
@@ -13283,7 +13283,7 @@
         "Monitoring"
       ],
       "platform": "linux",
-      "logo": "https://grafana.com/static/img/logos/grafana_logo.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "repository": {
         "url": "https://github.com/holythreekingstreescrowns/portainer-security-stack",
         "stackfile": "stacks/monitoring-only.yml"
@@ -13525,7 +13525,7 @@
         "Music"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/airsonic-logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/airsonic:stable",
       "ports": [
         "4040:4040/tcp"
@@ -13812,7 +13812,7 @@
         "Music"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/beets-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/beets:stable",
       "ports": [
         "8337:8337/tcp"
@@ -14081,7 +14081,7 @@
         "Music"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/daapd-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/daapd:stable",
       "volumes": [
         {
@@ -14343,7 +14343,7 @@
         "Music"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/headphones-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/headphones:stable",
       "ports": [
         "8181:8181/tcp"
@@ -14614,7 +14614,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/musicbrainz-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/musicbrainz:stable",
       "ports": [
         "5000:5000/tcp"
@@ -14884,7 +14884,7 @@
         "Music"
       ],
       "platform": "linux",
-      "logo": "https://api.cloudron.io/api/v1/apps/org.navidrome.cloudronapp/versions/1.2.0/icon",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "deluan/navidrome:stable",
       "ports": [
         "4533:4533/tcp"
@@ -15153,7 +15153,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/authelia.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "authelia/authelia:stable",
       "ports": [
         "9091:9091/tcp"
@@ -15408,7 +15408,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/bitwarden.png",
       "image": "bitwardenrs/server:stable",
       "ports": [
         "80:80/tcp"
@@ -15658,7 +15658,7 @@
         "Photo"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/Chevereto.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "nmtan/chevereto:stable",
       "ports": [
         "80:80/tcp"
@@ -15944,7 +15944,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/chowdown.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "gregyankovoy/chowdown:stable",
       "ports": [
         "4000:4000/tcp"
@@ -16192,7 +16192,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/code-server.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/code-server:stable",
       "ports": [
         "8443:8443/tcp"
@@ -16471,7 +16471,7 @@
         "Utilities"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ddclient.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/ddclient:stable",
       "volumes": [
         {
@@ -16745,7 +16745,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dashmachine_logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "rmountjoy/dashmachine:stable",
       "ports": [
         "5000:5000/tcp"
@@ -16994,7 +16994,7 @@
         "Music"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deemix.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/gitlab.png",
       "image": "registry.gitlab.com/bockiii/deemix-docker:stable",
       "ports": [
         "6595:6595/tcp"
@@ -17379,7 +17379,7 @@
         "retries": 3,
         "start_period": "60s"
       },
-      "logo": "https://dev.deluge-torrent.org/raw-attachment/wiki/WikiStart/deluge-icon-48.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/openvpn.png",
       "id": 64,
       "author": "EU-UNION-AI-PACT",
       "limits": {
@@ -17532,7 +17532,7 @@
         "Maintenance"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dozzle.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/dozzle.png",
       "image": "amir20/dozzle:stable",
       "ports": [
         "8080:8080/tcp"
@@ -17783,7 +17783,7 @@
         "Streaming"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/embystat.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/emby.png",
       "image": "linuxserver/embystat:stable",
       "ports": [
         "6555:6555/tcp"
@@ -18032,7 +18032,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filebrowser.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/filebrowser.png",
       "image": "80x86/filebrowser:stable",
       "ports": [
         "8082:8082/tcp"
@@ -18283,7 +18283,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/freshrss-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/freshrss:stable",
       "ports": [
         "80:80/tcp"
@@ -18545,7 +18545,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/gophish.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "gophish/gophish:stable",
       "ports": [
         "3333:3333/tcp"
@@ -18804,7 +18804,7 @@
         "Web"
       ],
       "platform": "linux",
-      "logo": "https://logodix.com/logo/1736776.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/grafana.png",
       "image": "grafana/grafana:10.2.0",
       "ports": [
         "3001:3000/tcp"
@@ -19053,7 +19053,7 @@
         "Finance"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/grocy_logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/grocy:stable",
       "ports": [
         "80:80/tcp"
@@ -19320,7 +19320,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/guacamole.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "oznu/guacamole:stable",
       "ports": [
         "8080:8080/tcp"
@@ -19568,7 +19568,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/homer.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "b4bz/homer:stable",
       "ports": [
         "8902:8080/tcp"
@@ -19820,7 +19820,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/huginn.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "huginn/huginn:stable",
       "ports": [
         "3000:3000/tcp"
@@ -20071,7 +20071,7 @@
         "Database"
       ],
       "platform": "linux",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Influxdb_logo.svg/1200px-Influxdb_logo.svg.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/influxdb.png",
       "image": "influxdb:2.7-alpine",
       "ports": [
         "8086:8086/tcp"
@@ -20319,7 +20319,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/speedtest.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/librespeed:stable",
       "ports": [
         "80:80/tcp"
@@ -20567,7 +20567,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mariadb-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/mariadb.png",
       "image": "lscr.io/linuxserver/mariadb:stable",
       "ports": [
         "3306:3306/tcp"
@@ -20834,7 +20834,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mcmyadmin-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/mcmyadmin2:stable",
       "ports": [
         "8080:8080/tcp",
@@ -21095,7 +21095,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "https://camo.githubusercontent.com/bfcc53b6de495c0f2d9d5699afea18b7319529933c5cd38f1e0cf55377df725f/68747470733a2f2f7669676e65747465322e77696b69612e6e6f636f6f6b69652e6e65742f6c6f74722d6d696e6563726166742d6d6f642d6578696c65732f696d616765732f662f66322f4d696e6563726166745f7365727665725f73657475702e706e672f7265766973696f6e2f6c61746573743f63623d3230313630393131313732353537",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "hexparrot/mineos:stable",
       "ports": [
         "25565:25565/tcp",
@@ -21367,7 +21367,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/minetest-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/minetest:stable",
       "ports": [
         "30000:30000/udp"
@@ -21628,7 +21628,7 @@
         "Music"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mstream.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/mstream:stable",
       "ports": [
         "3000:3000/tcp"
@@ -21881,7 +21881,7 @@
         "Chat"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/Mumble-logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "goofball222/murmur:stable",
       "ports": [
         "64738:64738/tcp",
@@ -22160,7 +22160,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "http://i.imgur.com/8LadrLg.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/oscam:stable",
       "ports": [
         "8888:8888/tcp",
@@ -22422,7 +22422,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/openvpn-as-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/openvpn.png",
       "image": "linuxserver/openvpn-as:stable",
       "ports": [
         "943:943/tcp",
@@ -22691,7 +22691,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/organizr-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "organizrtools/organizr-v2:php-fpm",
       "ports": [
         "80:80/tcp"
@@ -22954,7 +22954,7 @@
         "Management"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/Peppermint-Lab/peppermint/master/public/logo.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "pepperlabs/peppermint:stable",
       "ports": [
         "5001:5001/tcp"
@@ -23236,7 +23236,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pihole.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "pihole/pihole:stable",
       "ports": [
         "53:53/tcp",
@@ -23493,7 +23493,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/reactiveresume.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/react.png",
       "image": "amruthpillai/reactive-resume:stable",
       "ports": [
         "80:80/tcp"
@@ -23741,7 +23741,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/shiori-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "radhifadlillah/shiori:stable",
       "ports": [
         "8080:8080/tcp"
@@ -23989,7 +23989,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/snibox.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "snowmean/snibox-sqlite:stable",
       "ports": [
         "3010:3000/tcp"
@@ -24237,7 +24237,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tautulli-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/tautulli:stable",
       "ports": [
         "8181:8181/tcp"
@@ -24503,7 +24503,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tiddlywiki.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "mazzolino/tiddlywiki:stable",
       "ports": [
         "8080:8080/tcp"
@@ -24750,7 +24750,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tt-rss-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lunik1/tt-rss:stable",
       "ports": [
         "80:80/tcp"
@@ -25013,7 +25013,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/transmission-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/transmission.png",
       "image": "haugene/transmission-openvpn:stable",
       "ports": [
         "9091:9091/tcp"
@@ -25303,7 +25303,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/vaultwarden.png",
       "image": "vaultwarden/server:stable",
       "ports": [
         "80:80/tcp"
@@ -25552,7 +25552,7 @@
         "Maintenance"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/watchtower.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/watchtower.png",
       "image": "containrrr/watchtower:stable",
       "ports": [],
       "volumes": [
@@ -25799,7 +25799,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/whoogle.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "benbusby/whoogle-search:stable",
       "ports": [
         "5001:5000/tcp"
@@ -26051,7 +26051,7 @@
         "Productivity"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/wikijs.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/wikijs:stable",
       "ports": [
         "3100:3000/tcp"
@@ -26303,7 +26303,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/Yacht/master/readme_media/Yacht_logo_1_dark.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "selfhostedpro/yacht:stable",
       "ports": [
         "8001:8000/tcp"
@@ -26555,7 +26555,7 @@
         "Downloaders"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ytdlm.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "tzahi12345/youtubedl-material:stable",
       "ports": [
         "17442:17442/tcp"
@@ -26819,7 +26819,7 @@
         "Photos"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/photoshow-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/photoshow:stable",
       "ports": [
         "80:80/tcp"
@@ -27088,7 +27088,7 @@
         "Photos"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/piwigo-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/piwigo:stable",
       "ports": [
         "80:80/tcp"
@@ -27349,7 +27349,7 @@
         "Productivity"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/codiad-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/codiad:stable",
       "ports": [
         "80:80/tcp"
@@ -27611,7 +27611,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/proxy_mgr.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nginx.png",
       "image": "jlesage/nginx-proxy-manager:stable",
       "ports": [
         "80:8080/tcp",
@@ -27863,7 +27863,7 @@
         "Infrastructure"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/wazuh/wazuh/master/src/init/dist/darwin/wazuh-agent/Wazuh/Wazuh-Info.plist",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "repository": {
         "url": "https://github.com/holythreekingstreescrowns/portainer-security-stack",
         "stackfile": "docker-compose.yml"
@@ -28132,7 +28132,7 @@
         "Security"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dradis-logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "raesene/dradis:stable",
       "ports": [
         "3000:3000/tcp"
@@ -28373,7 +28373,7 @@
         "Security"
       ],
       "platform": "linux",
-      "logo": "https://wazuh.com/uploads/2022/05/Logo-blogpost.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "repository": {
         "url": "https://github.com/holythreekingstreescrowns/portainer-security-stack",
         "stackfile": "stacks/security-only.yml"
@@ -28616,7 +28616,7 @@
         "Free Alternatives"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/opensource.svg",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "repository": {
         "url": "https://github.com/YOUR_USERNAME/portainer-infrastructure-templates",
         "stackfile": "stacks/free-alternatives.yml"
@@ -28853,7 +28853,7 @@
         "GitHub"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/github/explore/main/topics/security/security.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "repository": {
         "url": "https://github.com/YOUR_USERNAME/portainer-infrastructure-templates",
         "stackfile": "stacks/extended-security-tools.yml"
@@ -29088,7 +29088,7 @@
         "System Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/phpmyadmin.png",
       "image": "lscr.io/linuxserver/phpmyadmin:stable",
       "ports": [
         "80:8306/tcp"
@@ -29369,7 +29369,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/heimdall-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/heimdall:stable",
       "ports": [
         "80:80/tcp",
@@ -29632,7 +29632,7 @@
         "Web"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/letsencrypt.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/letsencrypt:stable",
       "ports": [
         "80:80/tcp",
@@ -29930,7 +29930,7 @@
         "Web"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/swag.gif",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/swag:stable",
       "ports": [
         "80:80/tcp",
@@ -30227,7 +30227,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/jake-walker/selfhosted_templates/wallabag/Images/wallabag.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "wallabag/wallabag:stable",
       "ports": [
         "80:80/tcp"
@@ -30521,7 +30521,7 @@
         "Web"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pritunl.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "repository": {
         "url": "https://github.com/SelfhostedPro/selfhosted_templates",
         "stackfile": "Template/Stack/pritunl.yml"
@@ -30778,7 +30778,7 @@
         "Security"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wireguard-logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "repository": {
         "url": "https://github.com/holythreekingstreescrowns/portainer-security-stack",
         "stackfile": "stacks/vpn-only.yml"
@@ -31028,7 +31028,7 @@
         "Music"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bazarr.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/bazarr:stable",
       "ports": [
         "6767:6767/tcp"
@@ -31306,7 +31306,7 @@
         "Streaming"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/emby.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/emby.png",
       "image": "linuxserver/emby:stable",
       "ports": [
         "8096:8096/tcp",
@@ -31583,7 +31583,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/htpcmanager-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/htpcmanager:stable",
       "ports": [
         "8085:8085/tcp"
@@ -31848,7 +31848,7 @@
         "Streaming"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/jellyfin.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/jellyfin.png",
       "image": "lscr.io/linuxserver/jellyfin:stable",
       "ports": [
         "8096:8096/tcp",
@@ -32123,7 +32123,7 @@
         "Video"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/kodi-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/kodi-headless:stable",
       "ports": [
         "8080:8080/tcp",
@@ -32387,7 +32387,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/minisatip-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/minisatip:stable",
       "ports": [
         "8875:8875/tcp",
@@ -32648,7 +32648,7 @@
         "Streaming"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/plex-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/plex.png",
       "image": "lscr.io/linuxserver/plex:stable",
       "network": "host",
       "volumes": [
@@ -32920,7 +32920,7 @@
         "Other"
       ],
       "platform": "linux",
-      "logo": "http://i.imgur.com/zGSUAT4.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/tvheadend:stable",
       "ports": [
         "9981:9981/tcp",
@@ -33186,7 +33186,7 @@
         "Chat"
       ],
       "platform": "linux",
-      "logo": "https://addons-content.teamspeak.com/943dd816-7ef2-48d7-82b8-d60c3b9b10b3/images/648_366/teamspeaklogo_5d00347a0cb48.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "teamspeak:latest",
       "ports": [
         "9987:9987/udp",
@@ -33456,7 +33456,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/gazee-logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/gazee:stable",
       "volumes": [
         {
@@ -33725,7 +33725,7 @@
         "Tools"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/muximux-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lscr.io/linuxserver/muximux:stable",
       "ports": [
         "80:80/tcp"
@@ -33987,7 +33987,7 @@
         "Proxy"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nginx-icon.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nginx.png",
       "image": "nginx:1.25-alpine",
       "ports": [
         "80:80/tcp",
@@ -34252,7 +34252,7 @@
         "Wiki"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bookstack2.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "repository": {
         "stackfile": "Template/Stack/bookstack.yml",
         "url": "https://github.com/SelfhostedPro/selfhosted_templates"
@@ -34521,7 +34521,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/citus/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "citusdata/citus:stable",
       "ports": [
         "5432:5432"
@@ -34778,7 +34778,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/clickhouse/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "clickhouse/clickhouse-server:stable",
       "ports": [
         "8123:8123",
@@ -35036,7 +35036,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/databricks/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "databricks/databricks:stable",
       "ports": [
         "8080:8080"
@@ -35293,7 +35293,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/druid/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/apache.png",
       "image": "apache/druid:stable",
       "ports": [
         "8888:8888"
@@ -35550,7 +35550,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/greenplum/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "greenplum/gpdb-base:stable",
       "ports": [
         "5432:5432"
@@ -35807,7 +35807,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/hive/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/apache.png",
       "image": "apache/hive:stable",
       "ports": [
         "10000:10000"
@@ -36064,7 +36064,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/impala/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/apache.png",
       "image": "apache/impala:stable",
       "ports": [
         "21000:21000"
@@ -36321,7 +36321,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/kylin/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/apache.png",
       "image": "apachekylin/apache-kylin-standalone:stable",
       "ports": [
         "7070:7070"
@@ -36578,7 +36578,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/pinot/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/apache.png",
       "image": "apachepinot/pinot:stable",
       "ports": [
         "9000:9000"
@@ -36835,7 +36835,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/presto/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "prestodb/presto:stable",
       "ports": [
         "8080:8080"
@@ -37092,7 +37092,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/spark/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/apache.png",
       "image": "apache/spark:stable",
       "ports": [
         "8080:8080",
@@ -37350,7 +37350,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/trino/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "trinodb/trino:stable",
       "ports": [
         "8080:8080"
@@ -37607,7 +37607,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/envoy/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "envoyproxy/envoy:stable",
       "ports": [
         "8080:8080"
@@ -37864,7 +37864,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/haproxy/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/haproxy.png",
       "image": "haproxy:stable",
       "ports": [
         "80:80"
@@ -38121,7 +38121,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/mcrouter/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "facebook/mcrouter:stable",
       "ports": [
         "11211:11211"
@@ -38378,7 +38378,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/memcached/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "memcached:stable",
       "ports": [
         "11211:11211"
@@ -38635,7 +38635,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/nginx-cache/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nginx.png",
       "image": "nginx:1.25-alpine",
       "ports": [
         "80:80"
@@ -38892,7 +38892,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/squid/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "sameersbn/squid:stable",
       "ports": [
         "3128:3128"
@@ -39149,7 +39149,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/traefik/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/traefik.png",
       "image": "traefik:stable",
       "ports": [
         "80:80",
@@ -39407,7 +39407,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/varnish/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "varnish:stable",
       "ports": [
         "80:80"
@@ -39664,7 +39664,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/extremedb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "extremedb/extremedb:stable",
       "ports": [
         "8080:8080"
@@ -39921,7 +39921,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/litedb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "litedb/litedb:stable",
       "ports": [
         "8080:8080"
@@ -40178,7 +40178,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/mvstore/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "h2database/mvstore:stable",
       "ports": [
         "8080:8080"
@@ -40435,7 +40435,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/objectbox/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "objectbox/objectbox:stable",
       "ports": [
         "8080:8080"
@@ -40692,7 +40692,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/perst/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "perst/perst:stable",
       "ports": [
         "8080:8080"
@@ -40949,7 +40949,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/polyhedra/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "polyhedra/polyhedra:stable",
       "ports": [
         "8080:8080"
@@ -41206,7 +41206,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/realm/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "realm/realm:stable",
       "ports": [
         "8080:8080"
@@ -41463,7 +41463,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/unqlite/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "unqlite/unqlite:stable",
       "ports": [
         "8080:8080"
@@ -41720,7 +41720,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/agensdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "bitnine/agensgraph:stable",
       "ports": [
         "5432:5432"
@@ -41977,7 +41977,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/blazegraph/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "blazegraph/blazegraph:stable",
       "ports": [
         "9999:9999"
@@ -42234,7 +42234,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/cayley/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "cayley/cayley:stable",
       "ports": [
         "64210:64210"
@@ -42491,7 +42491,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/dgraph/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "dgraph/dgraph:stable",
       "ports": [
         "8080:8080",
@@ -42749,7 +42749,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/flockdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "flockdb/flockdb:stable",
       "ports": [
         "7915:7915"
@@ -43006,7 +43006,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/hugegraph/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "hugegraph/hugegraph:stable",
       "ports": [
         "8080:8080"
@@ -43263,7 +43263,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/hypergraphdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "hypergraphdb/hypergraphdb:stable",
       "ports": [
         "8080:8080"
@@ -43520,7 +43520,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/janusgraph/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "janusgraph/janusgraph:stable",
       "ports": [
         "8182:8182"
@@ -43777,7 +43777,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/memgraph/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "memgraph/memgraph:stable",
       "ports": [
         "7687:7687"
@@ -44036,7 +44036,7 @@
         "graph"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/neo4j/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/neo4j.png",
       "image": "neo4j:5.13-community",
       "ports": [
         "7474:7474",
@@ -44303,7 +44303,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/typedb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "vaticle/typedb:stable",
       "ports": [
         "1729:1729"
@@ -44560,7 +44560,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/whitedb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "whitedb/whitedb:stable",
       "ports": [
         "8080:8080"
@@ -44817,7 +44817,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/badgerdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "badgerdb/badger:stable",
       "ports": [
         "8080:8080"
@@ -45074,7 +45074,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/berkleydb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "berkleydb/db:stable",
       "ports": [
         "8080:8080"
@@ -45331,7 +45331,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/consul/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "consul:stable",
       "ports": [
         "8500:8500",
@@ -45589,7 +45589,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/dragonfly/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "dragonflydb/dragonfly:stable",
       "ports": [
         "6379:6379"
@@ -45846,7 +45846,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/etcd/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "quay.io/coreos/etcd:stable",
       "ports": [
         "2379:2379",
@@ -46104,7 +46104,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/hazelcast/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "hazelcast/hazelcast:stable",
       "ports": [
         "5701:5701"
@@ -46361,7 +46361,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/keydb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "eqalpha/keydb:stable",
       "ports": [
         "6379:6379"
@@ -46618,7 +46618,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/leveldb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "leveldb/leveldb:stable",
       "ports": [
         "8080:8080"
@@ -46875,7 +46875,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/lmdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lmdb/lmdb:stable",
       "ports": [
         "8080:8080"
@@ -47134,7 +47134,7 @@
         "key_value"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/redis/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/redis.png",
       "image": "redis:7-alpine",
       "ports": [
         "6379:6379"
@@ -47391,7 +47391,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/riak/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "basho/riak-kv:stable",
       "ports": [
         "8087:8087",
@@ -47649,7 +47649,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/rocksdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "rocksdb/rocksdb:stable",
       "ports": [
         "8080:8080"
@@ -47906,7 +47906,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/ssdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "ssdb/ssdb:stable",
       "ports": [
         "8888:8888"
@@ -48163,7 +48163,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/vedis/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "vedis/vedis:stable",
       "ports": [
         "6379:6379"
@@ -48420,7 +48420,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/arangodb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "arangodb:stable",
       "ports": [
         "8529:8529"
@@ -48677,7 +48677,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/couchbase/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "couchbase:stable",
       "ports": [
         "8091:8091",
@@ -48935,7 +48935,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/couchdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/couchdb.png",
       "image": "couchdb:stable",
       "ports": [
         "5984:5984"
@@ -49192,7 +49192,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/ejdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "ejdb/ejdb:stable",
       "ports": [
         "8080:8080"
@@ -49449,7 +49449,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/ferretdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "ferretdb/ferretdb:stable",
       "ports": [
         "27017:27017"
@@ -49706,7 +49706,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/lowdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lowdb/lowdb:stable",
       "ports": [
         "3000:3000"
@@ -49965,7 +49965,7 @@
         "nosql"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/mongodb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/mongodb.png",
       "image": "mongo:7.0",
       "ports": [
         "27017:27017"
@@ -50227,7 +50227,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/orientdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "orientdb:stable",
       "ports": [
         "2424:2424",
@@ -50485,7 +50485,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/pouchdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "pouchdb/pouchdb:stable",
       "ports": [
         "5984:5984"
@@ -50742,7 +50742,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/ravendb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "ravendb/ravendb:stable",
       "ports": [
         "8080:8080"
@@ -50999,7 +50999,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/rethinkdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "rethinkdb:stable",
       "ports": [
         "28015:28015",
@@ -51257,7 +51257,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/tinydb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "tinydb/tinydb:stable",
       "ports": [
         "8080:8080"
@@ -51514,7 +51514,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/altibase/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "altibase/altibase:stable",
       "ports": [
         "20300:20300"
@@ -51771,7 +51771,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/cockroachdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "cockroachdb/cockroach:stable",
       "ports": [
         "26257:26257",
@@ -52029,7 +52029,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/cubrid/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "cubrid/cubrid:stable",
       "ports": [
         "33000:33000"
@@ -52286,7 +52286,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/derby/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/apache.png",
       "image": "apache/derby:stable",
       "ports": [
         "1527:1527"
@@ -52543,7 +52543,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/duckdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "marcboeker/duckdb:stable",
       "ports": [
         "8080:8080"
@@ -52800,7 +52800,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/firebird/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "jacobalberty/firebird:stable",
       "ports": [
         "3050:3050"
@@ -53057,7 +53057,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/h2/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "buildo/h2database:stable",
       "ports": [
         "1521:1521",
@@ -53315,7 +53315,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/hsqldb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "lhsystems/hsqldb:stable",
       "ports": [
         "9001:9001"
@@ -53572,7 +53572,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/mariadb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/mariadb.png",
       "image": "mariadb:10.11",
       "ports": [
         "3306:3306"
@@ -53844,7 +53844,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/monetdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "monetdb/monetdb:stable",
       "ports": [
         "50000:50000"
@@ -54103,7 +54103,7 @@
         "relational"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/mysql/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/mysql.png",
       "image": "mysql:8.0",
       "ports": [
         "3306:3306"
@@ -54377,7 +54377,7 @@
         "relational"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/postgresql/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/postgresql.png",
       "image": "postgres:15-alpine",
       "ports": [
         "5432:5432"
@@ -54644,7 +54644,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/sqlite/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "nouchka/sqlite3:stable",
       "ports": [
         "8080:8080"
@@ -54901,7 +54901,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/tidb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "pingcap/tidb:stable",
       "ports": [
         "4000:4000"
@@ -55158,7 +55158,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/unknown/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "alpine:3.18",
       "ports": [
         "5432:5432"
@@ -55415,7 +55415,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/yugabytedb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "yugabytedb/yugabyte:stable",
       "ports": [
         "5433:5433",
@@ -55675,7 +55675,7 @@
         "Database"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/elasticsearch/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/elasticsearch.png",
       "image": "elasticsearch:8.11.0",
       "ports": [
         "9200:9200",
@@ -55938,7 +55938,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/manticore/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "manticoresearch/manticore:stable",
       "ports": [
         "9306:9306",
@@ -56196,7 +56196,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/meilisearch/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "getmeili/meilisearch:stable",
       "ports": [
         "7700:7700"
@@ -56453,7 +56453,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/opensearch/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "opensearchproject/opensearch:stable",
       "ports": [
         "9200:9200",
@@ -56711,7 +56711,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/solr/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "solr:stable",
       "ports": [
         "8983:8983"
@@ -56968,7 +56968,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/sonic/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "valeriansaliou/sonic:stable",
       "ports": [
         "1491:1491"
@@ -57225,7 +57225,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/sphinx/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "sphinxsearch/sphinx:stable",
       "ports": [
         "9312:9312"
@@ -57482,7 +57482,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/tantivy/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "tantivy/tantivy:stable",
       "ports": [
         "8080:8080"
@@ -57739,7 +57739,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/typesense/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "typesense/typesense:stable",
       "ports": [
         "8108:8108"
@@ -57996,7 +57996,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/vespa/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "vespaengine/vespa:stable",
       "ports": [
         "8080:8080"
@@ -58253,7 +58253,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/whoosh/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "whoosh/whoosh:stable",
       "ports": [
         "8080:8080"
@@ -58510,7 +58510,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/xapian/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "xapian/xapian:stable",
       "ports": [
         "8080:8080"
@@ -58767,7 +58767,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/akumuli/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "akumuli/akumuli:stable",
       "ports": [
         "8282:8282"
@@ -59024,7 +59024,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/atlas/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "netflix/atlas:stable",
       "ports": [
         "7101:7101"
@@ -59281,7 +59281,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/beringei/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "facebookincubator/beringei:stable",
       "ports": [
         "9999:9999"
@@ -59538,7 +59538,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/blueflood/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "rackerlabs/blueflood:stable",
       "ports": [
         "20000:20000"
@@ -59795,7 +59795,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/graphite/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "graphiteapp/graphite-statsd:stable",
       "ports": [
         "80:80",
@@ -60053,7 +60053,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/greptimedb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "greptime/greptimedb:stable",
       "ports": [
         "4000:4000",
@@ -60314,7 +60314,7 @@
         "database"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/influxdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/influxdb.png",
       "image": "influxdb:2.7-alpine",
       "ports": [
         "8086:8086"
@@ -60581,7 +60581,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/kairosdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "kairosdb/kairosdb:stable",
       "ports": [
         "8080:8080"
@@ -60838,7 +60838,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/m3db/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/nodejs.png",
       "image": "quay.io/m3db/m3dbnode:stable",
       "ports": [
         "9000:9000"
@@ -61095,7 +61095,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/opentsdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "petergrace/opentsdb-docker:stable",
       "ports": [
         "4242:4242"
@@ -61354,7 +61354,7 @@
         "Monitoring"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/prometheus/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/prometheus.png",
       "image": "prom/prometheus:v2.47.0",
       "ports": [
         "9090:9090"
@@ -61611,7 +61611,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/questdb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "questdb/questdb:stable",
       "ports": [
         "9000:9000",
@@ -61869,7 +61869,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/siridb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "siridb/siridb-server:stable",
       "ports": [
         "9000:9000"
@@ -62126,7 +62126,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/timescaledb/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "timescale/timescaledb:stable",
       "ports": [
         "5432:5432"
@@ -62383,7 +62383,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/victoriametrics/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "victoriametrics/victoria-metrics:stable",
       "ports": [
         "8428:8428"
@@ -62640,7 +62640,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/annoy/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "spotify/annoy:stable",
       "ports": [
         "8080:8080"
@@ -62897,7 +62897,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/chroma/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "chromadb/chroma:stable",
       "ports": [
         "8000:8000"
@@ -63154,7 +63154,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/deeplake/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "activeloop/deeplake:stable",
       "ports": [
         "8080:8080"
@@ -63411,7 +63411,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/faiss/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "faiss/faiss:stable",
       "ports": [
         "8080:8080"
@@ -63668,7 +63668,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/milvus/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "milvusdb/milvus:stable",
       "ports": [
         "19530:19530"
@@ -63925,7 +63925,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/pinecone/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "pinecone/pinecone:stable",
       "ports": [
         "8080:8080"
@@ -64182,7 +64182,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/qdrant/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "qdrant/qdrant:stable",
       "ports": [
         "6333:6333"
@@ -64439,7 +64439,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/txtai/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "neuml/txtai:stable",
       "ports": [
         "8000:8000"
@@ -64696,7 +64696,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/vald/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "vdaas/vald:stable",
       "ports": [
         "8081:8081"
@@ -64953,7 +64953,7 @@
         "storage"
       ],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/weaviate/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/docker.png",
       "image": "semitechnologies/weaviate:stable",
       "ports": [
         "8080:8080"
