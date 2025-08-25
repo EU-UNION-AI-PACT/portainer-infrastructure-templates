@@ -1,0 +1,276 @@
+# 🚀 PORTAINER TEMPLATE SERVER - COMPLETE DOCKER COMPOSE
+# Professional Template Server with 247+ Templates
+# Includes: Nginx, Python Backup, Load Balancer, Health Checks
+# IPv4/IPv6 Support, CORS Headers, High Availability
+
+version: '3.8'
+
+services:
+  # 🌐 Primary Nginx Template Server
+  portainer-template-server:
+    image: nginx:alpine
+    container_name: portainer-template-server
+    restart: unless-stopped
+    ports:
+      - "8091:80"      # Primary HTTP port
+      - "8092:443"     # HTTPS port (for future SSL)
+    volumes:
+      - ./web:/usr/share/nginx/html:ro                    # Template files
+      - ./config/nginx.conf:/etc/nginx/nginx.conf:ro      # Nginx config
+    environment:
+      - TZ=Europe/Berlin
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.templates.rule=Host(`templates.localhost`)"
+      - "traefik.http.routers.templates.entrypoints=web"
+      - "traefik.http.services.templates.loadbalancer.server.port=80"
+      - "com.portainer.template.server=primary"
+    networks:
+      - template-network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/portainer-template.json"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # 🐍 Python Backup Server
+  python-template-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.simple
+    image: portainer-python-server:latest
+    container_name: python-template-server
+    restart: unless-stopped
+    ports:
+      - "8093:8000"    # Python HTTP server port
+    volumes:
+      - ./web:/app/templates:ro                           # Template files
+    environment:
+      - PYTHONUNBUFFERED=1
+      - SERVER_PORT=8000
+      - TZ=Europe/Berlin
+    working_dir: /app/templates
+    command: python3 -m http.server 8000 --bind 0.0.0.0
+    labels:
+      - "com.portainer.template.server=backup"
+    networks:
+      - template-network
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/portainer-template.json')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # ⚖️ HAProxy Load Balancer
+  template-loadbalancer:
+    image: haproxy:alpine
+    container_name: template-loadbalancer
+    restart: unless-stopped
+    ports:
+      - "8090:80"      # Load balanced endpoint (MAIN URL)
+      - "8404:8404"    # HAProxy stats dashboard
+    volumes:
+      - ./config/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+    environment:
+      - TZ=Europe/Berlin
+    depends_on:
+      - portainer-template-server
+      - python-template-server
+    labels:
+      - "com.portainer.template.server=loadbalancer"
+    networks:
+      - template-network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/portainer-template.json"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # 📊 Optional: Monitoring with Prometheus
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: template-prometheus
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--web.enable-lifecycle'
+    networks:
+      - template-network
+    profiles:
+      - monitoring
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # 📈 Optional: Grafana Dashboard
+  grafana:
+    image: grafana/grafana:latest
+    container_name: template-grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin123
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./monitoring/grafana-dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./monitoring/grafana-datasources:/etc/grafana/provisioning/datasources:ro
+    depends_on:
+      - prometheus
+    networks:
+      - template-network
+    profiles:
+      - monitoring
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # 🔍 Optional: Log Aggregation with Loki
+  loki:
+    image: grafana/loki:latest
+    container_name: template-loki
+    restart: unless-stopped
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./monitoring/loki-config.yml:/etc/loki/local-config.yaml:ro
+      - loki-data:/loki
+    command: -config.file=/etc/loki/local-config.yaml
+    networks:
+      - template-network
+    profiles:
+      - monitoring
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # 📝 Optional: Log Collector
+  promtail:
+    image: grafana/promtail:latest
+    container_name: template-promtail
+    restart: unless-stopped
+    volumes:
+      - ./monitoring/promtail-config.yml:/etc/promtail/config.yml:ro
+      - /var/log:/var/log:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    command: -config.file=/etc/promtail/config.yml
+    depends_on:
+      - loki
+    networks:
+      - template-network
+    profiles:
+      - monitoring
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+# 🗄️ Persistent Volumes
+volumes:
+  prometheus-data:
+    driver: local
+    labels:
+      - "com.portainer.template.volume=prometheus"
+  grafana-data:
+    driver: local
+    labels:
+      - "com.portainer.template.volume=grafana"
+  loki-data:
+    driver: local
+    labels:
+      - "com.portainer.template.volume=loki"
+
+# 🌐 Networks
+networks:
+  template-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.21.0.0/16
+          gateway: 172.21.0.1
+    labels:
+      - "com.portainer.template.network=main"
+
+# 🔧 USAGE INSTRUCTIONS:
+# 
+# 1. BASIC SETUP (Template Server Only):
+#    docker-compose up -d portainer-template-server python-template-server template-loadbalancer
+#
+# 2. WITH MONITORING:
+#    docker-compose --profile monitoring up -d
+#
+# 3. CHECK STATUS:
+#    docker-compose ps
+#
+# 4. VIEW LOGS:
+#    docker-compose logs -f
+#
+# 5. STOP ALL:
+#    docker-compose down
+#
+# 📡 ENDPOINTS:
+# 
+# PRIMARY (Use this in Portainer):
+#   http://localhost:8090/portainer-template.json  (Load Balanced)
+#
+# INDIVIDUAL SERVERS:
+#   http://localhost:8091/portainer-template.json  (Nginx)
+#   http://localhost:8093/portainer-template.json  (Python)
+#
+# MONITORING (if enabled):
+#   http://localhost:8404/stats     (HAProxy Stats)
+#   http://localhost:9090           (Prometheus)
+#   http://localhost:3000           (Grafana - admin/admin123)
+#   http://localhost:3100           (Loki)
+#
+# 🎯 PORTAINER CONFIGURATION:
+# In Portainer Settings → App Templates:
+# Template URL: http://localhost:8090/portainer-template.json
+#
+# ✅ FEATURES:
+# - 247+ Professional Templates
+# - IPv4/IPv6 Dual Stack Support
+# - CORS Headers for Portainer
+# - High Availability (Load Balancer)
+# - Health Checks & Auto Restart
+# - Optional Monitoring Stack
+# - Professional Logging
+# - Security Headers

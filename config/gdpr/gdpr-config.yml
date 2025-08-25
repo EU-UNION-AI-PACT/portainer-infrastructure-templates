@@ -1,0 +1,26 @@
+gdpr:
+  compliance_mode: "strict"
+  data_retention:
+    default_days: 30
+    audit_logs_days: 2555  # 7 years as required by some regulations
+    session_data_days: 1
+    user_data_days: 90
+  anonymization:
+    enabled: true
+    fields:
+      - "ip_address"
+      - "user_agent"
+      - "session_id"
+  consent:
+    required: true
+    opt_in_only: true
+    withdrawal_allowed: true
+  rights:
+    data_portability: true
+    right_to_erasure: true
+    right_to_rectification: true
+    data_access_request: true
+  audit:
+    enabled: true
+    retention_days: 2555
+    encryption: true

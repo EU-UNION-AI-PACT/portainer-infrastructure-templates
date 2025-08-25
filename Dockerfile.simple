@@ -1,0 +1,30 @@
+FROM python:3.11-alpine
+
+# Install dependencies
+RUN apk add --no-cache \
+    curl \
+    wget \
+    && rm -rf /var/cache/apk/*
+
+# Create app directory
+WORKDIR /app
+
+# Create non-root user
+RUN addgroup -g 1000 appuser && \
+    adduser -D -s /bin/sh -u 1000 -G appuser appuser
+
+# Copy templates
+COPY --chown=appuser:appuser web/ /app/templates/
+
+# Switch to non-root user
+USER appuser
+
+# Expose port
+EXPOSE 8000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD python3 -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/portainer-template.json')" || exit 1
+
+# Run server
+CMD ["python3", "-m", "http.server", "8000", "--bind", "0.0.0.0"]

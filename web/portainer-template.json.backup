@@ -1,0 +1,3946 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "type": 3,
+      "title": "Complete Security Infrastructure Stack",
+      "description": "Comprehensive security, monitoring, and VPN infrastructure with Wazuh, CrowdSec, Grafana, Prometheus, WireGuard and more",
+      "note": "This will deploy a complete security infrastructure stack. Make sure you have at least 8GB RAM available.",
+      "categories": [
+        "Security",
+        "Monitoring",
+        "Infrastructure"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/wazuh/wazuh/master/src/init/dist/darwin/wazuh-agent/Wazuh/Wazuh-Info.plist",
+      "repository": {
+        "url": "https://github.com/holythreekingstreescrowns/portainer-security-stack",
+        "stackfile": "docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DOMAIN",
+          "label": "Domain",
+          "description": "Your domain name for SSL certificates",
+          "default": "localhost"
+        },
+        {
+          "name": "ADMIN_EMAIL",
+          "label": "Admin Email",
+          "description": "Administrator email for certificates and notifications",
+          "default": "admin@localhost.local"
+        },
+        {
+          "name": "WAZUH_PASSWORD",
+          "label": "Wazuh Admin Password",
+          "description": "Password for Wazuh admin user",
+          "default": "SecretPassword123!"
+        },
+        {
+          "name": "GRAFANA_PASSWORD",
+          "label": "Grafana Admin Password",
+          "description": "Password for Grafana admin user",
+          "default": "admin123"
+        },
+        {
+          "name": "VAULT_TOKEN",
+          "label": "Vault Root Token",
+          "description": "Root token for HashiCorp Vault",
+          "default": "hvs.your-root-token-here"
+        },
+        {
+          "name": "VAULTWARDEN_ADMIN_TOKEN",
+          "label": "Vaultwarden Admin Token",
+          "description": "Admin token for Vaultwarden password manager",
+          "default": "your-secure-admin-token"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "Security-Only Stack",
+      "description": "Core security tools: Wazuh SIEM, CrowdSec IPS, Vault secrets management",
+      "note": "Lightweight security stack without monitoring components",
+      "categories": [
+        "Security"
+      ],
+      "platform": "linux",
+      "logo": "https://wazuh.com/uploads/2022/05/Logo-blogpost.png",
+      "repository": {
+        "url": "https://github.com/holythreekingstreescrowns/portainer-security-stack",
+        "stackfile": "stacks/security-only.yml"
+      },
+      "env": [
+        {
+          "name": "WAZUH_PASSWORD",
+          "label": "Wazuh Password",
+          "default": "SecretPassword123!"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "Monitoring-Only Stack",
+      "description": "Complete monitoring solution: Prometheus, Grafana, Loki, Elasticsearch, Kibana",
+      "note": "Comprehensive monitoring without security components",
+      "categories": [
+        "Monitoring"
+      ],
+      "platform": "linux",
+      "logo": "https://grafana.com/static/img/logos/grafana_logo.svg",
+      "repository": {
+        "url": "https://github.com/holythreekingstreescrowns/portainer-security-stack",
+        "stackfile": "stacks/monitoring-only.yml"
+      },
+      "env": [
+        {
+          "name": "GRAFANA_PASSWORD",
+          "label": "Grafana Password",
+          "default": "admin123"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "VPN-Only Stack",
+      "description": "WireGuard VPN with web management interface",
+      "note": "Simple VPN solution for secure remote access",
+      "categories": [
+        "VPN",
+        "Security"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wireguard-logo.png",
+      "repository": {
+        "url": "https://github.com/holythreekingstreescrowns/portainer-security-stack",
+        "stackfile": "stacks/vpn-only.yml"
+      },
+      "env": [
+        {
+          "name": "SERVERURL",
+          "label": "Server URL",
+          "description": "External IP or domain for VPN server",
+          "default": "auto"
+        },
+        {
+          "name": "PEERS",
+          "label": "Number of Peers",
+          "description": "Number of VPN client configurations to generate",
+          "default": "10"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "\ud83c\udd93 Kostenlose Security Alternativen",
+      "description": "Komplette kostenlose Alternativen zu Keeper, Auth0, Authy, Okta & Co. Alle Open-Source L\u00f6sungen ohne Limits.",
+      "note": "Sammlung der besten kostenlosen Alternativen zu kommerziellen Security-L\u00f6sungen",
+      "categories": [
+        "Security",
+        "Free Alternatives"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/opensource.svg",
+      "repository": {
+        "url": "https://github.com/YOUR_USERNAME/portainer-infrastructure-templates",
+        "stackfile": "stacks/free-alternatives.yml"
+      }
+    },
+    {
+      "type": 3,
+      "title": "\ud83d\udd27 Extended Security Tools",
+      "description": "Erweiterte Security-Tools: Wazuh, FusionAuth, Tailscale, OWASP ZAP, Pi-hole, Passbolt, TheHive, MISP und mehr",
+      "note": "Sammlung von 15+ erweiterten Security-Tools aus GitHub/DockerHub",
+      "categories": [
+        "Security",
+        "Extended Tools",
+        "GitHub"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/github/explore/main/topics/security/security.png",
+      "repository": {
+        "url": "https://github.com/YOUR_USERNAME/portainer-infrastructure-templates",
+        "stackfile": "stacks/extended-security-tools.yml"
+      }
+    },
+    {
+      "type": 1,
+      "title": "Unknown Database",
+      "description": "The postgresql linked to the prewave assignement app (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/unknown/logo.png",
+      "image": "/unknown",
+      "ports": [
+        "5432:5432"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/unknown/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Postgresql Database",
+      "description": "Advanced open-source relational database (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/postgresql/logo.png",
+      "image": "postgres:latest",
+      "ports": [
+        "5432:5432"
+      ],
+      "volumes": [
+        {
+          "container": "/var/lib/postgresql/data",
+          "bind": "./data/postgresql/var/lib/postgresql/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "POSTGRES_DB",
+          "label": "POSTGRES_DB",
+          "default": "database"
+        },
+        {
+          "name": "POSTGRES_USER",
+          "label": "POSTGRES_USER",
+          "default": "admin"
+        },
+        {
+          "name": "POSTGRES_PASSWORD",
+          "label": "POSTGRES_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Mysql Database",
+      "description": "Popular open-source relational database (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/mysql/logo.png",
+      "image": "mysql:latest",
+      "ports": [
+        "3306:3306"
+      ],
+      "volumes": [
+        {
+          "container": "/var/lib/mysql",
+          "bind": "./data/mysql/var/lib/mysql"
+        }
+      ],
+      "env": [
+        {
+          "name": "MYSQL_ROOT_PASSWORD",
+          "label": "MYSQL_ROOT_PASSWORD",
+          "default": "secure_password"
+        },
+        {
+          "name": "MYSQL_DATABASE",
+          "label": "MYSQL_DATABASE",
+          "default": "database"
+        },
+        {
+          "name": "MYSQL_USER",
+          "label": "MYSQL_USER",
+          "default": "admin"
+        },
+        {
+          "name": "MYSQL_PASSWORD",
+          "label": "MYSQL_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Mariadb Database",
+      "description": "Community fork of MySQL (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/mariadb/logo.png",
+      "image": "mariadb:latest",
+      "ports": [
+        "3306:3306"
+      ],
+      "volumes": [
+        {
+          "container": "/var/lib/mysql",
+          "bind": "./data/mariadb/var/lib/mysql"
+        }
+      ],
+      "env": [
+        {
+          "name": "MYSQL_ROOT_PASSWORD",
+          "label": "MYSQL_ROOT_PASSWORD",
+          "default": "secure_password"
+        },
+        {
+          "name": "MYSQL_DATABASE",
+          "label": "MYSQL_DATABASE",
+          "default": "database"
+        },
+        {
+          "name": "MYSQL_USER",
+          "label": "MYSQL_USER",
+          "default": "admin"
+        },
+        {
+          "name": "MYSQL_PASSWORD",
+          "label": "MYSQL_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Sqlite Database",
+      "description": "Lightweight embedded database (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/sqlite/logo.png",
+      "image": "nouchka/sqlite3:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/sqlite/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Cockroachdb Database",
+      "description": "Distributed SQL database (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/cockroachdb/logo.png",
+      "image": "cockroachdb/cockroach:latest",
+      "ports": [
+        "26257:26257",
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/cockroachdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Yugabytedb Database",
+      "description": "Distributed SQL database (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/yugabytedb/logo.png",
+      "image": "yugabytedb/yugabyte:latest",
+      "ports": [
+        "5433:5433",
+        "9000:9000"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/yugabytedb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Tidb Database",
+      "description": "Distributed NewSQL database (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/tidb/logo.png",
+      "image": "pingcap/tidb:latest",
+      "ports": [
+        "4000:4000"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/tidb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Firebird Database",
+      "description": "Open-source SQL relational database (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/firebird/logo.png",
+      "image": "jacobalberty/firebird:latest",
+      "ports": [
+        "3050:3050"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/firebird/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "H2 Database",
+      "description": "Java embedded database (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/h2/logo.png",
+      "image": "buildo/h2database:latest",
+      "ports": [
+        "1521:1521",
+        "8082:8082"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/h2/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Hsqldb Database",
+      "description": "Java relational database (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/hsqldb/logo.png",
+      "image": "lhsystems/hsqldb:latest",
+      "ports": [
+        "9001:9001"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/hsqldb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Derby Database",
+      "description": "Apache Derby embedded database (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/derby/logo.png",
+      "image": "apache/derby:latest",
+      "ports": [
+        "1527:1527"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/derby/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Monetdb Database",
+      "description": "Column-oriented database (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/monetdb/logo.png",
+      "image": "monetdb/monetdb:latest",
+      "ports": [
+        "50000:50000"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/monetdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Duckdb Database",
+      "description": "In-process analytical database (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/duckdb/logo.png",
+      "image": "marcboeker/duckdb:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/duckdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Cubrid Database",
+      "description": "Object-relational database (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/cubrid/logo.png",
+      "image": "cubrid/cubrid:latest",
+      "ports": [
+        "33000:33000"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/cubrid/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Altibase Database",
+      "description": "Hybrid relational database (Category: relational)",
+      "categories": [
+        "relational",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/altibase/logo.png",
+      "image": "altibase/altibase:latest",
+      "ports": [
+        "20300:20300"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/altibase/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Mongodb Database",
+      "description": "Popular document database (Category: nosql)",
+      "categories": [
+        "nosql",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/mongodb/logo.png",
+      "image": "mongo:latest",
+      "ports": [
+        "27017:27017"
+      ],
+      "volumes": [
+        {
+          "container": "/data/db",
+          "bind": "./data/mongodb/data/db"
+        }
+      ],
+      "env": [
+        {
+          "name": "MONGO_INITDB_ROOT_USERNAME",
+          "label": "MONGO_INITDB_ROOT_USERNAME",
+          "default": "admin"
+        },
+        {
+          "name": "MONGO_INITDB_ROOT_PASSWORD",
+          "label": "MONGO_INITDB_ROOT_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Couchdb Database",
+      "description": "JSON document database (Category: nosql)",
+      "categories": [
+        "nosql",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/couchdb/logo.png",
+      "image": "couchdb:latest",
+      "ports": [
+        "5984:5984"
+      ],
+      "volumes": [
+        {
+          "container": "/opt/couchdb/data",
+          "bind": "./data/couchdb/opt/couchdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Rethinkdb Database",
+      "description": "Real-time document database (Category: nosql)",
+      "categories": [
+        "nosql",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/rethinkdb/logo.png",
+      "image": "rethinkdb:latest",
+      "ports": [
+        "28015:28015",
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/rethinkdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Orientdb Database",
+      "description": "Multi-model database (Category: nosql)",
+      "categories": [
+        "nosql",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/orientdb/logo.png",
+      "image": "orientdb:latest",
+      "ports": [
+        "2424:2424",
+        "2480:2480"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/orientdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Arangodb Database",
+      "description": "Multi-model database (Category: nosql)",
+      "categories": [
+        "nosql",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/arangodb/logo.png",
+      "image": "arangodb:latest",
+      "ports": [
+        "8529:8529"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/arangodb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Couchbase Database",
+      "description": "NoSQL document database (Category: nosql)",
+      "categories": [
+        "nosql",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/couchbase/logo.png",
+      "image": "couchbase:latest",
+      "ports": [
+        "8091:8091",
+        "11210:11210"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/couchbase/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Ravendb Database",
+      "description": ".NET document database (Category: nosql)",
+      "categories": [
+        "nosql",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/ravendb/logo.png",
+      "image": "ravendb/ravendb:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/ravendb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Ferretdb Database",
+      "description": "MongoDB alternative (Category: nosql)",
+      "categories": [
+        "nosql",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/ferretdb/logo.png",
+      "image": "ferretdb/ferretdb:latest",
+      "ports": [
+        "27017:27017"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/ferretdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Ejdb Database",
+      "description": "Embedded JSON database (Category: nosql)",
+      "categories": [
+        "nosql",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/ejdb/logo.png",
+      "image": "ejdb/ejdb:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/ejdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Tinydb Database",
+      "description": "Lightweight JSON database (Category: nosql)",
+      "categories": [
+        "nosql",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/tinydb/logo.png",
+      "image": "tinydb/tinydb:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/tinydb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Lowdb Database",
+      "description": "Small JSON database for Node (Category: nosql)",
+      "categories": [
+        "nosql",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/lowdb/logo.png",
+      "image": "lowdb/lowdb:latest",
+      "ports": [
+        "3000:3000"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/lowdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Pouchdb Database",
+      "description": "JavaScript database (Category: nosql)",
+      "categories": [
+        "nosql",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/pouchdb/logo.png",
+      "image": "pouchdb/pouchdb:latest",
+      "ports": [
+        "5984:5984"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/pouchdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Redis Database",
+      "description": "In-memory data structure store (Category: key_value)",
+      "categories": [
+        "key_value",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/redis/logo.png",
+      "image": "redis:latest",
+      "ports": [
+        "6379:6379"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/redis/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "REDIS_PASSWORD",
+          "label": "REDIS_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Keydb Database",
+      "description": "High-performance Redis alternative (Category: key_value)",
+      "categories": [
+        "key_value",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/keydb/logo.png",
+      "image": "eqalpha/keydb:latest",
+      "ports": [
+        "6379:6379"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/keydb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Dragonfly Database",
+      "description": "Modern Redis replacement (Category: key_value)",
+      "categories": [
+        "key_value",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/dragonfly/logo.png",
+      "image": "dragonflydb/dragonfly:latest",
+      "ports": [
+        "6379:6379"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/dragonfly/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Etcd Database",
+      "description": "Distributed key-value store (Category: key_value)",
+      "categories": [
+        "key_value",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/etcd/logo.png",
+      "image": "quay.io/coreos/etcd:latest",
+      "ports": [
+        "2379:2379",
+        "2380:2380"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/etcd/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Consul Database",
+      "description": "Service mesh solution (Category: key_value)",
+      "categories": [
+        "key_value",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/consul/logo.png",
+      "image": "consul:latest",
+      "ports": [
+        "8500:8500",
+        "8300:8300"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/consul/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Hazelcast Database",
+      "description": "In-memory data grid (Category: key_value)",
+      "categories": [
+        "key_value",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/hazelcast/logo.png",
+      "image": "hazelcast/hazelcast:latest",
+      "ports": [
+        "5701:5701"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/hazelcast/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Riak Database",
+      "description": "Distributed NoSQL database (Category: key_value)",
+      "categories": [
+        "key_value",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/riak/logo.png",
+      "image": "basho/riak-kv:latest",
+      "ports": [
+        "8087:8087",
+        "8098:8098"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/riak/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Badgerdb Database",
+      "description": "Fast key-value database (Category: key_value)",
+      "categories": [
+        "key_value",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/badgerdb/logo.png",
+      "image": "badgerdb/badger:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/badgerdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Rocksdb Database",
+      "description": "Embedded key-value store (Category: key_value)",
+      "categories": [
+        "key_value",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/rocksdb/logo.png",
+      "image": "rocksdb/rocksdb:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/rocksdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Leveldb Database",
+      "description": "Fast key-value storage library (Category: key_value)",
+      "categories": [
+        "key_value",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/leveldb/logo.png",
+      "image": "leveldb/leveldb:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/leveldb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Lmdb Database",
+      "description": "Lightning memory-mapped database (Category: key_value)",
+      "categories": [
+        "key_value",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/lmdb/logo.png",
+      "image": "lmdb/lmdb:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/lmdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Berkleydb Database",
+      "description": "Oracle Berkeley DB (Category: key_value)",
+      "categories": [
+        "key_value",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/berkleydb/logo.png",
+      "image": "berkleydb/db:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/berkleydb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Vedis Database",
+      "description": "Embedded datastore (Category: key_value)",
+      "categories": [
+        "key_value",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/vedis/logo.png",
+      "image": "vedis/vedis:latest",
+      "ports": [
+        "6379:6379"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/vedis/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Ssdb Database",
+      "description": "High performance NoSQL database (Category: key_value)",
+      "categories": [
+        "key_value",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/ssdb/logo.png",
+      "image": "ssdb/ssdb:latest",
+      "ports": [
+        "8888:8888"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/ssdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Neo4J Database",
+      "description": "Leading graph database (Category: graph)",
+      "categories": [
+        "graph",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/neo4j/logo.png",
+      "image": "neo4j:latest",
+      "ports": [
+        "7474:7474",
+        "7687:7687"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/neo4j/data"
+        },
+        {
+          "container": "/logs",
+          "bind": "./data/neo4j/logs"
+        }
+      ],
+      "env": [
+        {
+          "name": "NEO4J_AUTH",
+          "label": "NEO4J_AUTH",
+          "default": "neo4j/secure_password"
+        },
+        {
+          "name": "NEO4J_dbms_memory_heap_initial__size",
+          "label": "NEO4J_dbms_memory_heap_initial__size",
+          "default": "512m"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Dgraph Database",
+      "description": "Distributed graph database (Category: graph)",
+      "categories": [
+        "graph",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/dgraph/logo.png",
+      "image": "dgraph/dgraph:latest",
+      "ports": [
+        "8080:8080",
+        "9080:9080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/dgraph/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Janusgraph Database",
+      "description": "Scalable graph database (Category: graph)",
+      "categories": [
+        "graph",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/janusgraph/logo.png",
+      "image": "janusgraph/janusgraph:latest",
+      "ports": [
+        "8182:8182"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/janusgraph/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Memgraph Database",
+      "description": "Real-time graph database (Category: graph)",
+      "categories": [
+        "graph",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/memgraph/logo.png",
+      "image": "memgraph/memgraph:latest",
+      "ports": [
+        "7687:7687"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/memgraph/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Hugegraph Database",
+      "description": "Fast-speed graph database (Category: graph)",
+      "categories": [
+        "graph",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/hugegraph/logo.png",
+      "image": "hugegraph/hugegraph:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/hugegraph/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Blazegraph Database",
+      "description": "GPU-accelerated graph database (Category: graph)",
+      "categories": [
+        "graph",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/blazegraph/logo.png",
+      "image": "blazegraph/blazegraph:latest",
+      "ports": [
+        "9999:9999"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/blazegraph/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Cayley Database",
+      "description": "Open-source graph database (Category: graph)",
+      "categories": [
+        "graph",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/cayley/logo.png",
+      "image": "cayley/cayley:latest",
+      "ports": [
+        "64210:64210"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/cayley/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Flockdb Database",
+      "description": "Distributed graph database (Category: graph)",
+      "categories": [
+        "graph",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/flockdb/logo.png",
+      "image": "flockdb/flockdb:latest",
+      "ports": [
+        "7915:7915"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/flockdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Hypergraphdb Database",
+      "description": "General purpose graph database (Category: graph)",
+      "categories": [
+        "graph",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/hypergraphdb/logo.png",
+      "image": "hypergraphdb/hypergraphdb:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/hypergraphdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Whitedb Database",
+      "description": "Lightweight graph database (Category: graph)",
+      "categories": [
+        "graph",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/whitedb/logo.png",
+      "image": "whitedb/whitedb:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/whitedb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Typedb Database",
+      "description": "Strongly-typed database (Category: graph)",
+      "categories": [
+        "graph",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/typedb/logo.png",
+      "image": "vaticle/typedb:latest",
+      "ports": [
+        "1729:1729"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/typedb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Agensdb Database",
+      "description": "Graph extension for PostgreSQL (Category: graph)",
+      "categories": [
+        "graph",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/agensdb/logo.png",
+      "image": "bitnine/agensgraph:latest",
+      "ports": [
+        "5432:5432"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/agensdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Influxdb Database",
+      "description": "Time series database (Category: timeseries)",
+      "categories": [
+        "timeseries",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/influxdb/logo.png",
+      "image": "influxdb:latest",
+      "ports": [
+        "8086:8086"
+      ],
+      "volumes": [
+        {
+          "container": "/var/lib/influxdb",
+          "bind": "./data/influxdb/var/lib/influxdb"
+        }
+      ],
+      "env": [
+        {
+          "name": "INFLUXDB_DB",
+          "label": "INFLUXDB_DB",
+          "default": "database"
+        },
+        {
+          "name": "INFLUXDB_ADMIN_USER",
+          "label": "INFLUXDB_ADMIN_USER",
+          "default": "admin"
+        },
+        {
+          "name": "INFLUXDB_ADMIN_PASSWORD",
+          "label": "INFLUXDB_ADMIN_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Questdb Database",
+      "description": "High-performance time series database (Category: timeseries)",
+      "categories": [
+        "timeseries",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/questdb/logo.png",
+      "image": "questdb/questdb:latest",
+      "ports": [
+        "9000:9000",
+        "8812:8812"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/questdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Timescaledb Database",
+      "description": "PostgreSQL extension for time series (Category: timeseries)",
+      "categories": [
+        "timeseries",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/timescaledb/logo.png",
+      "image": "timescale/timescaledb:latest",
+      "ports": [
+        "5432:5432"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/timescaledb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Victoriametrics Database",
+      "description": "Fast time series database (Category: timeseries)",
+      "categories": [
+        "timeseries",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/victoriametrics/logo.png",
+      "image": "victoriametrics/victoria-metrics:latest",
+      "ports": [
+        "8428:8428"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/victoriametrics/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Prometheus Database",
+      "description": "Monitoring and alerting toolkit (Category: timeseries)",
+      "categories": [
+        "timeseries",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/prometheus/logo.png",
+      "image": "prom/prometheus:latest",
+      "ports": [
+        "9090:9090"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/prometheus/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Graphite Database",
+      "description": "Scalable time-series database (Category: timeseries)",
+      "categories": [
+        "timeseries",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/graphite/logo.png",
+      "image": "graphiteapp/graphite-statsd:latest",
+      "ports": [
+        "80:80",
+        "2003:2003"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/graphite/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Opentsdb Database",
+      "description": "Distributed time series database (Category: timeseries)",
+      "categories": [
+        "timeseries",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/opentsdb/logo.png",
+      "image": "petergrace/opentsdb-docker:latest",
+      "ports": [
+        "4242:4242"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/opentsdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Kairosdb Database",
+      "description": "Fast time series database (Category: timeseries)",
+      "categories": [
+        "timeseries",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/kairosdb/logo.png",
+      "image": "kairosdb/kairosdb:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/kairosdb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Siridb Database",
+      "description": "Time series database (Category: timeseries)",
+      "categories": [
+        "timeseries",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/siridb/logo.png",
+      "image": "siridb/siridb-server:latest",
+      "ports": [
+        "9000:9000"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/siridb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Akumuli Database",
+      "description": "Time series database (Category: timeseries)",
+      "categories": [
+        "timeseries",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/akumuli/logo.png",
+      "image": "akumuli/akumuli:latest",
+      "ports": [
+        "8282:8282"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/akumuli/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Blueflood Database",
+      "description": "Multi-tenant time series database (Category: timeseries)",
+      "categories": [
+        "timeseries",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/blueflood/logo.png",
+      "image": "rackerlabs/blueflood:latest",
+      "ports": [
+        "20000:20000"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/blueflood/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Beringei Database",
+      "description": "High performance time series database (Category: timeseries)",
+      "categories": [
+        "timeseries",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/beringei/logo.png",
+      "image": "facebookincubator/beringei:latest",
+      "ports": [
+        "9999:9999"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/beringei/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Atlas Database",
+      "description": "In-memory dimensional time series database (Category: timeseries)",
+      "categories": [
+        "timeseries",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/atlas/logo.png",
+      "image": "netflix/atlas:latest",
+      "ports": [
+        "7101:7101"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/atlas/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "M3Db Database",
+      "description": "Distributed time series database (Category: timeseries)",
+      "categories": [
+        "timeseries",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/m3db/logo.png",
+      "image": "quay.io/m3db/m3dbnode:latest",
+      "ports": [
+        "9000:9000"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/m3db/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Greptimedb Database",
+      "description": "Time-series database in Rust (Category: timeseries)",
+      "categories": [
+        "timeseries",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/greptimedb/logo.png",
+      "image": "greptime/greptimedb:latest",
+      "ports": [
+        "4000:4000",
+        "4001:4001",
+        "4002:4002"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/greptimedb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Elasticsearch Database",
+      "description": "Distributed search and analytics engine (Category: search)",
+      "categories": [
+        "search",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/elasticsearch/logo.png",
+      "image": "docker.elastic.co/elasticsearch/elasticsearch:latest",
+      "ports": [
+        "9200:9200",
+        "9300:9300"
+      ],
+      "volumes": [
+        {
+          "container": "/usr/share/elasticsearch/data",
+          "bind": "./data/elasticsearch/usr/share/elasticsearch/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "discovery.type",
+          "label": "discovery.type",
+          "default": "single-node"
+        },
+        {
+          "name": "ES_JAVA_OPTS",
+          "label": "ES_JAVA_OPTS",
+          "default": "-Xms512m -Xmx512m"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Opensearch Database",
+      "description": "Open source search and analytics suite (Category: search)",
+      "categories": [
+        "search",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/opensearch/logo.png",
+      "image": "opensearchproject/opensearch:latest",
+      "ports": [
+        "9200:9200",
+        "9600:9600"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/opensearch/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Solr Database",
+      "description": "Enterprise search platform (Category: search)",
+      "categories": [
+        "search",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/solr/logo.png",
+      "image": "solr:latest",
+      "ports": [
+        "8983:8983"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/solr/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Typesense Database",
+      "description": "Fast, typo-tolerant search engine (Category: search)",
+      "categories": [
+        "search",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/typesense/logo.png",
+      "image": "typesense/typesense:latest",
+      "ports": [
+        "8108:8108"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/typesense/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Meilisearch Database",
+      "description": "Lightning fast search engine (Category: search)",
+      "categories": [
+        "search",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/meilisearch/logo.png",
+      "image": "getmeili/meilisearch:latest",
+      "ports": [
+        "7700:7700"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/meilisearch/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Vespa Database",
+      "description": "Big data serving engine (Category: search)",
+      "categories": [
+        "search",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/vespa/logo.png",
+      "image": "vespaengine/vespa:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/vespa/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Tantivy Database",
+      "description": "Full-text search engine library (Category: search)",
+      "categories": [
+        "search",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/tantivy/logo.png",
+      "image": "tantivy/tantivy:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/tantivy/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Sonic Database",
+      "description": "Fast, lightweight search backend (Category: search)",
+      "categories": [
+        "search",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/sonic/logo.png",
+      "image": "valeriansaliou/sonic:latest",
+      "ports": [
+        "1491:1491"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/sonic/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Manticore Database",
+      "description": "Easy to use open source fast database for search (Category: search)",
+      "categories": [
+        "search",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/manticore/logo.png",
+      "image": "manticoresearch/manticore:latest",
+      "ports": [
+        "9306:9306",
+        "9308:9308"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/manticore/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Sphinx Database",
+      "description": "SQL full-text search engine (Category: search)",
+      "categories": [
+        "search",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/sphinx/logo.png",
+      "image": "sphinxsearch/sphinx:latest",
+      "ports": [
+        "9312:9312"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/sphinx/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Xapian Database",
+      "description": "Open source search engine library (Category: search)",
+      "categories": [
+        "search",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/xapian/logo.png",
+      "image": "xapian/xapian:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/xapian/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Whoosh Database",
+      "description": "Fast, featureful full-text indexing and searching library (Category: search)",
+      "categories": [
+        "search",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/whoosh/logo.png",
+      "image": "whoosh/whoosh:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/whoosh/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Milvus Database",
+      "description": "Vector database for AI applications (Category: vector)",
+      "categories": [
+        "vector",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/milvus/logo.png",
+      "image": "milvusdb/milvus:latest",
+      "ports": [
+        "19530:19530"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/milvus/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Weaviate Database",
+      "description": "Vector search engine (Category: vector)",
+      "categories": [
+        "vector",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/weaviate/logo.png",
+      "image": "semitechnologies/weaviate:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/weaviate/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Qdrant Database",
+      "description": "Vector similarity search engine (Category: vector)",
+      "categories": [
+        "vector",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/qdrant/logo.png",
+      "image": "qdrant/qdrant:latest",
+      "ports": [
+        "6333:6333"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/qdrant/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Pinecone Database",
+      "description": "Vector database for machine learning (Category: vector)",
+      "categories": [
+        "vector",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/pinecone/logo.png",
+      "image": "pinecone/pinecone:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/pinecone/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Chroma Database",
+      "description": "AI-native open-source embedding database (Category: vector)",
+      "categories": [
+        "vector",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/chroma/logo.png",
+      "image": "chromadb/chroma:latest",
+      "ports": [
+        "8000:8000"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/chroma/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Vald Database",
+      "description": "Distributed vector search engine (Category: vector)",
+      "categories": [
+        "vector",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/vald/logo.png",
+      "image": "vdaas/vald:latest",
+      "ports": [
+        "8081:8081"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/vald/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Annoy Database",
+      "description": "Approximate Nearest Neighbors library (Category: vector)",
+      "categories": [
+        "vector",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/annoy/logo.png",
+      "image": "spotify/annoy:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/annoy/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Faiss Database",
+      "description": "Library for efficient similarity search (Category: vector)",
+      "categories": [
+        "vector",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/faiss/logo.png",
+      "image": "faiss/faiss:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/faiss/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Deeplake Database",
+      "description": "Database for AI (Category: vector)",
+      "categories": [
+        "vector",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/deeplake/logo.png",
+      "image": "activeloop/deeplake:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/deeplake/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Txtai Database",
+      "description": "Semantic search and workflows (Category: vector)",
+      "categories": [
+        "vector",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/txtai/logo.png",
+      "image": "neuml/txtai:latest",
+      "ports": [
+        "8000:8000"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/txtai/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Clickhouse Database",
+      "description": "Fast open-source OLAP database (Category: analytics)",
+      "categories": [
+        "analytics",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/clickhouse/logo.png",
+      "image": "clickhouse/clickhouse-server:latest",
+      "ports": [
+        "8123:8123",
+        "9000:9000"
+      ],
+      "volumes": [
+        {
+          "container": "/var/lib/clickhouse",
+          "bind": "./data/clickhouse/var/lib/clickhouse"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Druid Database",
+      "description": "Real-time analytics database (Category: analytics)",
+      "categories": [
+        "analytics",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/druid/logo.png",
+      "image": "apache/druid:latest",
+      "ports": [
+        "8888:8888"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/druid/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Pinot Database",
+      "description": "Realtime distributed OLAP datastore (Category: analytics)",
+      "categories": [
+        "analytics",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/pinot/logo.png",
+      "image": "apachepinot/pinot:latest",
+      "ports": [
+        "9000:9000"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/pinot/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Kylin Database",
+      "description": "Extreme OLAP Engine for Big Data (Category: analytics)",
+      "categories": [
+        "analytics",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/kylin/logo.png",
+      "image": "apachekylin/apache-kylin-standalone:latest",
+      "ports": [
+        "7070:7070"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/kylin/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Greenplum Database",
+      "description": "Massively parallel database (Category: analytics)",
+      "categories": [
+        "analytics",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/greenplum/logo.png",
+      "image": "greenplum/gpdb-base:latest",
+      "ports": [
+        "5432:5432"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/greenplum/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Citus Database",
+      "description": "Distributed PostgreSQL (Category: analytics)",
+      "categories": [
+        "analytics",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/citus/logo.png",
+      "image": "citusdata/citus:latest",
+      "ports": [
+        "5432:5432"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/citus/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Presto Database",
+      "description": "Distributed SQL query engine (Category: analytics)",
+      "categories": [
+        "analytics",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/presto/logo.png",
+      "image": "prestodb/presto:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/presto/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Trino Database",
+      "description": "Fast distributed SQL query engine (Category: analytics)",
+      "categories": [
+        "analytics",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/trino/logo.png",
+      "image": "trinodb/trino:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/trino/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Impala Database",
+      "description": "Native analytic database (Category: analytics)",
+      "categories": [
+        "analytics",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/impala/logo.png",
+      "image": "apache/impala:latest",
+      "ports": [
+        "21000:21000"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/impala/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Hive Database",
+      "description": "Data warehouse software (Category: analytics)",
+      "categories": [
+        "analytics",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/hive/logo.png",
+      "image": "apache/hive:latest",
+      "ports": [
+        "10000:10000"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/hive/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Spark Database",
+      "description": "Unified analytics engine (Category: analytics)",
+      "categories": [
+        "analytics",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/spark/logo.png",
+      "image": "apache/spark:latest",
+      "ports": [
+        "8080:8080",
+        "7077:7077"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/spark/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Databricks Database",
+      "description": "Unified analytics platform (Category: analytics)",
+      "categories": [
+        "analytics",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/databricks/logo.png",
+      "image": "databricks/databricks:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/databricks/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Memcached Database",
+      "description": "High-performance distributed memory caching system (Category: cache)",
+      "categories": [
+        "cache",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/memcached/logo.png",
+      "image": "memcached:latest",
+      "ports": [
+        "11211:11211"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/memcached/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Varnish Database",
+      "description": "HTTP accelerator (Category: cache)",
+      "categories": [
+        "cache",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/varnish/logo.png",
+      "image": "varnish:latest",
+      "ports": [
+        "80:80"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/varnish/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Squid Database",
+      "description": "Caching proxy server (Category: cache)",
+      "categories": [
+        "cache",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/squid/logo.png",
+      "image": "sameersbn/squid:latest",
+      "ports": [
+        "3128:3128"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/squid/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Nginx-Cache Database",
+      "description": "HTTP cache server (Category: cache)",
+      "categories": [
+        "cache",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/nginx-cache/logo.png",
+      "image": "nginx:latest",
+      "ports": [
+        "80:80"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/nginx-cache/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Traefik Database",
+      "description": "Modern HTTP reverse proxy (Category: cache)",
+      "categories": [
+        "cache",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/traefik/logo.png",
+      "image": "traefik:latest",
+      "ports": [
+        "80:80",
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/traefik/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Haproxy Database",
+      "description": "Load balancer (Category: cache)",
+      "categories": [
+        "cache",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/haproxy/logo.png",
+      "image": "haproxy:latest",
+      "ports": [
+        "80:80"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/haproxy/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Envoy Database",
+      "description": "Cloud-native proxy (Category: cache)",
+      "categories": [
+        "cache",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/envoy/logo.png",
+      "image": "envoyproxy/envoy:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/envoy/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Mcrouter Database",
+      "description": "Memcached protocol router (Category: cache)",
+      "categories": [
+        "cache",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/mcrouter/logo.png",
+      "image": "facebook/mcrouter:latest",
+      "ports": [
+        "11211:11211"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/mcrouter/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Realm Database",
+      "description": "Mobile database (Category: embedded)",
+      "categories": [
+        "embedded",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/realm/logo.png",
+      "image": "realm/realm:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/realm/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Objectbox Database",
+      "description": "Embedded object database (Category: embedded)",
+      "categories": [
+        "embedded",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/objectbox/logo.png",
+      "image": "objectbox/objectbox:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/objectbox/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Perst Database",
+      "description": "Embedded database for Java/.NET (Category: embedded)",
+      "categories": [
+        "embedded",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/perst/logo.png",
+      "image": "perst/perst:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/perst/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Unqlite Database",
+      "description": "Embedded NoSQL database (Category: embedded)",
+      "categories": [
+        "embedded",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/unqlite/logo.png",
+      "image": "unqlite/unqlite:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/unqlite/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Polyhedra Database",
+      "description": "Embedded real-time database (Category: embedded)",
+      "categories": [
+        "embedded",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/polyhedra/logo.png",
+      "image": "polyhedra/polyhedra:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/polyhedra/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Extremedb Database",
+      "description": "Embedded database (Category: embedded)",
+      "categories": [
+        "embedded",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/extremedb/logo.png",
+      "image": "extremedb/extremedb:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/extremedb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Litedb Database",
+      "description": ".NET embedded database (Category: embedded)",
+      "categories": [
+        "embedded",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/litedb/logo.png",
+      "image": "litedb/litedb:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/litedb/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    },
+    {
+      "type": 1,
+      "title": "Mvstore Database",
+      "description": "Embedded key-value store (Category: embedded)",
+      "categories": [
+        "embedded",
+        "database",
+        "storage"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/master/mvstore/logo.png",
+      "image": "h2database/mvstore:latest",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        {
+          "container": "/data",
+          "bind": "./data/mvstore/data"
+        }
+      ],
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "secure_password"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "network_mode": "bridge"
+    }
+  ]
+}

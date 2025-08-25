@@ -1,21 +1,43 @@
-# 🚀 PORTAINER MASTER URL INTEGRATION - SOFORTIGE NUTZUNG
+# � PORTAINER TEMPLATE - DIREKTE URL INTEGRATION
 
-## 🎯 **SCHRITT 1: MASTER URL IN PORTAINER INTEGRIEREN**
+## 🚀 **MASTER URL FÜR SOFORTIGEN IMPORT:**
 
-### Portainer öffnen und Template URL hinzufügen:
+```
+https://raw.githubusercontent.com/holythreekingstreescrowns/portainer-infrastructure-templates/main/portainer-template.json
+```
 
-1. **Portainer öffnen:** `http://localhost:9000` (oder deine Portainer URL)
+## 📋 **PORTAINER IMPORT SCHRITTE:**
 
-2. **App Templates öffnen:** Linke Sidebar → **App Templates**
+### **Schritt 1: Portainer öffnen**
+- Gehe zu deiner Portainer Instanz: `http://localhost:9000`
+- Melde dich mit deinen Admin-Credentials an
 
-3. **Settings klicken:** Rechts oben → **Settings** Button
+### **Schritt 2: App Templates Settings**
+- Klicke auf **"Settings"** im linken Menü
+- Wähle **"App Templates"** aus
 
-4. **Template URL hinzufügen:**
-   ```
-   https://raw.githubusercontent.com/YOUR_USERNAME/portainer-infrastructure-templates/main/portainer-template.json
-   ```
+### **Schritt 3: Template URL hinzufügen**
+- Füge diese Master URL hinzu:
+```
+https://raw.githubusercontent.com/holythreekingstreescrowns/portainer-infrastructure-templates/main/portainer-template.json
+```
 
-5. **Save & Reload:** **Save** klicken → **Reload** → ✅ **125+ Templates sofort verfügbar!**
+### **Schritt 4: Templates aktivieren**
+- Klicke auf **"Save Settings"**
+- Gehe zu **"App Templates"** im Hauptmenü
+- **✅ Alle 125+ Templates werden sofort geladen!**
+
+## 🎯 **ALTERNATIVE DEPLOYMENT URLs:**
+
+### **Lokale Integration (Nginx Server):**
+```
+http://localhost:8090/portainer-template.json
+```
+
+### **CDN Backup URL:**
+```
+https://cdn.jsdelivr.net/gh/holythreekingstreescrowns/portainer-infrastructure-templates/portainer-template.json
+```
 
 ---
 

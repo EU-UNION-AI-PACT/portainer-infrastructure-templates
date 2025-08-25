@@ -1,0 +1,80 @@
+version: '3.8'
+
+services:
+  # Hauptserver für Portainer Templates
+  portainer-template-server:
+    image: nginx:alpine
+    container_name: portainer-template-server
+    restart: unless-stopped
+    ports:
+      - "8091:80"      # HTTP
+      - "8092:443"     # HTTPS (optional)
+    volumes:
+      - ./web:/usr/share/nginx/html:ro
+      - ./config/nginx.conf:/etc/nginx/nginx.conf:ro
+    environment:
+      - TZ=Europe/Berlin
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.templates.rule=Host(`templates.localhost`)"
+      - "traefik.http.routers.templates.entrypoints=web"
+      - "traefik.http.services.templates.loadbalancer.server.port=80"
+    networks:
+      - template-network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/portainer-template.json"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # Backup Python Server
+  python-template-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.simple
+    container_name: python-template-server
+    restart: unless-stopped
+    ports:
+      - "8093:8000"
+    volumes:
+      - ./web:/app/templates:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - SERVER_PORT=8000
+    working_dir: /app/templates
+    command: python3 -m http.server 8000 --bind 0.0.0.0
+    networks:
+      - template-network
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/portainer-template.json')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Load Balancer für hohe Verfügbarkeit
+  haproxy:
+    image: haproxy:alpine
+    container_name: template-loadbalancer
+    restart: unless-stopped
+    ports:
+      - "8090:80"      # Load balanced endpoint
+    volumes:
+      - ./config/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+    depends_on:
+      - portainer-template-server
+      - python-template-server
+    networks:
+      - template-network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/portainer-template.json"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+networks:
+  template-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.21.0.0/16

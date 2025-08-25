@@ -1,12 +1,49 @@
-# 🚀 PORTAINER INFRASTRUCTURE TEMPLATES - DEPLOYMENT URLs
+# � PORTAINER TEMPLATE - DIREKTE URL INTEGRATION ✅ LIVE!
 
-## 📋 Nach GitHub Upload sofort verfügbar:
+## 🚀 **SOFORT VERFÜGBARE TEMPLATE URLs:**
 
-### 🎯 **MASTER TEMPLATE URL** (Alle Templates in einem)
+### **Option 1: Lokaler Template Server (✅ LÄUFT GERADE!)**
 ```
-https://raw.githubusercontent.com/YOUR_USERNAME/portainer-infrastructure-templates/main/portainer-template.json
+http://localhost:8091/portainer-template.json
 ```
-**👆 Diese URL in Portainer App Templates einfügen für Zugriff auf alle 6+ Stacks!**
+**🎯 Sofort in Portainer einfügen - Server läuft bereits!**
+
+### **Option 2: GitHub Raw URL (Für Produktion)**
+```
+https://raw.githubusercontent.com/holythreekingstreescrowns/portainer-infrastructure-templates/main/portainer-template.json
+```
+
+### **Option 3: JSDelivr CDN (Backup)**
+```
+https://cdn.jsdelivr.net/gh/holythreekingstreescrowns/portainer-infrastructure-templates/portainer-template.json
+```
+
+## � **PORTAINER INTEGRATION - 3 SCHRITTE:**
+
+### **Schritt 1: Portainer öffnen**
+- Gehe zu: `http://localhost:9000`
+- Mit Admin-Credentials anmelden
+
+### **Schritt 2: Template URL hinzufügen**
+- **Settings** → **App Templates** → **Template URL:**
+```
+http://localhost:8091/portainer-template.json
+```
+
+### **Schritt 3: Templates aktivieren**
+- **Save Settings** → **App Templates**
+- **🎉 125+ Templates sofort verfügbar!**
+
+## 🎯 **VERFÜGBARE TEMPLATES (125+):**
+
+### **🔒 Security Infrastructure (7 Templates)**
+- Complete Security Infrastructure Stack
+- Security-Only Stack (Wazuh, CrowdSec, Vault)
+- Monitoring-Only Stack (Prometheus, Grafana)
+- VPN-Only Stack (WireGuard)
+- Free Alternatives (Keycloak, Authelia, etc.)
+- Extended Security Tools (OWASP ZAP, Trivy, etc.)
+- Development Stack (GitLab, Jenkins, etc.)
 
 ---
 
