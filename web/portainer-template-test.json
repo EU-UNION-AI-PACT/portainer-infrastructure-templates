@@ -1,0 +1,39 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "type": 1,
+      "title": "Test Template - Nginx",
+      "description": "Simple nginx test template to verify Portainer compatibility",
+      "categories": [
+        "Web",
+        "Test"
+      ],
+      "platform": "linux",
+      "logo": "https://img.shields.io/badge/Test-Nginx-green?style=for-the-badge&logo=nginx",
+      "image": "nginx:alpine",
+      "ports": [
+        "8080:80/tcp"
+      ],
+      "env": [
+        {
+          "name": "TEST_VAR",
+          "label": "Test Variable",
+          "default": "test",
+          "description": "Test environment variable"
+        }
+      ],
+      "restart_policy": "unless-stopped",
+      "labels": [
+        {
+          "name": "test.template",
+          "value": "true"
+        },
+        {
+          "name": "version",
+          "value": "1.0"
+        }
+      ]
+    }
+  ]
+}
