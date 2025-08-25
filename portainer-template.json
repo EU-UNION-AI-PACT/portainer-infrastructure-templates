@@ -6,7 +6,11 @@
       "title": "Complete Security Infrastructure Stack",
       "description": "Comprehensive security, monitoring, and VPN infrastructure with Wazuh, CrowdSec, Grafana, Prometheus, WireGuard and more",
       "note": "This will deploy a complete security infrastructure stack. Make sure you have at least 8GB RAM available.",
-      "categories": ["Security", "Monitoring", "Infrastructure"],
+      "categories": [
+        "Security",
+        "Monitoring",
+        "Infrastructure"
+      ],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/wazuh/wazuh/master/src/init/dist/darwin/wazuh-agent/Wazuh/Wazuh-Info.plist",
       "repository": {
@@ -57,7 +61,9 @@
       "title": "Security-Only Stack",
       "description": "Core security tools: Wazuh SIEM, CrowdSec IPS, Vault secrets management",
       "note": "Lightweight security stack without monitoring components",
-      "categories": ["Security"],
+      "categories": [
+        "Security"
+      ],
       "platform": "linux",
       "logo": "https://wazuh.com/uploads/2022/05/Logo-blogpost.png",
       "repository": {
@@ -77,7 +83,9 @@
       "title": "Monitoring-Only Stack",
       "description": "Complete monitoring solution: Prometheus, Grafana, Loki, Elasticsearch, Kibana",
       "note": "Comprehensive monitoring without security components",
-      "categories": ["Monitoring"],
+      "categories": [
+        "Monitoring"
+      ],
       "platform": "linux",
       "logo": "https://grafana.com/static/img/logos/grafana_logo.svg",
       "repository": {
@@ -97,7 +105,10 @@
       "title": "VPN-Only Stack",
       "description": "WireGuard VPN with web management interface",
       "note": "Simple VPN solution for secure remote access",
-      "categories": ["VPN", "Security"],
+      "categories": [
+        "VPN",
+        "Security"
+      ],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wireguard-logo.png",
       "repository": {
@@ -118,6 +129,22 @@
           "default": "10"
         }
       ]
+    },
+    {
+      "type": 3,
+      "title": "🆓 Kostenlose Security Alternativen",
+      "description": "Komplette kostenlose Alternativen zu Keeper, Auth0, Authy, Okta & Co. Alle Open-Source Lösungen ohne Limits.",
+      "note": "Sammlung der besten kostenlosen Alternativen zu kommerziellen Security-Lösungen",
+      "categories": [
+        "Security",
+        "Free Alternatives"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/opensource.svg",
+      "repository": {
+        "url": "https://github.com/YOUR_USERNAME/portainer-infrastructure-templates",
+        "stackfile": "stacks/free-alternatives.yml"
+      }
     }
   ]
 }

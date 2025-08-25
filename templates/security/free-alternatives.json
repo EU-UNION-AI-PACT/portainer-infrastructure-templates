@@ -1,0 +1,328 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "type": 3,
+      "title": "Vaultwarden - Keeper Alternative",
+      "description": "🔐 Bitwarden-kompatible, selbst-gehostete Passwort-Manager Alternative zu Keeper. Vollständig kostenlos mit Premium-Features.",
+      "note": "Kostenlose Alternative zu Keeper Password Manager. Unterstützt alle Bitwarden Clients.",
+      "categories": [
+        "Security",
+        "Password Manager"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/dani-garcia/vaultwarden/main/resources/vaultwarden-icon.png",
+      "repository": {
+        "url": "https://github.com/dani-garcia/vaultwarden",
+        "stackfile": "docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DOMAIN",
+          "label": "Domain",
+          "description": "Domain für Vaultwarden (z.B. https://vault.example.com)",
+          "default": "https://localhost"
+        },
+        {
+          "name": "ADMIN_TOKEN",
+          "label": "Admin Token",
+          "description": "Sicherer Admin Token für Vaultwarden Admin Panel"
+        },
+        {
+          "name": "SIGNUPS_ALLOWED",
+          "label": "Registrierungen erlauben",
+          "description": "Erlaube neue Benutzerregistrierungen",
+          "default": "true",
+          "select": [
+            {
+              "text": "Ja",
+              "value": "true"
+            },
+            {
+              "text": "Nein",
+              "value": "false"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "Keycloak - Auth0 Alternative",
+      "description": "🔑 Open-Source Identity und Access Management. Vollständige Auth0 Alternative mit SSO, SAML, OAuth2, LDAP Support.",
+      "note": "Kostenlose Alternative zu Auth0. Enterprise-grade Identity Provider von Red Hat.",
+      "categories": [
+        "Security",
+        "Authentication",
+        "SSO"
+      ],
+      "platform": "linux",
+      "logo": "https://www.keycloak.org/resources/images/keycloak_logo_200px.svg",
+      "repository": {
+        "url": "https://github.com/keycloak/keycloak",
+        "stackfile": "docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "KEYCLOAK_ADMIN",
+          "label": "Admin Benutzername",
+          "description": "Keycloak Admin Benutzername",
+          "default": "admin"
+        },
+        {
+          "name": "KEYCLOAK_ADMIN_PASSWORD",
+          "label": "Admin Passwort",
+          "description": "Sicheres Passwort für Keycloak Admin"
+        },
+        {
+          "name": "KC_DB",
+          "label": "Datenbank",
+          "description": "Datenbank Typ",
+          "default": "postgres",
+          "select": [
+            {
+              "text": "PostgreSQL",
+              "value": "postgres"
+            },
+            {
+              "text": "MySQL",
+              "value": "mysql"
+            },
+            {
+              "text": "MariaDB",
+              "value": "mariadb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "Authentik - Authy/Auth0 Alternative",
+      "description": "🛡️ Moderne Identity Provider Alternative zu Authy und Auth0. 2FA, SSO, LDAP, OAuth2, SAML Support.",
+      "note": "Kostenlose Alternative zu Authy und Auth0. Modernes UI und einfache Konfiguration.",
+      "categories": [
+        "Security",
+        "Authentication",
+        "2FA"
+      ],
+      "platform": "linux",
+      "logo": "https://goauthentik.io/img/icon.png",
+      "repository": {
+        "url": "https://github.com/goauthentik/authentik",
+        "stackfile": "docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "AUTHENTIK_SECRET_KEY",
+          "label": "Secret Key",
+          "description": "Sicherer Secret Key für Authentik (50+ Zeichen)"
+        },
+        {
+          "name": "AUTHENTIK_EMAIL__HOST",
+          "label": "SMTP Server",
+          "description": "SMTP Server für E-Mail Versand",
+          "default": "localhost"
+        },
+        {
+          "name": "AUTHENTIK_EMAIL__USERNAME",
+          "label": "SMTP Benutzername",
+          "description": "SMTP Benutzername für E-Mail Versand"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "KeeWeb - Globe Keeper Alternative",
+      "description": "🌐 Web-basierter KeePass Client. Kostenlose Alternative zu Globe Keeper mit lokaler und Cloud-Synchronisation.",
+      "note": "Kostenlose Alternative zu Globe Keeper. Unterstützt KeePass Datenbanken im Browser.",
+      "categories": [
+        "Security",
+        "Password Manager",
+        "Web"
+      ],
+      "platform": "linux",
+      "logo": "https://app.keeweb.info/favicon.png",
+      "repository": {
+        "url": "https://github.com/keeweb/keeweb",
+        "stackfile": "docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "Port",
+          "description": "Port für KeeWeb Interface",
+          "default": "8080"
+        },
+        {
+          "name": "KEEWEB_CONFIG",
+          "label": "Konfiguration",
+          "description": "Pfad zur KeeWeb Konfigurationsdatei",
+          "default": "/config/config.json"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "Authelia - FrontEgg Alternative",
+      "description": "🔐 Forward Auth Middleware für moderne Apps. Kostenlose Alternative zu FrontEgg mit 2FA, SSO, LDAP.",
+      "note": "Kostenlose Alternative zu FrontEgg. Perfekt für Reverse Proxy Authentication.",
+      "categories": [
+        "Security",
+        "Authentication",
+        "Middleware"
+      ],
+      "platform": "linux",
+      "logo": "https://www.authelia.com/images/branding/logo-cropped.png",
+      "repository": {
+        "url": "https://github.com/authelia/authelia",
+        "stackfile": "docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "AUTHELIA_JWT_SECRET",
+          "label": "JWT Secret",
+          "description": "Sicherer JWT Secret für Authelia"
+        },
+        {
+          "name": "AUTHELIA_SESSION_SECRET",
+          "label": "Session Secret",
+          "description": "Sicherer Session Secret"
+        },
+        {
+          "name": "AUTHELIA_STORAGE_ENCRYPTION_KEY",
+          "label": "Encryption Key",
+          "description": "Verschlüsselungsschlüssel für Storage"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "FusionAuth - Okta Alternative",
+      "description": "🏢 Enterprise Identity Platform. Kostenlose Alternative zu Okta mit unbegrenzten Benutzern und Premium Features.",
+      "note": "Kostenlose Alternative zu Okta. Keine Benutzer-Limits, vollständige API, Enterprise Features.",
+      "categories": [
+        "Security",
+        "Enterprise",
+        "Identity"
+      ],
+      "platform": "linux",
+      "logo": "https://fusionauth.io/assets/img/fusionauth-logo-orange.svg",
+      "repository": {
+        "url": "https://github.com/FusionAuth/fusionauth-containers",
+        "stackfile": "docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DATABASE_USER",
+          "label": "Datenbank Benutzer",
+          "description": "PostgreSQL Benutzer für FusionAuth",
+          "default": "fusionauth"
+        },
+        {
+          "name": "DATABASE_PASSWORD",
+          "label": "Datenbank Passwort",
+          "description": "Sicheres Passwort für PostgreSQL"
+        },
+        {
+          "name": "FUSIONAUTH_APP_MEMORY",
+          "label": "Memory Limit",
+          "description": "Memory Limit für FusionAuth",
+          "default": "512M"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "FreeOTP+ - Authy Alternative",
+      "description": "📱 Open-Source 2FA App Alternative zu Authy. Unterstützt TOTP und HOTP ohne Cloud-Sync.",
+      "note": "Kostenlose Alternative zu Authy. Keine Cloud-Abhängigkeit, vollständig Open Source.",
+      "categories": [
+        "Security",
+        "2FA",
+        "Mobile"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/helloworld1/FreeOTPPlus/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "repository": {
+        "url": "https://github.com/helloworld1/FreeOTPPlus",
+        "stackfile": "docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "TOTP_SERVICE_NAME",
+          "label": "Service Name",
+          "description": "Name des TOTP Services",
+          "default": "Self-Hosted TOTP"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "Passbolt - Team Password Manager",
+      "description": "👥 Open-Source Team Password Manager. Kostenlose Alternative für Unternehmen mit Sharing und Permissions.",
+      "note": "Kostenlose Alternative für Team Password Management. Enterprise Features ohne Kosten.",
+      "categories": [
+        "Security",
+        "Password Manager",
+        "Team"
+      ],
+      "platform": "linux",
+      "logo": "https://www.passbolt.com/assets/img/logo/logo.svg",
+      "repository": {
+        "url": "https://github.com/passbolt/passbolt_docker",
+        "stackfile": "docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "APP_FULL_BASE_URL",
+          "label": "Base URL",
+          "description": "Vollständige URL für Passbolt",
+          "default": "https://passbolt.local"
+        },
+        {
+          "name": "DATASOURCES_DEFAULT_USERNAME",
+          "label": "DB Username",
+          "description": "Datenbank Benutzername",
+          "default": "passbolt"
+        },
+        {
+          "name": "DATASOURCES_DEFAULT_PASSWORD",
+          "label": "DB Password",
+          "description": "Sicheres Datenbank Passwort"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "Ory Kratos - User Management",
+      "description": "👤 Cloud-native User Management System. Kostenlose Alternative für komplettes User Lifecycle Management.",
+      "note": "Moderne Alternative für User Management. API-first Design, keine Vendor Lock-in.",
+      "categories": [
+        "Security",
+        "User Management",
+        "API"
+      ],
+      "platform": "linux",
+      "logo": "https://avatars.githubusercontent.com/u/44235614?s=200&v=4",
+      "repository": {
+        "url": "https://github.com/ory/kratos",
+        "stackfile": "docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DSN",
+          "label": "Database DSN",
+          "description": "Datenbank Connection String",
+          "default": "postgres://kratos:secret@postgres:5432/kratos?sslmode=disable"
+        },
+        {
+          "name": "SERVE_PUBLIC_BASE_URL",
+          "label": "Public URL",
+          "description": "Öffentliche URL für Kratos",
+          "default": "http://localhost:4433"
+        }
+      ]
+    }
+  ]
+}
