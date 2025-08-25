@@ -1,0 +1,117 @@
+version: '3.8'
+
+services:
+  # Security Stack Only
+  crowdsec:
+    image: crowdsecurity/crowdsec:latest
+    container_name: crowdsec
+    environment:
+      - COLLECTIONS=crowdsecurity/linux crowdsecurity/nginx
+      - GID=1000
+    volumes:
+      - crowdsec-config:/etc/crowdsec
+      - crowdsec-data:/var/lib/crowdsec
+      - /var/log:/logs:ro
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    networks:
+      - security-net
+
+  wazuh-manager:
+    image: wazuh/wazuh-manager:latest
+    container_name: wazuh-manager
+    hostname: wazuh-manager
+    restart: unless-stopped
+    ports:
+      - "1514:1514/udp"
+      - "1515:1515"
+      - "55000:55000"
+    environment:
+      - INDEXER_URL=https://wazuh-indexer:9200
+      - INDEXER_USERNAME=admin
+      - INDEXER_PASSWORD=${WAZUH_PASSWORD:-SecretPassword123!}
+    volumes:
+      - wazuh-manager-config:/wazuh-config-mount/etc/wazuh
+      - wazuh-manager-logs:/var/ossec/logs
+      - wazuh-manager-etc:/var/ossec/etc
+    networks:
+      - security-net
+
+  wazuh-indexer:
+    image: wazuh/wazuh-indexer:latest
+    container_name: wazuh-indexer
+    restart: unless-stopped
+    ports:
+      - "9200:9200"
+    environment:
+      - "OPENSEARCH_JAVA_OPTS=-Xms1g -Xmx1g"
+      - "bootstrap.memory_lock=true"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - wazuh-indexer-data:/var/lib/wazuh-indexer
+    networks:
+      - security-net
+
+  wazuh-dashboard:
+    image: wazuh/wazuh-dashboard:latest
+    container_name: wazuh-dashboard
+    restart: unless-stopped
+    ports:
+      - "443:5601"
+    environment:
+      - INDEXER_USERNAME=admin
+      - INDEXER_PASSWORD=${WAZUH_PASSWORD:-SecretPassword123!}
+      - WAZUH_API_URL=https://wazuh-manager
+    depends_on:
+      - wazuh-indexer
+    networks:
+      - security-net
+
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    restart: unless-stopped
+    environment:
+      - WEBSOCKET_ENABLED=true
+      - SIGNUPS_ALLOWED=true
+      - ADMIN_TOKEN=${VAULTWARDEN_ADMIN_TOKEN:-your-secure-admin-token}
+    volumes:
+      - vaultwarden-data:/data
+    ports:
+      - "8081:80"
+    networks:
+      - security-net
+
+  vault:
+    image: hashicorp/vault:latest
+    container_name: vault
+    restart: unless-stopped
+    cap_add:
+      - IPC_LOCK
+    environment:
+      - VAULT_DEV_ROOT_TOKEN_ID=${VAULT_TOKEN:-hvs.your-root-token}
+      - VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:8200
+    volumes:
+      - vault-data:/vault/file
+    ports:
+      - "8200:8200"
+    networks:
+      - security-net
+
+volumes:
+  crowdsec-config:
+  crowdsec-data:
+  wazuh-manager-config:
+  wazuh-manager-logs:
+  wazuh-manager-etc:
+  wazuh-indexer-data:
+  vaultwarden-data:
+  vault-data:
+
+networks:
+  security-net:
+    driver: bridge

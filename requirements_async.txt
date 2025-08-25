@@ -1,0 +1,2 @@
+# Add this to requirements.txt for async HTTP support
+aiohttp>=3.8.0

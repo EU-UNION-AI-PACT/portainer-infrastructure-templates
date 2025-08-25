@@ -1,0 +1,364 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "type": 1,
+      "title": "CrowdSec",
+      "name": "crowdsec",
+      "description": "Modern behavior-based IPS. Detects aggressive behaviors and bans malicious IPs",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "IDS/IPS"
+      ],
+      "image": "crowdsecurity/crowdsec:latest",
+      "logo": "https://raw.githubusercontent.com/crowdsecurity/crowdsec/master/docs/assets/images/crowdsec_logo.png",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        "crowdsec-config:/etc/crowdsec",
+        "crowdsec-data:/var/lib/crowdsec",
+        "/var/log:/logs:ro"
+      ],
+      "restart_policy": "unless-stopped",
+      "env": [
+        {
+          "name": "COLLECTIONS",
+          "default": "crowdsecurity/linux crowdsecurity/nginx"
+        },
+        {
+          "name": "GID",
+          "default": "1000"
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "title": "Wazuh Manager",
+      "name": "wazuh",
+      "description": "Open source SIEM, HIDS, and security monitoring platform",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "SIEM"
+      ],
+      "image": "wazuh/wazuh-manager:latest",
+      "logo": "https://wazuh.com/uploads/2022/05/Logo-blogpost.png",
+      "ports": [
+        "55000:55000",
+        "1514:1514/udp",
+        "1515:1515"
+      ],
+      "volumes": [
+        "wazuh-data:/var/ossec/data",
+        "wazuh-logs:/var/ossec/logs",
+        "wazuh-etc:/var/ossec/etc"
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "Suricata IDS",
+      "name": "suricata",
+      "description": "High-performance network IDS, IPS and security monitoring",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "IDS/IPS"
+      ],
+      "image": "jasonish/suricata:latest",
+      "cap_add": [
+        "NET_ADMIN",
+        "NET_RAW"
+      ],
+      "network_mode": "host",
+      "volumes": [
+        "suricata-etc:/etc/suricata",
+        "suricata-log:/var/log/suricata",
+        "suricata-lib:/var/lib/suricata"
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "WireGuard VPN",
+      "name": "wireguard",
+      "description": "Fast, modern, secure VPN tunnel with web UI",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "VPN"
+      ],
+      "image": "linuxserver/wireguard:latest",
+      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wireguard-logo.png",
+      "cap_add": [
+        "NET_ADMIN",
+        "SYS_MODULE"
+      ],
+      "sysctls": [
+        {
+          "net.ipv4.conf.all.src_valid_mark": "1"
+        }
+      ],
+      "ports": [
+        "51820:51820/udp"
+      ],
+      "volumes": [
+        "wg-config:/config",
+        "/lib/modules:/lib/modules:ro"
+      ],
+      "env": [
+        {
+          "name": "PUID",
+          "default": "1000"
+        },
+        {
+          "name": "PGID",
+          "default": "1000"
+        },
+        {
+          "name": "TZ",
+          "default": "Etc/UTC"
+        },
+        {
+          "name": "SERVERURL",
+          "default": "auto"
+        },
+        {
+          "name": "SERVERPORT",
+          "default": "51820"
+        },
+        {
+          "name": "PEERS",
+          "default": "1"
+        }
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "OpenVPN Access Server",
+      "name": "openvpn-as",
+      "description": "OpenVPN Access Server with web administration interface",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "VPN"
+      ],
+      "image": "linuxserver/openvpn-as:latest",
+      "cap_add": [
+        "NET_ADMIN"
+      ],
+      "ports": [
+        "943:943",
+        "9443:9443",
+        "1194:1194/udp"
+      ],
+      "volumes": [
+        "openvpn-data:/config"
+      ],
+      "env": [
+        {
+          "name": "PUID",
+          "default": "1000"
+        },
+        {
+          "name": "PGID",
+          "default": "1000"
+        },
+        {
+          "name": "TZ",
+          "default": "Etc/UTC"
+        }
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "Vaultwarden",
+      "name": "vaultwarden",
+      "description": "Lightweight Bitwarden server implementation in Rust",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "Password Manager"
+      ],
+      "image": "vaultwarden/server:latest",
+      "logo": "https://raw.githubusercontent.com/bitwarden/brand/master/icons/icon-256x256.png",
+      "ports": [
+        "8081:80"
+      ],
+      "volumes": [
+        "vaultwarden-data:/data"
+      ],
+      "env": [
+        {
+          "name": "WEBSOCKET_ENABLED",
+          "default": "true"
+        },
+        {
+          "name": "SIGNUPS_ALLOWED",
+          "default": "true"
+        },
+        {
+          "name": "ADMIN_TOKEN",
+          "default": ""
+        }
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "HashiCorp Vault",
+      "name": "vault",
+      "description": "Secure, store and tightly control access to secrets",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "Secrets Management"
+      ],
+      "image": "hashicorp/vault:latest",
+      "logo": "https://www.datocms-assets.com/2885/1506457071-blog-vault-list.svg",
+      "cap_add": [
+        "IPC_LOCK"
+      ],
+      "ports": [
+        "8200:8200"
+      ],
+      "volumes": [
+        "vault-data:/vault/file",
+        "vault-logs:/vault/logs"
+      ],
+      "env": [
+        {
+          "name": "VAULT_DEV_ROOT_TOKEN_ID",
+          "default": "myroot"
+        },
+        {
+          "name": "VAULT_DEV_LISTEN_ADDRESS",
+          "default": "0.0.0.0:8200"
+        }
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "Authelia",
+      "name": "authelia",
+      "description": "The Single Sign-On Multi-Factor portal for web apps",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "Authentication"
+      ],
+      "image": "authelia/authelia:latest",
+      "logo": "https://www.authelia.com/images/branding/logo-cropped.png",
+      "ports": [
+        "9091:9091"
+      ],
+      "volumes": [
+        "authelia-config:/config"
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "Keycloak",
+      "name": "keycloak",
+      "description": "Open Source Identity and Access Management",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "Identity Management"
+      ],
+      "image": "quay.io/keycloak/keycloak:latest",
+      "logo": "https://www.keycloak.org/resources/images/logo.svg",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        "keycloak-data:/opt/keycloak/data"
+      ],
+      "env": [
+        {
+          "name": "KEYCLOAK_ADMIN",
+          "default": "admin"
+        },
+        {
+          "name": "KEYCLOAK_ADMIN_PASSWORD",
+          "default": "admin"
+        },
+        {
+          "name": "KC_HOSTNAME_STRICT",
+          "default": "false"
+        }
+      ],
+      "command": "start-dev",
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "CrowdStrike Falcon Sensor",
+      "name": "crowdstrike-falcon",
+      "description": "CrowdStrike Falcon container security agent (requires valid license)",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "Enterprise",
+        "EDR"
+      ],
+      "image": "crowdstrike/falcon-container-sensor:latest",
+      "note": "Requires valid CrowdStrike license and credentials",
+      "env": [
+        {
+          "name": "FALCON_CLIENT_ID",
+          "default": "your-client-id"
+        },
+        {
+          "name": "FALCON_CLIENT_SECRET",
+          "default": "your-client-secret"
+        },
+        {
+          "name": "FALCON_CID",
+          "default": "your-customer-id"
+        }
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "Palo Alto Prisma Defender",
+      "name": "prisma-defender",
+      "description": "Prisma Cloud container defender (requires valid Palo Alto license)",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "Enterprise",
+        "Container Security"
+      ],
+      "image": "registry.twistlock.com/twistlock/defender:latest",
+      "note": "Requires valid Palo Alto Prisma Cloud license",
+      "privileged": true,
+      "env": [
+        {
+          "name": "DEFENDER_TYPE",
+          "default": "dockerLinux"
+        },
+        {
+          "name": "DEFENDER_LISTENER_TYPE",
+          "default": "none"
+        },
+        {
+          "name": "CONSOLE_ADDR",
+          "default": "your-console-url"
+        },
+        {
+          "name": "WS_ADDRESS",
+          "default": "your-websocket-address"
+        }
+      ],
+      "restart_policy": "unless-stopped"
+    }
+  ]
+}

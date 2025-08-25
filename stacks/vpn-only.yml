@@ -1,0 +1,150 @@
+version: '3.8'
+
+services:
+  # VPN Stack Only
+  wireguard:
+    image: linuxserver/wireguard:latest
+    container_name: wireguard
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+      - SERVERURL=${WIREGUARD_SERVER_URL:-vpn.example.com}
+      - SERVERPORT=51820
+      - PEERS=10
+      - PEERDNS=auto
+      - INTERNAL_SUBNET=10.13.13.0
+      - ALLOWEDIPS=0.0.0.0/0
+    volumes:
+      - wireguard-config:/config
+      - /lib/modules:/lib/modules
+    ports:
+      - "51820:51820/udp"
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+    restart: unless-stopped
+    networks:
+      - vpn-net
+
+  openvpn-as:
+    image: linuxserver/openvpn-as:latest
+    container_name: openvpn-as
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+      - INTERFACE=eth0
+    volumes:
+      - openvpn-config:/config
+    ports:
+      - "943:943"
+      - "9443:9443"
+      - "1194:1194/udp"
+    restart: unless-stopped
+    networks:
+      - vpn-net
+
+  pfsense:
+    image: pfsense/pfsense:latest
+    container_name: pfsense
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+    volumes:
+      - pfsense-config:/config
+    ports:
+      - "8443:443"
+      - "8080:80"
+    restart: unless-stopped
+    networks:
+      - vpn-net
+
+  tailscale:
+    image: tailscale/tailscale:latest
+    container_name: tailscale
+    hostname: docker-tailscale
+    environment:
+      - TS_AUTHKEY=${TAILSCALE_AUTHKEY:-your-auth-key}
+      - TS_ROUTES=192.168.0.0/24
+      - TS_EXTRA_ARGS=--advertise-routes=192.168.0.0/24
+    volumes:
+      - tailscale-data:/var/lib/tailscale
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    restart: unless-stopped
+    networks:
+      - vpn-net
+
+  zerotier:
+    image: zerotier/zerotier:latest
+    container_name: zerotier
+    devices:
+      - /dev/net/tun
+    network_mode: host
+    volumes:
+      - zerotier-data:/var/lib/zerotier-one
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    restart: unless-stopped
+
+  nginx-proxy-manager:
+    image: jc21/nginx-proxy-manager:latest
+    container_name: nginx-proxy-manager
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "81:81"
+    environment:
+      - DB_MYSQL_HOST=npm-db
+      - DB_MYSQL_PORT=3306
+      - DB_MYSQL_USER=npm
+      - DB_MYSQL_PASSWORD=${NPM_DB_PASSWORD:-npm123}
+      - DB_MYSQL_NAME=npm
+    volumes:
+      - npm-data:/data
+      - npm-letsencrypt:/etc/letsencrypt
+    depends_on:
+      - npm-db
+    networks:
+      - vpn-net
+
+  npm-db:
+    image: mariadb:latest
+    container_name: npm-db
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=${NPM_DB_ROOT_PASSWORD:-rootpassword123}
+      - MYSQL_DATABASE=npm
+      - MYSQL_USER=npm
+      - MYSQL_PASSWORD=${NPM_DB_PASSWORD:-npm123}
+    volumes:
+      - npm-db-data:/var/lib/mysql
+    networks:
+      - vpn-net
+
+volumes:
+  wireguard-config:
+  openvpn-config:
+  pfsense-config:
+  tailscale-data:
+  zerotier-data:
+  npm-data:
+  npm-letsencrypt:
+  npm-db-data:
+
+networks:
+  vpn-net:
+    driver: bridge

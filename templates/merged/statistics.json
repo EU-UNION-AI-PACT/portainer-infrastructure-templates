@@ -1,0 +1,358 @@
+{
+  "total_templates": 615,
+  "total_sources": 16,
+  "templates_by_category": {
+    "Downloaders": 27,
+    "Tools": 135,
+    "Books": 2,
+    "Documents": 6,
+    "Networkother": 20,
+    "Mediaappvideo": 7,
+    "Networkdns": 1,
+    "Utilitybackup": 2,
+    "Networkweb": 6,
+    "Statusstable": 3,
+    "Mediaservervideo": 1,
+    "Mediaservermusic": 1,
+    "Mediaserverphotos": 1,
+    "Utilities": 3,
+    "Mediaappbooks": 1,
+    "Backup": 5,
+    "Cloud": 13,
+    "Monitoring": 9,
+    "Mediaserverother": 1,
+    "Productivity": 27,
+    "Social": 9,
+    "Authenticationserver": 2,
+    "Taskserver": 6,
+    "Familyappserver": 12,
+    "Managementutilityserver": 9,
+    "Dashboardserver": 11,
+    "Financeserver": 1,
+    "Networkserver": 1,
+    "Notesserver": 6,
+    "Smarthome": 9,
+    "Libraryserver": 10,
+    "Mediaserver": 10,
+    "Chatserver": 3,
+    "Musicserver": 6,
+    "Usenetserver": 6,
+    "Passwordserver": 1,
+    "Photos": 9,
+    "Codeserver": 6,
+    "Ftpserver": 2,
+    "Torrentserver": 4,
+    "Proxyserver": 5,
+    "Databaseserver": 3,
+    "Vpnserver": 2,
+    "Dns": 3,
+    "Email": 2,
+    "Backupandsyncserver": 2,
+    "Gamingserver": 1,
+    "Music": 6,
+    "Other": 92,
+    "Web": 18,
+    "Video": 10,
+    "Vpn": 6,
+    "Messenger": 5,
+    "Cctv": 1,
+    "Security": 3,
+    "Proxy": 8,
+    "Games": 4,
+    "Downloader": 2,
+    "Webserver": 2,
+    "Anitvirus": 1,
+    "Tool": 2,
+    "Homeautomation": 3,
+    "Management": 7,
+    "3dprinters": 1,
+    "Monitor": 2,
+    "Wordpress": 1,
+    "Database": 11,
+    "Development": 11,
+    "Cms": 8,
+    "Serverless": 4,
+    "Continuousintegration": 1,
+    "Marketing": 1,
+    "Ops": 1,
+    "Projectmanagement": 3,
+    "Portainer": 1,
+    "Messaging": 2,
+    "Docker": 6,
+    "Storage": 2,
+    "Logmanagement": 1,
+    "Searchengine": 1,
+    "Forum": 1,
+    "Feedreader": 1,
+    "Multimedia": 9,
+    "Dashboard": 2,
+    "Crypto": 1,
+    "Finance": 4,
+    "Presentation": 1,
+    "Network": 8,
+    "Ai": 4,
+    "Filebrowsers": 2,
+    "Pdftools": 1,
+    "Timerelated": 1,
+    "Offline": 1,
+    "Metrics": 3,
+    "Devops": 1,
+    "Audio": 1,
+    "Timetracking": 1,
+    "Learning": 1,
+    "Helpdesk": 1,
+    "Fitness": 1,
+    "Ebooks": 2,
+    "Comics": 1,
+    "Employee": 1,
+    "Podcast": 1,
+    "Files": 1,
+    "Adult": 1,
+    "Lowcode": 4,
+    "Events": 1,
+    "Rss": 1,
+    "Analytics": 3,
+    "Notes": 1,
+    "Bookmarks": 1,
+    "Remotecontrol": 3,
+    "Automation": 2,
+    "Tracking": 1,
+    "Linksharing": 1,
+    "Llm": 1,
+    "News": 1,
+    "System": 2,
+    "Calendar": 1,
+    "Wiki": 2,
+    "Knowledgebase": 1,
+    "Devtools": 1,
+    "Drawing": 2,
+    "Nocode": 3,
+    "Search": 1,
+    "Identitymanagement": 2,
+    "Accessproxy": 1,
+    "Mail": 1,
+    "Entertainment": 2,
+    "Graphicdesign": 1,
+    "Pdf": 1,
+    "Secrets": 1,
+    "Research": 1,
+    "Networking": 2,
+    "Photography": 1,
+    "Filemanagement": 1,
+    "Webplatform": 1,
+    "Documentation": 1,
+    "Operatingsystem": 1,
+    "Paas": 1,
+    "Edge": 10,
+    "Media": 5,
+    "Filesystem": 1,
+    "Locationtracking": 1,
+    "Logs": 1,
+    "Orchestration": 1,
+    "Adblocking": 1,
+    "Remote Control": 1,
+    "P2P": 1,
+    "Usenet Server": 1,
+    "Log Management": 1
+  },
+  "templates_by_platform": {
+    "linux": 614,
+    "windows": 1
+  },
+  "source_statistics": {
+    "lissy93_v3": {
+      "template_count": 551,
+      "metadata": {
+        "source_name": "lissy93_v3",
+        "source_url": "https://raw.githubusercontent.com/Lissy93/portainer-templates/main/templates_v3.json",
+        "description": "500+ comprehensive templates by Lissy93 (v3 format)",
+        "category": "comprehensive",
+        "fetched_at": 1756082786.0519462,
+        "status": "success"
+      },
+      "status": "success"
+    },
+    "lissy93_legacy": {
+      "template_count": 472,
+      "metadata": {
+        "source_name": "lissy93_legacy",
+        "source_url": "https://raw.githubusercontent.com/Lissy93/portainer-templates/main/templates.json",
+        "description": "Lissy93 templates in legacy format",
+        "category": "comprehensive",
+        "fetched_at": 1756082786.0239453,
+        "status": "success"
+      },
+      "status": "success"
+    },
+    "qballjos": {
+      "template_count": 112,
+      "metadata": {
+        "source_name": "qballjos",
+        "source_url": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Template/template.json",
+        "description": "Homelab-focused template collection",
+        "category": "homelab",
+        "fetched_at": 1756082785.8942046,
+        "status": "success"
+      },
+      "status": "success"
+    },
+    "xneo1": {
+      "template_count": 265,
+      "metadata": {
+        "source_name": "xneo1",
+        "source_url": "https://raw.githubusercontent.com/xneo1/portainer_templates/master/Template/template.json",
+        "description": "Community-maintained template collection",
+        "category": "community",
+        "fetched_at": 1756082786.0035233,
+        "status": "success"
+      },
+      "status": "success"
+    },
+    "technorabilia": {
+      "template_count": 1,
+      "metadata": {
+        "source_name": "technorabilia",
+        "source_url": "https://raw.githubusercontent.com/technorabilia/portainer-templates/main/lsio/templates/templates-2.0.json",
+        "description": "LinuxServer.io driven templates",
+        "category": "linuxserver",
+        "fetched_at": 1756082785.8895772,
+        "status": "success"
+      },
+      "status": "success"
+    },
+    "thelustrivas_nov2022": {
+      "template_count": 153,
+      "metadata": {
+        "source_name": "thelustrivas_nov2022",
+        "source_url": "https://raw.githubusercontent.com/TheLustriVA/portainer-templates-Nov-2022-collection/main/templates_2_2_rc_2_2.json",
+        "description": "November 2022 template collection",
+        "category": "snapshot",
+        "fetched_at": 1756082786.0614543,
+        "status": "success"
+      },
+      "status": "success"
+    },
+    "ntv_one": {
+      "template_count": 220,
+      "metadata": {
+        "source_name": "ntv_one",
+        "source_url": "https://raw.githubusercontent.com/ntv-one/portainer/main/template.json",
+        "description": "NTV-One maintained templates",
+        "category": "community",
+        "fetched_at": 1756082785.92797,
+        "status": "success"
+      },
+      "status": "success"
+    },
+    "mycroftwilde": {
+      "template_count": 153,
+      "metadata": {
+        "source_name": "mycroftwilde",
+        "source_url": "https://raw.githubusercontent.com/mycroftwilde/portainer_templates/master/Template/template.json",
+        "description": "Mycroft Wilde's template collection",
+        "category": "community",
+        "fetched_at": 1756082785.9548934,
+        "status": "success"
+      },
+      "status": "success"
+    },
+    "mikestraney": {
+      "template_count": 153,
+      "metadata": {
+        "source_name": "mikestraney",
+        "source_url": "https://raw.githubusercontent.com/mikestraney/portainer-templates/master/templates.json",
+        "description": "Mike Straney's template collection",
+        "category": "community",
+        "fetched_at": 1756082785.980211,
+        "status": "success"
+      },
+      "status": "success"
+    },
+    "dnburgess": {
+      "template_count": 20,
+      "metadata": {
+        "source_name": "dnburgess",
+        "source_url": "https://raw.githubusercontent.com/dnburgess/dbtechtemplate/master/Template/v2/templates.json",
+        "description": "Tech-oriented template collection",
+        "category": "tech",
+        "fetched_at": 1756082786.1315694,
+        "status": "success"
+      },
+      "status": "success"
+    },
+    "selfhostedpro": {
+      "template_count": 98,
+      "metadata": {
+        "source_name": "selfhostedpro",
+        "source_url": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Template/omv-v2.json",
+        "description": "Self-hosted services for OMV",
+        "category": "selfhosted",
+        "fetched_at": 1756082786.1882145,
+        "status": "success"
+      },
+      "status": "success"
+    },
+    "selfhostedpro_portainer2": {
+      "template_count": 105,
+      "metadata": {
+        "source_name": "selfhostedpro_portainer2",
+        "source_url": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/portainer-2.0/Template/template.json",
+        "description": "Self-hosted services for Portainer 2.0",
+        "category": "selfhosted",
+        "fetched_at": 1756082786.0536318,
+        "status": "success"
+      },
+      "status": "success"
+    },
+    "mediadepot": {
+      "template_count": 47,
+      "metadata": {
+        "source_name": "mediadepot",
+        "source_url": "https://raw.githubusercontent.com/mediadepot/templates/master/portainer.json",
+        "description": "Media-focused template collection",
+        "category": "media",
+        "fetched_at": 1756082786.0784185,
+        "status": "success"
+      },
+      "status": "success"
+    },
+    "portainer_official": {
+      "template_count": 68,
+      "metadata": {
+        "source_name": "portainer_official",
+        "source_url": "https://raw.githubusercontent.com/portainer/templates/master/templates-2.0.json",
+        "description": "Official Portainer templates",
+        "category": "official",
+        "fetched_at": 1756082786.0743408,
+        "status": "success"
+      },
+      "status": "success"
+    },
+    "donpablonow": {
+      "template_count": 0,
+      "metadata": {
+        "source_name": "donpablonow",
+        "source_url": "https://raw.githubusercontent.com/donPabloNow/portainer-templates/master/templates.json",
+        "status": "failed",
+        "error": "HTTP 404",
+        "fetched_at": 1756082789.2203257
+      },
+      "status": "failed"
+    },
+    "olivercullimore": {
+      "template_count": 139,
+      "metadata": {
+        "source_name": "olivercullimore",
+        "source_url": "https://raw.githubusercontent.com/OliverCullimore/portainer-templates/master/templates.json",
+        "description": "Oliver Cullimore's template collection",
+        "category": "community",
+        "fetched_at": 1756082786.098896,
+        "status": "success"
+      },
+      "status": "success"
+    }
+  },
+  "generated_at": "2025-08-25T02:46:29.475368",
+  "unique_categories": 152,
+  "unique_platforms": 2
+}

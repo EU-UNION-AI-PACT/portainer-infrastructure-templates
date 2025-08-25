@@ -1,0 +1,144 @@
+{
+  "sources": [
+    {
+      "name": "lissy93_v3",
+      "url": "https://raw.githubusercontent.com/Lissy93/portainer-templates/main/templates_v3.json",
+      "description": "500+ comprehensive templates by Lissy93 (v3 format)",
+      "active": true,
+      "category": "comprehensive"
+    },
+    {
+      "name": "lissy93_legacy",
+      "url": "https://raw.githubusercontent.com/Lissy93/portainer-templates/main/templates.json",
+      "description": "Lissy93 templates in legacy format",
+      "active": true,
+      "category": "comprehensive"
+    },
+    {
+      "name": "qballjos",
+      "url": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Template/template.json",
+      "description": "Homelab-focused template collection",
+      "active": true,
+      "category": "homelab"
+    },
+    {
+      "name": "xneo1",
+      "url": "https://raw.githubusercontent.com/xneo1/portainer_templates/master/Template/template.json",
+      "description": "Community-maintained template collection",
+      "active": true,
+      "category": "community"
+    },
+    {
+      "name": "technorabilia",
+      "url": "https://raw.githubusercontent.com/technorabilia/portainer-templates/main/lsio/templates/templates-2.0.json",
+      "description": "LinuxServer.io driven templates",
+      "active": true,
+      "category": "linuxserver"
+    },
+    {
+      "name": "thelustrivas_nov2022",
+      "url": "https://raw.githubusercontent.com/TheLustriVA/portainer-templates-Nov-2022-collection/main/templates_2_2_rc_2_2.json",
+      "description": "November 2022 template collection",
+      "active": true,
+      "category": "snapshot"
+    },
+    {
+      "name": "ntv_one",
+      "url": "https://raw.githubusercontent.com/ntv-one/portainer/main/template.json",
+      "description": "NTV-One maintained templates",
+      "active": true,
+      "category": "community"
+    },
+    {
+      "name": "mycroftwilde",
+      "url": "https://raw.githubusercontent.com/mycroftwilde/portainer_templates/master/Template/template.json",
+      "description": "Mycroft Wilde's template collection",
+      "active": true,
+      "category": "community"
+    },
+    {
+      "name": "mikestraney",
+      "url": "https://raw.githubusercontent.com/mikestraney/portainer-templates/master/templates.json",
+      "description": "Mike Straney's template collection",
+      "active": true,
+      "category": "community"
+    },
+    {
+      "name": "dnburgess",
+      "url": "https://raw.githubusercontent.com/dnburgess/dbtechtemplate/master/Template/v2/templates.json",
+      "description": "Tech-oriented template collection",
+      "active": true,
+      "category": "tech"
+    },
+    {
+      "name": "selfhostedpro",
+      "url": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Template/omv-v2.json",
+      "description": "Self-hosted services for OMV",
+      "active": true,
+      "category": "selfhosted"
+    },
+    {
+      "name": "selfhostedpro_portainer2",
+      "url": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/portainer-2.0/Template/template.json",
+      "description": "Self-hosted services for Portainer 2.0",
+      "active": true,
+      "category": "selfhosted"
+    },
+    {
+      "name": "mediadepot",
+      "url": "https://raw.githubusercontent.com/mediadepot/templates/master/portainer.json",
+      "description": "Media-focused template collection",
+      "active": true,
+      "category": "media"
+    },
+    {
+      "name": "portainer_official",
+      "url": "https://raw.githubusercontent.com/portainer/templates/master/templates-2.0.json",
+      "description": "Official Portainer templates",
+      "active": true,
+      "category": "official"
+    },
+    {
+      "name": "donpablonow",
+      "url": "https://raw.githubusercontent.com/donPabloNow/portainer-templates/master/templates.json",
+      "description": "Don Pablo Now's template collection",
+      "active": true,
+      "category": "community"
+    },
+    {
+      "name": "olivercullimore",
+      "url": "https://raw.githubusercontent.com/OliverCullimore/portainer-templates/master/templates.json",
+      "description": "Oliver Cullimore's template collection",
+      "active": true,
+      "category": "community"
+    }
+  ],
+  "meta_sources": [
+    {
+      "name": "ibaraki_multiSource",
+      "url": "https://templates-portainer.ibaraki.app",
+      "description": "Multi-source aggregator with 508+ templates from 11 sources",
+      "active": true,
+      "category": "aggregator",
+      "supports_custom_urls": true
+    }
+  ],
+  "mirror_sources": [
+    {
+      "name": "sourceforge_mirror",
+      "url": "https://sourceforge.net/projects/portainer-templates.mirror/",
+      "description": "SourceForge mirror of Lissy93's collection",
+      "active": false,
+      "category": "mirror",
+      "note": "Download required, not direct JSON URL"
+    }
+  ],
+  "settings": {
+    "concurrent_downloads": 5,
+    "timeout_seconds": 30,
+    "retry_attempts": 3,
+    "output_format": "json",
+    "deduplicate_by": ["name", "title"],
+    "merge_strategy": "latest_wins"
+  }
+}

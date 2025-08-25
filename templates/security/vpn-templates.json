@@ -1,0 +1,99 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "type": 1,
+      "title": "WireGuard VPN",
+      "name": "wireguard",
+      "description": "Fast, modern, secure VPN tunnel with web UI",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "VPN"
+      ],
+      "image": "linuxserver/wireguard:latest",
+      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wireguard-logo.png",
+      "cap_add": [
+        "NET_ADMIN",
+        "SYS_MODULE"
+      ],
+      "sysctls": [
+        {
+          "net.ipv4.conf.all.src_valid_mark": "1"
+        }
+      ],
+      "ports": [
+        "51820:51820/udp"
+      ],
+      "volumes": [
+        "wg-config:/config",
+        "/lib/modules:/lib/modules:ro"
+      ],
+      "env": [
+        {
+          "name": "PUID",
+          "default": "1000"
+        },
+        {
+          "name": "PGID",
+          "default": "1000"
+        },
+        {
+          "name": "TZ",
+          "default": "Etc/UTC"
+        },
+        {
+          "name": "SERVERURL",
+          "default": "auto"
+        },
+        {
+          "name": "SERVERPORT",
+          "default": "51820"
+        },
+        {
+          "name": "PEERS",
+          "default": "1"
+        }
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "OpenVPN Access Server",
+      "name": "openvpn-as",
+      "description": "OpenVPN Access Server with web administration interface",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "VPN"
+      ],
+      "image": "linuxserver/openvpn-as:latest",
+      "cap_add": [
+        "NET_ADMIN"
+      ],
+      "ports": [
+        "943:943",
+        "9443:9443",
+        "1194:1194/udp"
+      ],
+      "volumes": [
+        "openvpn-data:/config"
+      ],
+      "env": [
+        {
+          "name": "PUID",
+          "default": "1000"
+        },
+        {
+          "name": "PGID",
+          "default": "1000"
+        },
+        {
+          "name": "TZ",
+          "default": "Etc/UTC"
+        }
+      ],
+      "restart_policy": "unless-stopped"
+    }
+  ]
+}

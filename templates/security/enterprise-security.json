@@ -1,0 +1,68 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "type": 1,
+      "title": "CrowdStrike Falcon Sensor",
+      "name": "crowdstrike-falcon",
+      "description": "CrowdStrike Falcon container security agent (requires valid license)",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "Enterprise",
+        "EDR"
+      ],
+      "image": "crowdstrike/falcon-container-sensor:latest",
+      "note": "Requires valid CrowdStrike license and credentials",
+      "env": [
+        {
+          "name": "FALCON_CLIENT_ID",
+          "default": "your-client-id"
+        },
+        {
+          "name": "FALCON_CLIENT_SECRET",
+          "default": "your-client-secret"
+        },
+        {
+          "name": "FALCON_CID",
+          "default": "your-customer-id"
+        }
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "Palo Alto Prisma Defender",
+      "name": "prisma-defender",
+      "description": "Prisma Cloud container defender (requires valid Palo Alto license)",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "Enterprise",
+        "Container Security"
+      ],
+      "image": "registry.twistlock.com/twistlock/defender:latest",
+      "note": "Requires valid Palo Alto Prisma Cloud license",
+      "privileged": true,
+      "env": [
+        {
+          "name": "DEFENDER_TYPE",
+          "default": "dockerLinux"
+        },
+        {
+          "name": "DEFENDER_LISTENER_TYPE",
+          "default": "none"
+        },
+        {
+          "name": "CONSOLE_ADDR",
+          "default": "your-console-url"
+        },
+        {
+          "name": "WS_ADDRESS",
+          "default": "your-websocket-address"
+        }
+      ],
+      "restart_policy": "unless-stopped"
+    }
+  ]
+}

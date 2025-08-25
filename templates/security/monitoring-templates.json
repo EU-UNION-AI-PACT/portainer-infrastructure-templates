@@ -1,0 +1,204 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "type": 1,
+      "title": "Elasticsearch",
+      "name": "elasticsearch",
+      "description": "Distributed search and analytics engine",
+      "platform": "linux",
+      "categories": [
+        "Monitoring",
+        "SIEM",
+        "Database"
+      ],
+      "image": "docker.elastic.co/elasticsearch/elasticsearch:8.11.0",
+      "logo": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt6ae3d6980b5fd629/5bbca1d1af3a954c36f95ed3/logo-elastic.svg",
+      "ports": [
+        "9200:9200",
+        "9300:9300"
+      ],
+      "volumes": [
+        "elasticsearch-data:/usr/share/elasticsearch/data"
+      ],
+      "env": [
+        {
+          "name": "discovery.type",
+          "default": "single-node"
+        },
+        {
+          "name": "xpack.security.enabled",
+          "default": "false"
+        },
+        {
+          "name": "ES_JAVA_OPTS",
+          "default": "-Xms1g -Xmx1g"
+        }
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "Kibana",
+      "name": "kibana",
+      "description": "Analytics and visualization platform for Elasticsearch",
+      "platform": "linux",
+      "categories": [
+        "Monitoring",
+        "SIEM",
+        "Visualization"
+      ],
+      "image": "docker.elastic.co/kibana/kibana:8.11.0",
+      "ports": [
+        "5601:5601"
+      ],
+      "env": [
+        {
+          "name": "ELASTICSEARCH_HOSTS",
+          "default": "http://elasticsearch:9200"
+        }
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "Logstash",
+      "name": "logstash",
+      "description": "Server-side data processing pipeline",
+      "platform": "linux",
+      "categories": [
+        "Monitoring",
+        "Log Processing"
+      ],
+      "image": "docker.elastic.co/logstash/logstash:8.11.0",
+      "ports": [
+        "5044:5044",
+        "9600:9600"
+      ],
+      "volumes": [
+        "logstash-pipeline:/usr/share/logstash/pipeline"
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "Prometheus",
+      "name": "prometheus",
+      "description": "Monitoring system and time series database",
+      "platform": "linux",
+      "categories": [
+        "Monitoring",
+        "Metrics"
+      ],
+      "image": "prom/prometheus:latest",
+      "logo": "https://prometheus.io/assets/prometheus_logo-cb55bb5c346.png",
+      "ports": [
+        "9090:9090"
+      ],
+      "volumes": [
+        "prometheus-data:/prometheus",
+        "prometheus-config:/etc/prometheus"
+      ],
+      "command": "--config.file=/etc/prometheus/prometheus.yml --storage.tsdb.path=/prometheus --web.console.libraries=/etc/prometheus/console_libraries --web.console.templates=/etc/prometheus/consoles --web.enable-lifecycle",
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "Grafana",
+      "name": "grafana",
+      "description": "Open observability platform for metrics, logs, and traces",
+      "platform": "linux",
+      "categories": [
+        "Monitoring",
+        "Visualization"
+      ],
+      "image": "grafana/grafana:latest",
+      "logo": "https://grafana.com/static/img/logos/grafana_logo.svg",
+      "ports": [
+        "3000:3000"
+      ],
+      "volumes": [
+        "grafana-data:/var/lib/grafana"
+      ],
+      "env": [
+        {
+          "name": "GF_SECURITY_ADMIN_PASSWORD",
+          "default": "admin"
+        }
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "Loki",
+      "name": "loki",
+      "description": "Horizontally-scalable log aggregation system",
+      "platform": "linux",
+      "categories": [
+        "Monitoring",
+        "Logging"
+      ],
+      "image": "grafana/loki:latest",
+      "ports": [
+        "3100:3100"
+      ],
+      "volumes": [
+        "loki-data:/loki"
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "Promtail",
+      "name": "promtail",
+      "description": "Log shipping agent for Loki",
+      "platform": "linux",
+      "categories": [
+        "Monitoring",
+        "Log Shipping"
+      ],
+      "image": "grafana/promtail:latest",
+      "volumes": [
+        "promtail-config:/etc/promtail",
+        "/var/log:/var/log:ro"
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "Graylog",
+      "name": "graylog",
+      "description": "Free and open source log management platform",
+      "platform": "linux",
+      "categories": [
+        "Monitoring",
+        "SIEM",
+        "Log Management"
+      ],
+      "image": "graylog/graylog:5.2",
+      "logo": "https://www.graylog.org/hubfs/graylog-logo-rgb-web.svg",
+      "ports": [
+        "9000:9000",
+        "12201:12201/udp"
+      ],
+      "volumes": [
+        "graylog-data:/usr/share/graylog/data"
+      ],
+      "env": [
+        {
+          "name": "GRAYLOG_PASSWORD_SECRET",
+          "default": "somepasswordpepper"
+        },
+        {
+          "name": "GRAYLOG_ROOT_PASSWORD_SHA2",
+          "default": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918"
+        },
+        {
+          "name": "GRAYLOG_HTTP_EXTERNAL_URI",
+          "default": "http://127.0.0.1:9000/"
+        }
+      ],
+      "restart_policy": "unless-stopped"
+    }
+  ]
+}

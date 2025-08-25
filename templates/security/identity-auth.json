@@ -1,0 +1,60 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "type": 1,
+      "title": "Authelia",
+      "name": "authelia",
+      "description": "The Single Sign-On Multi-Factor portal for web apps",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "Authentication"
+      ],
+      "image": "authelia/authelia:latest",
+      "logo": "https://www.authelia.com/images/branding/logo-cropped.png",
+      "ports": [
+        "9091:9091"
+      ],
+      "volumes": [
+        "authelia-config:/config"
+      ],
+      "restart_policy": "unless-stopped"
+    },
+    {
+      "type": 1,
+      "title": "Keycloak",
+      "name": "keycloak",
+      "description": "Open Source Identity and Access Management",
+      "platform": "linux",
+      "categories": [
+        "Security",
+        "Identity Management"
+      ],
+      "image": "quay.io/keycloak/keycloak:latest",
+      "logo": "https://www.keycloak.org/resources/images/logo.svg",
+      "ports": [
+        "8080:8080"
+      ],
+      "volumes": [
+        "keycloak-data:/opt/keycloak/data"
+      ],
+      "env": [
+        {
+          "name": "KEYCLOAK_ADMIN",
+          "default": "admin"
+        },
+        {
+          "name": "KEYCLOAK_ADMIN_PASSWORD",
+          "default": "admin"
+        },
+        {
+          "name": "KC_HOSTNAME_STRICT",
+          "default": "false"
+        }
+      ],
+      "command": "start-dev",
+      "restart_policy": "unless-stopped"
+    }
+  ]
+}
