@@ -145,6 +145,23 @@
         "url": "https://github.com/YOUR_USERNAME/portainer-infrastructure-templates",
         "stackfile": "stacks/free-alternatives.yml"
       }
+    },
+    {
+      "type": 3,
+      "title": "🔧 Extended Security Tools",
+      "description": "Erweiterte Security-Tools: Wazuh, FusionAuth, Tailscale, OWASP ZAP, Pi-hole, Passbolt, TheHive, MISP und mehr",
+      "note": "Sammlung von 15+ erweiterten Security-Tools aus GitHub/DockerHub",
+      "categories": [
+        "Security",
+        "Extended Tools",
+        "GitHub"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/github/explore/main/topics/security/security.png",
+      "repository": {
+        "url": "https://github.com/YOUR_USERNAME/portainer-infrastructure-templates",
+        "stackfile": "stacks/extended-security-tools.yml"
+      }
     }
   ]
 }

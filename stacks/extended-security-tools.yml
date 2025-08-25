@@ -1,0 +1,252 @@
+version: '3.8'
+
+services:
+  # SIEM & Security Monitoring
+  wazuh-manager:
+    image: wazuh/wazuh-manager:latest
+    container_name: wazuh-manager
+    hostname: wazuh-manager
+    restart: unless-stopped
+    ports:
+      - "1514:1514/udp"
+      - "1515:1515"
+      - "55000:55000"
+    volumes:
+      - wazuh-manager-config:/wazuh-config-mount/etc/wazuh
+    networks:
+      - extended-security-net
+
+  # Identity & Auth
+  fusionauth:
+    image: fusionauth/fusionauth-app:latest
+    container_name: fusionauth
+    restart: unless-stopped
+    environment:
+      - DATABASE_URL=jdbc:postgresql://fusionauth-db:5432/fusionauth
+      - FUSIONAUTH_APP_MEMORY=512M
+    ports:
+      - "9011:9011"
+    depends_on:
+      - fusionauth-db
+    networks:
+      - extended-security-net
+
+  fusionauth-db:
+    image: postgres:15
+    container_name: fusionauth-db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=fusionauth
+      - POSTGRES_USER=fusionauth
+      - POSTGRES_PASSWORD=${FUSIONAUTH_DB_PASSWORD:-fusionauth123}
+    volumes:
+      - fusionauth-db-data:/var/lib/postgresql/data
+    networks:
+      - extended-security-net
+
+  # VPN & Network
+  tailscale:
+    image: tailscale/tailscale:latest
+    container_name: tailscale
+    hostname: docker-tailscale
+    environment:
+      - TS_AUTHKEY=${TAILSCALE_AUTHKEY:-your-auth-key}
+      - TS_ROUTES=192.168.0.0/24
+    volumes:
+      - tailscale-data:/var/lib/tailscale
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    restart: unless-stopped
+    networks:
+      - extended-security-net
+
+  zerotier:
+    image: zerotier/zerotier:latest
+    container_name: zerotier
+    privileged: true
+    volumes:
+      - zerotier-data:/var/lib/zerotier-one
+    restart: unless-stopped
+    network_mode: host
+
+  # DevSecOps Tools
+  trivy-server:
+    image: aquasec/trivy:latest
+    container_name: trivy-server
+    restart: unless-stopped
+    command: server --listen 0.0.0.0:4954
+    ports:
+      - "4954:4954"
+    volumes:
+      - trivy-cache:/root/.cache
+    networks:
+      - extended-security-net
+
+  owasp-zap:
+    image: owasp/zap2docker-stable:latest
+    container_name: owasp-zap
+    restart: unless-stopped
+    command: zap-webswing.sh
+    ports:
+      - "8080:8080"
+      - "8090:8090"
+    volumes:
+      - zap-data:/zap/wrk
+    networks:
+      - extended-security-net
+
+  # Mail & Communication
+  roundcube:
+    image: roundcube/roundcubemail:latest
+    container_name: roundcube
+    restart: unless-stopped
+    environment:
+      - ROUNDCUBEMAIL_DEFAULT_HOST=${MAIL_HOST:-localhost}
+      - ROUNDCUBEMAIL_SMTP_SERVER=${SMTP_HOST:-localhost}
+    ports:
+      - "8081:80"
+    volumes:
+      - roundcube-data:/var/www/html
+    networks:
+      - extended-security-net
+
+  # Privacy Tools
+  tor-proxy:
+    image: dperson/torproxy:latest
+    container_name: tor-proxy
+    restart: unless-stopped
+    ports:
+      - "8118:8118"
+      - "9050:9050"
+    networks:
+      - extended-security-net
+
+  pihole:
+    image: pihole/pihole:latest
+    container_name: pihole
+    restart: unless-stopped
+    environment:
+      - WEBPASSWORD=${PIHOLE_PASSWORD:-admin}
+      - TZ=Europe/Berlin
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "8082:80"
+    volumes:
+      - pihole-etc:/etc/pihole
+      - pihole-dnsmasq:/etc/dnsmasq.d
+    networks:
+      - extended-security-net
+
+  # Team Password Manager
+  passbolt:
+    image: passbolt/passbolt:latest-ce
+    container_name: passbolt
+    restart: unless-stopped
+    environment:
+      - APP_FULL_BASE_URL=${PASSBOLT_BASE_URL:-https://passbolt.local}
+      - DATASOURCES_DEFAULT_HOST=passbolt-db
+      - DATASOURCES_DEFAULT_USERNAME=passbolt
+      - DATASOURCES_DEFAULT_PASSWORD=${PASSBOLT_DB_PASSWORD:-passbolt123}
+      - DATASOURCES_DEFAULT_DATABASE=passbolt
+    volumes:
+      - passbolt-gpg:/etc/passbolt/gpg
+      - passbolt-jwt:/etc/passbolt/jwt
+    ports:
+      - "8083:80"
+      - "8445:443"
+    depends_on:
+      - passbolt-db
+    networks:
+      - extended-security-net
+
+  passbolt-db:
+    image: mariadb:latest
+    container_name: passbolt-db
+    restart: unless-stopped
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=true
+      - MYSQL_DATABASE=passbolt
+      - MYSQL_USER=passbolt
+      - MYSQL_PASSWORD=${PASSBOLT_DB_PASSWORD:-passbolt123}
+    volumes:
+      - passbolt-db-data:/var/lib/mysql
+    networks:
+      - extended-security-net
+
+  # Multi-Factor Auth
+  privacyidea:
+    image: privacyidea/privacyidea:latest
+    container_name: privacyidea
+    restart: unless-stopped
+    ports:
+      - "5001:5001"
+    volumes:
+      - privacyidea-config:/etc/privacyidea
+    networks:
+      - extended-security-net
+
+  # Incident Response
+  thehive:
+    image: strangebee/thehive:latest
+    container_name: thehive
+    restart: unless-stopped
+    ports:
+      - "9000:9000"
+    volumes:
+      - thehive-data:/opt/thp/thehive/data
+    networks:
+      - extended-security-net
+
+  # Threat Intelligence
+  misp:
+    image: coolacid/misp-docker:core-latest
+    container_name: misp
+    restart: unless-stopped
+    environment:
+      - HOSTNAME=${MISP_HOSTNAME:-misp.local}
+      - POSTFIX_RELAY_HOST=${SMTP_RELAY:-localhost}
+    ports:
+      - "8084:80"
+      - "8446:443"
+    volumes:
+      - misp-data:/var/www/MISP
+    networks:
+      - extended-security-net
+
+  # Container Security
+  clair:
+    image: quay.io/coreos/clair:latest
+    container_name: clair
+    restart: unless-stopped
+    ports:
+      - "6060:6060"
+      - "6061:6061"
+    volumes:
+      - clair-config:/config
+    networks:
+      - extended-security-net
+
+volumes:
+  wazuh-manager-config:
+  fusionauth-db-data:
+  tailscale-data:
+  zerotier-data:
+  trivy-cache:
+  zap-data:
+  roundcube-data:
+  pihole-etc:
+  pihole-dnsmasq:
+  passbolt-gpg:
+  passbolt-jwt:
+  passbolt-db-data:
+  privacyidea-config:
+  thehive-data:
+  misp-data:
+  clair-config:
+
+networks:
+  extended-security-net:
+    driver: bridge

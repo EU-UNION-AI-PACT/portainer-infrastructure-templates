@@ -1,0 +1,296 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "type": 1,
+      "title": "Wazuh SIEM Complete",
+      "description": "🛡️ Open Source SIEM/XDR Platform - Wazuh Manager, Indexer & Dashboard",
+      "categories": [
+        "Security",
+        "SIEM",
+        "Monitoring"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/wazuh/wazuh/master/images/logo.png",
+      "image": "wazuh/wazuh-manager:latest",
+      "ports": [
+        "1514:1514/udp",
+        "1515:1515",
+        "55000:55000"
+      ],
+      "volumes": [
+        "/wazuh-config:/wazuh-config-mount/etc/wazuh"
+      ]
+    },
+    {
+      "type": 1,
+      "title": "FusionAuth",
+      "description": "🔑 Customer Identity Platform - kostenlose Okta Alternative",
+      "categories": [
+        "Security",
+        "Authentication",
+        "Identity"
+      ],
+      "platform": "linux",
+      "logo": "https://fusionauth.io/assets/img/fusionauth-logo-orange.svg",
+      "image": "fusionauth/fusionauth-app:latest",
+      "ports": [
+        "9011:9011"
+      ],
+      "env": [
+        {
+          "name": "DATABASE_URL",
+          "label": "Database URL",
+          "default": "jdbc:postgresql://db:5432/fusionauth"
+        },
+        {
+          "name": "FUSIONAUTH_APP_MEMORY",
+          "label": "Memory",
+          "default": "512M"
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "title": "Tailscale",
+      "description": "🌐 Zero-Config VPN basiert auf WireGuard",
+      "categories": [
+        "VPN",
+        "Network",
+        "Security"
+      ],
+      "platform": "linux",
+      "logo": "https://avatars.githubusercontent.com/u/48932923?s=200&v=4",
+      "image": "tailscale/tailscale:latest",
+      "privileged": true,
+      "env": [
+        {
+          "name": "TS_AUTHKEY",
+          "label": "Tailscale Auth Key",
+          "description": "Dein Tailscale Auth Key"
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "title": "ZeroTier",
+      "description": "🕸️ Software Defined Networking",
+      "categories": [
+        "VPN",
+        "SDN",
+        "Network"
+      ],
+      "platform": "linux",
+      "logo": "https://avatars.githubusercontent.com/u/4173285?s=200&v=4",
+      "image": "zerotier/zerotier:latest",
+      "privileged": true,
+      "volumes": [
+        "/var/lib/zerotier-one:/var/lib/zerotier-one"
+      ]
+    },
+    {
+      "type": 1,
+      "title": "Trivy Scanner",
+      "description": "🔍 Vulnerability Scanner für Container & Kubernetes",
+      "categories": [
+        "Security",
+        "DevSecOps",
+        "Scanner"
+      ],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/aquasecurity/trivy/main/docs/imgs/logo.png",
+      "image": "aquasec/trivy:latest",
+      "command": "server --listen 0.0.0.0:4954",
+      "ports": [
+        "4954:4954"
+      ]
+    },
+    {
+      "type": 1,
+      "title": "OWASP ZAP",
+      "description": "⚡ Web Application Security Scanner",
+      "categories": [
+        "Security",
+        "Web Security",
+        "Scanner"
+      ],
+      "platform": "linux",
+      "logo": "https://www.zaproxy.org/img/zap256x256.png",
+      "image": "owasp/zap2docker-stable:latest",
+      "command": "zap-webswing.sh",
+      "ports": [
+        "8080:8080",
+        "8090:8090"
+      ]
+    },
+    {
+      "type": 1,
+      "title": "Roundcube Webmail",
+      "description": "📧 Open Source Webmail Client",
+      "categories": [
+        "Mail",
+        "Communication",
+        "Web"
+      ],
+      "platform": "linux",
+      "logo": "https://roundcube.net/images/roundcube_logo_icon.svg",
+      "image": "roundcube/roundcubemail:latest",
+      "ports": [
+        "80:80"
+      ],
+      "env": [
+        {
+          "name": "ROUNDCUBEMAIL_DEFAULT_HOST",
+          "label": "Mail Server",
+          "default": "localhost"
+        },
+        {
+          "name": "ROUNDCUBEMAIL_SMTP_SERVER",
+          "label": "SMTP Server",
+          "default": "localhost"
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "title": "Tor Proxy",
+      "description": "🧅 Tor Anonymity Network Proxy",
+      "categories": [
+        "Privacy",
+        "Proxy",
+        "Anonymity"
+      ],
+      "platform": "linux",
+      "logo": "https://www.torproject.org/static/images/tor-logo@2x.png",
+      "image": "dperson/torproxy:latest",
+      "ports": [
+        "8118:8118",
+        "9050:9050"
+      ]
+    },
+    {
+      "type": 1,
+      "title": "Pi-hole DNS Filter",
+      "description": "🕳️ Network-wide Ad & Tracking Blocker",
+      "categories": [
+        "Privacy",
+        "DNS",
+        "Ad Block"
+      ],
+      "platform": "linux",
+      "logo": "https://wp-cdn.pi-hole.net/wp-content/uploads/2016/12/Vortex-R.png",
+      "image": "pihole/pihole:latest",
+      "ports": [
+        "53:53/tcp",
+        "53:53/udp",
+        "80:80"
+      ],
+      "env": [
+        {
+          "name": "WEBPASSWORD",
+          "label": "Admin Password",
+          "default": "admin"
+        },
+        {
+          "name": "TZ",
+          "label": "Timezone",
+          "default": "Europe/Berlin"
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "title": "Passbolt CE",
+      "description": "🔐 Open Source Team Password Manager",
+      "categories": [
+        "Security",
+        "Passwords",
+        "Team"
+      ],
+      "platform": "linux",
+      "logo": "https://www.passbolt.com/assets/img/logo/logo.svg",
+      "image": "passbolt/passbolt:latest-ce",
+      "ports": [
+        "80:80",
+        "443:443"
+      ],
+      "env": [
+        {
+          "name": "APP_FULL_BASE_URL",
+          "label": "Base URL",
+          "default": "https://passbolt.local"
+        },
+        {
+          "name": "DATASOURCES_DEFAULT_PASSWORD",
+          "label": "DB Password"
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "title": "privacyIDEA MFA",
+      "description": "🛡️ Multi-Factor Authentication Server",
+      "categories": [
+        "Security",
+        "MFA",
+        "Authentication"
+      ],
+      "platform": "linux",
+      "logo": "https://www.privacyidea.org/wp-content/uploads/2020/02/privacyIDEA-logo.png",
+      "image": "privacyidea/privacyidea:latest",
+      "ports": [
+        "5001:5001"
+      ],
+      "volumes": [
+        "/etc/privacyidea:/etc/privacyidea"
+      ]
+    },
+    {
+      "type": 1,
+      "title": "TheHive Incident Response",
+      "description": "🕵️ Security Incident Response Platform",
+      "categories": [
+        "Security",
+        "Incident Response",
+        "SIEM"
+      ],
+      "platform": "linux",
+      "logo": "https://github.com/TheHive-Project/TheHive/raw/master/images/thehive-logo.png",
+      "image": "strangebee/thehive:latest",
+      "ports": [
+        "9000:9000"
+      ],
+      "volumes": [
+        "/opt/thp/thehive/data:/opt/thp/thehive/data"
+      ]
+    },
+    {
+      "type": 1,
+      "title": "MISP Threat Sharing",
+      "description": "🌐 Malware Information Sharing Platform",
+      "categories": [
+        "Security",
+        "Threat Intel",
+        "Sharing"
+      ],
+      "platform": "linux",
+      "logo": "https://www.misp-project.org/assets/images/misp-logo.png",
+      "image": "coolacid/misp-docker:core-latest",
+      "ports": [
+        "80:80",
+        "443:443"
+      ],
+      "env": [
+        {
+          "name": "HOSTNAME",
+          "label": "Hostname",
+          "default": "misp.local"
+        },
+        {
+          "name": "POSTFIX_RELAY_HOST",
+          "label": "SMTP Relay"
+        }
+      ]
+    }
+  ]
+}
