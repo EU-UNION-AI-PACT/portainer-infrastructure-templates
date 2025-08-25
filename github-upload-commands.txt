@@ -1,0 +1,9 @@
+# GitHub Repository Commands (nach Repository-Erstellung)
+# Ersetze DEIN-USERNAME mit deinem GitHub Username
+
+git remote add origin https://github.com/DEIN-USERNAME/portainer-infrastructure-templates.git
+git branch -M main
+git push -u origin main
+
+# Deine Portainer Template URL:
+# https://raw.githubusercontent.com/DEIN-USERNAME/portainer-infrastructure-templates/main/web/portainer-template.json
