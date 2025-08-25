@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "python",
+      "request": "launch",
+      "name": "🚀 Portainer Manager Update",
+      "program": "${workspaceFolder}/portainer_manager.py",
+      "args": ["update"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/bin/python"
+    },
+    {
+      "type": "python", 
+      "request": "launch",
+      "name": "🔧 Generate Advanced Templates",
+      "program": "${workspaceFolder}/scripts/generate_advanced_templates.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/bin/python"
+    },
+    {
+      "type": "python",
+      "request": "launch", 
+      "name": "🔍 Template Validator",
+      "program": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "-c",
+        "import json; import sys; print('🔍 Validating Portainer Template...'); data = json.load(open('web/portainer-template.json')); print(f'✅ JSON Valid - {len(data[\"templates\"])} templates found'); [print(f'❌ Template {i}: Missing required field \"{field}\"') for i, t in enumerate(data['templates']) if not t.get(field) for field in ['title', 'description', 'type']]; print('🎯 Validation Complete!')"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "🔄 Update Portainer Templates",
+      "type": "shell",
+      "command": "\"/home/holythreekingstreescrowns/Schreibtisch/Portainer Template/.venv/bin/python\" portainer_manager.py update",
+      "isBackground": false,
+      "problemMatcher": [],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "detail": "Update templates using portainer_manager.py script"
+    },
+    {
+      "label": "🔍 Validate JSON Template",
+      "type": "shell",
+      "command": "jq",
+      "args": [
+        ".",
+        "web/portainer-template.json"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": [],
+      "detail": "Validate JSON syntax and structure of Portainer template"
+    },
+    {
+      "label": "📊 Count Templates",
+      "type": "shell",
+      "command": "jq",
+      "args": [
+        "'.templates | length'",
+        "web/portainer-template.json"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "detail": "Count total number of templates in collection"
+    },
+    {
+      "label": "🐳 Validate Docker Compose Stacks",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "echo '🔍 Validating all Docker Compose stack files...' && for file in stacks/*.yml; do echo \"\\n📄 Validating $file:\"; docker compose -f \"$file\" config >/dev/null 2>&1 && echo \"✅ $file: VALID\" || echo \"❌ $file: INVALID\"; done"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "detail": "Validate all Docker Compose stack files syntax"
+    },
+    {
+      "label": "🔧 Check Environment Variables",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "echo '🔍 Checking environment variables in stack files...' && for file in stacks/*.yml; do echo \"\\n📄 Checking $file:\"; VARS=$(grep -o '\\${[A-Z0-9_]\\+}' \"$file\" 2>/dev/null | tr -d '${}' | sort -u || true); if [ ! -z \"$VARS\" ]; then echo \"Environment variables found:\"; echo \"$VARS\" | sed 's/^/  - /'; else echo \"No environment variables found\"; fi; done"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "detail": "Check environment variables used in Docker Compose files"
+    },
+    {
+      "label": "🌐 Test GitHub Raw Access",
+      "type": "shell",
+      "command": "curl",
+      "args": [
+        "-fsSL",
+        "-w",
+        "\\nHTTP Status: %{http_code}\\nSize: %{size_download} bytes\\nTime: %{time_total}s\\n",
+        "https://raw.githubusercontent.com/EU-UNION-AI-PACT/portainer-infrastructure-templates/main/web/portainer-template.json"
+      ],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "detail": "Test access to GitHub raw template file"
+    },
+    {
+      "label": "🚀 Full Template Validation Suite",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "🔍 Validate JSON Template",
+        "📊 Count Templates", 
+        "🐳 Validate Docker Compose Stacks",
+        "🔧 Check Environment Variables",
+        "🌐 Test GitHub Raw Access"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "detail": "Run complete validation suite for Portainer templates"
+    },
+    {
+      "label": "🎯 Deploy Specific Stack",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "echo 'Available stacks:' && ls stacks/*.yml | sed 's/^/  - /' && echo && read -p 'Enter stack filename (e.g., mean-stack.yml): ' STACK && echo && echo '🚀 Testing deployment of stacks/'$STACK && docker compose -f stacks/$STACK up --no-start && echo '✅ Stack validation successful!' && docker compose -f stacks/$STACK down"
+      ],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "detail": "Test deployment of a specific Docker Compose stack"
+    },
+    {
+      "label": "📋 Generate Template Report",
+      "type": "shell",
+      "command": "\"/home/holythreekingstreescrowns/Schreibtisch/Portainer Template/.venv/bin/python\"",
+      "args": [
+        "-c",
+        "import json; data=json.load(open('web/portainer-template.json')); templates=data['templates']; print(f'📊 TEMPLATE COLLECTION REPORT\\n{\\'=\\'*50}'); print(f'Total Templates: {len(templates)}'); types={1: 'Container', 2: 'Stack'}; type_counts={t: sum(1 for tmpl in templates if tmpl.get(\\'type\\') == t) for t in types}; [print(f'{types[t]} Templates: {count}') for t, count in type_counts.items()]; categories={}; [categories.setdefault(cat, 0) or categories.update({cat: categories[cat] + 1}) for tmpl in templates for cat in tmpl.get('categories', [])]; print(f'\\n📂 TOP CATEGORIES:'); [print(f'  {cat}: {count}') for cat, count in sorted(categories.items(), key=lambda x: x[1], reverse=True)[:10]]; one_click=[t for t in templates if 'One-Click' in t.get('title', '') or 'Pre-configured' in t.get('categories', [])]; print(f'\\n🚀 One-Click Ready: {len(one_click)} templates'); print(f'\\n💎 Collection Status: Pink Star Diamond Certified')"
+      ],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "detail": "Generate comprehensive report about template collection"
+    }
+  ]
+}

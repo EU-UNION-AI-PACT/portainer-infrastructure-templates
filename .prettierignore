@@ -1,0 +1,68 @@
+# VS Code Configuration Files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# Python Environment  
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docker
+.docker/
+.dockerignore
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+template-server.log
+template-server.pid
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# Backup files
+*.backup
+*-backup-*
+*.bak
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# Configuration
+.env.local
+.env.production
+.env.development
+config/local.json
+
+# Reports
+reports/*.html
+reports/*.json
+monitoring/reports/
