@@ -6328,10 +6328,8 @@
       "platform": "linux",
       "restart_policy": "unless-stopped",
       "ports": [
-        {
-          "HTTP Proxy": "80/tcp",
-          "HTTPS Proxy": "443/tcp"
-        }
+        "80:80/tcp",
+        "443:443/tcp"
       ],
       "volumes": [
         {
@@ -8763,9 +8761,7 @@
       "platform": "linux",
       "restart_policy": "unless-stopped",
       "ports": [
-        {
-          "WebUI": "8086:8086/tcp"
-        }
+        "8086:8086/tcp"
       ],
       "volumes": [
         {
@@ -13003,9 +12999,7 @@
       "platform": "linux",
       "restart_policy": "unless-stopped",
       "ports": [
-        {
-          "WebUI": "3001:3000/tcp"
-        }
+        "3001:3000/tcp"
       ],
       "volumes": [
         {
@@ -13312,9 +13306,7 @@
       "platform": "linux",
       "restart_policy": "unless-stopped",
       "ports": [
-        {
-          "WebUI": "9090:9090/tcp"
-        }
+        "9090:9090/tcp"
       ],
       "volumes": [
         {
@@ -46235,10 +46227,8 @@
       "platform": "linux",
       "restart_policy": "unless-stopped",
       "ports": [
-        {
-          "Minecraft Server": "25565:25565/tcp",
-          "WebUI": "8443:8443/tcp"
-        }
+        "25565:25565/tcp",
+        "8443:8443/tcp"
       ],
       "volumes": [
         {
@@ -50051,9 +50041,7 @@
       "platform": "linux",
       "restart_policy": "unless-stopped",
       "ports": [
-        {
-          "WebUI": "4533:4533/tcp"
-        }
+        "4533:4533/tcp"
       ],
       "volumes": [
         {
@@ -52764,9 +52752,7 @@
       "platform": "linux",
       "restart_policy": "unless-stopped",
       "ports": [
-        {
-          "WebUI": "8000:8000/tcp"
-        }
+        "8000:8000/tcp"
       ],
       "volumes": [
         {
@@ -64044,11 +64030,9 @@
       "platform": "linux",
       "restart_policy": "unless-stopped",
       "ports": [
-        {
-          "Voice": "9987:9987/udp",
-          "Filetransfer": "30033:30033/tcp",
-          "ServerQuery": "10011:10011/tcp"
-        }
+        "9987:9987/udp",
+        "30033:30033/tcp",
+        "10011:10011/tcp"
       ],
       "volumes": [
         {
