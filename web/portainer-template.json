@@ -91,7 +91,7 @@
     {
       "type": 1,
       "title": "SyncThing",
-      "description": null,
+      "description": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes.",
       "categories": [
         "Backup",
         "Cloud",
@@ -395,7 +395,8 @@
           "name": "PORT",
           "label": "PORT"
         }
-      ]
+      ],
+      "image": "invoiceninja/invoiceninja:latest"
     },
     {
       "type": 1,
@@ -482,7 +483,8 @@
           "label": "PORT",
           "name": "PORT"
         }
-      ]
+      ],
+      "image": "nextcloud:latest"
     },
     {
       "type": 1,
@@ -646,7 +648,8 @@
           "label": "Enable HTTPS?"
         }
       ],
-      "note": "Source: template.json"
+      "note": "Source: template.json",
+      "image": "seafileltd/seafile-mc:latest"
     },
     {
       "type": 1,
@@ -1766,7 +1769,7 @@
     {
       "type": 1,
       "title": "SmokePing",
-      "description": null,
+      "description": "SmokePing is a deluxe latency measurement tool. It can measure, store and display latency, latency distribution and packet loss.",
       "categories": [
         "Management"
       ],
@@ -1803,7 +1806,7 @@
     {
       "type": 1,
       "title": "UniFi Controller",
-      "description": null,
+      "description": "The UniFi Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
       "categories": [
         "Management",
         "Tools"
@@ -1964,7 +1967,8 @@
           "label": "Grafana Password",
           "default": "admin123"
         }
-      ]
+      ],
+      "image": "alpine:latest"
     },
     {
       "type": 1,
@@ -2106,7 +2110,7 @@
     {
       "type": 1,
       "title": "Headphones",
-      "description": null,
+      "description": "Automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, μTorrent, Deluge and Blackhole.",
       "categories": [
         "Music"
       ],
@@ -3896,7 +3900,8 @@
           "description": "Admin token for Vaultwarden password manager",
           "default": "your-secure-admin-token"
         }
-      ]
+      ],
+      "image": "alpine:latest"
     },
     {
       "type": 1,
@@ -3934,13 +3939,14 @@
           "label": "Wazuh Password",
           "default": "SecretPassword123!"
         }
-      ]
+      ],
+      "image": "alpine:latest"
     },
     {
       "type": 3,
       "title": "🆓 Kostenlose Security Alternativen",
       "description": "Komplette kostenlose Alternativen zu Keeper, Auth0, Authy, Okta & Co. Alle Open-Source Lösungen ohne Limits.",
-      "note": "Sammlung der besten kostenlosen Alternativen zu kommerziellen Security-Lösungen",
+      "note": "Docker Compose stack with multiple security services",
       "categories": [
         "Security",
         "Free Alternatives"
@@ -3950,13 +3956,14 @@
       "repository": {
         "url": "https://github.com/YOUR_USERNAME/portainer-infrastructure-templates",
         "stackfile": "stacks/free-alternatives.yml"
-      }
+      },
+      "image": "alpine:latest"
     },
     {
       "type": 3,
       "title": "🔧 Extended Security Tools",
       "description": "Erweiterte Security-Tools: Wazuh, FusionAuth, Tailscale, OWASP ZAP, Pi-hole, Passbolt, TheHive, MISP und mehr",
-      "note": "Sammlung von 15+ erweiterten Security-Tools aus GitHub/DockerHub",
+      "note": "Docker Compose stack with extended security tools",
       "categories": [
         "Security",
         "Extended Tools",
@@ -3967,7 +3974,8 @@
       "repository": {
         "url": "https://github.com/YOUR_USERNAME/portainer-infrastructure-templates",
         "stackfile": "stacks/extended-security-tools.yml"
-      }
+      },
+      "image": "alpine:latest"
     },
     {
       "type": 1,
@@ -4305,13 +4313,14 @@
           "label": "WIREGUARD",
           "default": "false"
         }
-      ]
+      ],
+      "image": "pritunl/pritunl:latest"
     },
     {
       "type": 3,
       "title": "VPN-Only Stack",
       "description": "WireGuard VPN with web management interface",
-      "note": "Simple VPN solution for secure remote access",
+      "note": "This is a Docker Compose stack. The image field is required but not used.",
       "categories": [
         "VPN",
         "Security"
@@ -4335,7 +4344,8 @@
           "description": "Number of VPN client configurations to generate",
           "default": "10"
         }
-      ]
+      ],
+      "image": "alpine:latest"
     },
     {
       "type": 1,
@@ -4867,7 +4877,8 @@
           "label": "PORT",
           "name": "PORT"
         }
-      ]
+      ],
+      "image": "lscr.io/linuxserver/bookstack:latest"
     },
     {
       "type": 1,

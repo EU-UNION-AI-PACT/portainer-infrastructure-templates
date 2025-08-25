@@ -3946,7 +3946,7 @@
       "type": 3,
       "title": "🆓 Kostenlose Security Alternativen",
       "description": "Komplette kostenlose Alternativen zu Keeper, Auth0, Authy, Okta & Co. Alle Open-Source Lösungen ohne Limits.",
-      "note": "Docker Compose stack with multiple security services",
+      "note": "Sammlung der besten kostenlosen Alternativen zu kommerziellen Security-Lösungen",
       "categories": [
         "Security",
         "Free Alternatives"
@@ -3956,14 +3956,13 @@
       "repository": {
         "url": "https://github.com/YOUR_USERNAME/portainer-infrastructure-templates",
         "stackfile": "stacks/free-alternatives.yml"
-      },
-      "image": "alpine:latest"
+      }
     },
     {
       "type": 3,
       "title": "🔧 Extended Security Tools",
       "description": "Erweiterte Security-Tools: Wazuh, FusionAuth, Tailscale, OWASP ZAP, Pi-hole, Passbolt, TheHive, MISP und mehr",
-      "note": "Docker Compose stack with extended security tools",
+      "note": "Sammlung von 15+ erweiterten Security-Tools aus GitHub/DockerHub",
       "categories": [
         "Security",
         "Extended Tools",
@@ -3974,8 +3973,7 @@
       "repository": {
         "url": "https://github.com/YOUR_USERNAME/portainer-infrastructure-templates",
         "stackfile": "stacks/extended-security-tools.yml"
-      },
-      "image": "alpine:latest"
+      }
     },
     {
       "type": 1,
@@ -4313,8 +4311,7 @@
           "label": "WIREGUARD",
           "default": "false"
         }
-      ],
-      "image": "pritunl/pritunl:latest"
+      ]
     },
     {
       "type": 3,
@@ -4877,8 +4874,7 @@
           "label": "PORT",
           "name": "PORT"
         }
-      ],
-      "image": "lscr.io/linuxserver/bookstack:latest"
+      ]
     },
     {
       "type": 1,
